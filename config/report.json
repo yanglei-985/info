@@ -1,0 +1,25 @@
+{
+  "title": "每日信息流",
+  "sections": [
+    {
+      "id": "top",
+      "title": "今日最重要"
+    },
+    {
+      "id": "web3",
+      "title": "Web3 / Crypto"
+    },
+    {
+      "id": "ai",
+      "title": "AI / 开源 / 技术"
+    },
+    {
+      "id": "market",
+      "title": "市场与政策信号"
+    },
+    {
+      "id": "watch",
+      "title": "继续跟踪"
+    }
+  ]
+}

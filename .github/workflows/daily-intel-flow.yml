@@ -1,0 +1,40 @@
+name: Daily Intel Flow
+
+on:
+  schedule:
+    # 00:00 UTC = 08:00 Asia/Shanghai
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+      OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+      WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+      WEBHOOK_TYPE: ${{ secrets.WEBHOOK_TYPE }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      TELEGRAM_API_BASE: ${{ secrets.TELEGRAM_API_BASE }}
+      ENABLE_AI_SUMMARY: ${{ secrets.ENABLE_AI_SUMMARY }}
+      MAX_ITEMS_PER_SOURCE: ${{ secrets.MAX_ITEMS_PER_SOURCE }}
+      REPORT_TIMEZONE: ${{ secrets.REPORT_TIMEZONE }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate and push daily report
+        run: npm run once

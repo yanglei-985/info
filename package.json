@@ -1,0 +1,24 @@
+{
+  "name": "daily-intel-flow",
+  "version": "1.0.0",
+  "description": "Daily Web3 and AI intelligence flow with RSS/API collection, filtering, scoring, and report output.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "run": "node src/index.js",
+    "once": "node src/index.js --once",
+    "serve": "node src/server.js",
+    "schedule": "node src/scheduler.js",
+    "test:notify": "node src/test-notify.js",
+    "telegram:chatid": "node src/telegram-chat-id.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "fast-xml-parser": "^5.7.2",
+    "node-cron": "^4.2.1",
+    "rss-parser": "^3.13.0"
+  }
+}

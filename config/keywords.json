@@ -1,0 +1,53 @@
+{
+  "mustIncludeAny": [
+    "bitcoin",
+    "btc",
+    "ethereum",
+    "eth",
+    "solana",
+    "base",
+    "eigenlayer",
+    "zk",
+    "rwa",
+    "depin",
+    "airdrop",
+    "etf",
+    "stablecoin",
+    "openai",
+    "anthropic",
+    "claude",
+    "gemini",
+    "ai agent",
+    "mcp",
+    "llm",
+    "cursor",
+    "sora",
+    "github",
+    "model",
+    "paper"
+  ],
+  "highPriority": [
+    "hack",
+    "exploit",
+    "security",
+    "mainnet",
+    "testnet",
+    "funding",
+    "raises",
+    "launch",
+    "release",
+    "airdrop",
+    "partnership",
+    "acquisition",
+    "regulation",
+    "sec",
+    "etf",
+    "open source",
+    "benchmark"
+  ],
+  "exclude": [
+    "price prediction",
+    "sponsored",
+    "advertisement"
+  ]
+}

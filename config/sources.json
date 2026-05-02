@@ -1,0 +1,37 @@
+{
+  "rss": [
+    {
+      "name": "ChainFeeds Web3 RAW",
+      "type": "opml",
+      "path": "data/chainfeeds-raw.opml",
+      "limit": 20
+    },
+    {
+      "name": "BestBlogs AI Featured",
+      "url": "https://www.bestblogs.dev/zh/feeds/rss?category=ai&featured=y&timeFilter=1w&minScore=70",
+      "limit": 20
+    },
+    {
+      "name": "Hacker News Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "limit": 15
+    },
+    {
+      "name": "GitHub Trending Daily",
+      "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+      "limit": 15
+    }
+  ],
+  "api": [
+    {
+      "name": "cryptocurrency.cv Latest",
+      "url": "https://cryptocurrency.cv/api/news",
+      "limit": 30
+    },
+    {
+      "name": "cryptocurrency.cv Trending",
+      "url": "https://cryptocurrency.cv/api/trending",
+      "limit": 20
+    }
+  ]
+}
