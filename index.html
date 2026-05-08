@@ -21,213 +21,284 @@
   <main>
 <h1>每日信息流</h1>
 
-<p>生成时间：2026年5月2日星期六 23:09</p>
+<p>生成时间：2026年5月8日星期五 15:56</p>
 
-<p>采集命中：20 条</p>
+<p>采集命中：37 条</p>
 
 <h2>AI 主编摘要</h2>
 
-<p>以下基于你给出的信息，做了去重与重要性排序，重点偏向 **Web3 + AI 基础设施/工作流/安全**，不构成投资建议。</p>
+<p>以下为基于你提供信息整理的**今日中文情报摘要**。我已合并重复主题，按重要性排序，并尽量聚焦 **AI Agent、开发者工具、基础设施、企业落地、Web3 相关边缘信号**，**不构成投资建议**。</p>
 
 <p>---</p>
 
-<h2>1）今日最重要 5 条</h2>
+<h1>1）今日最重要 5 条</h1>
 
-<p>### 1. OpenAI Codex 平台深度解析：子智能体、MCP、Guardian、安全门控、300万周活</p>
-<p>**来源**：BestBlogs AI Featured  </p>
-<p>**核心摘要**：Codex 被定位为“软件工程智能体平台”，而不只是代码补全工具。重点展示了 **子智能体并行执行**、**Skills/Apps/MCP 插件生态**、**后台自动化**、**Guardian Approvals 安全门控**，并披露其已达 **300 万周活跃用户**。</p>
+<h2>1. Anthropic 连续释放重磅信号：Claude 使用额度上调 + SpaceX 算力合作 + 托管智能体升级 + Office 深度集成</h2>
+<p>**相关来源已合并**：  </p>
+<p>- Claude 使用额度提升及与 SpaceX 的计算资源合作  </p>
+<p>- Claude 托管智能体新功能：梦境 / 成果评估 / 多智能体编排  </p>
+<p>- Claude 在 Excel、PowerPoint、Word、Outlook 中协作  </p>
+<p>- Dario / Daniela 谈 Anthropic 增长与算力压力  </p>
+<p>- anthropics/financial-services（金融服务参考 agents）</p>
 
-<p>**为什么重要**</p>
-<p>- 这是当前 AI Agent 工程化能力最完整的公开信号之一，说明竞争已从“模型能力”转向“平台能力 + 工作流能力 + 安全能力”。</p>
-<p>- **子智能体并行化** 已成为主流范式，和 Web3/开发者工具中的多代理协作趋势一致。</p>
-<p>- **MCP 生态**继续强化，意味着未来 AI 工具的互操作标准正在形成，影响链上工具、钱包、DevOps、审计等场景。</p>
-<p>- **Guardian 审批机制**说明高权限 Agent 不再只拼自动化，还要拼可审计与可控性，这对企业与链上安全都很关键。</p>
-
-<p>---</p>
-
-<p>### 2. Claude 披露 Claude Code 关键经验：提示缓存应成为 Agent 架构一级约束</p>
-<p>**来源**：Claude Blog  </p>
-<p>**核心摘要**：Claude 官方总结 Claude Code 的核心经验：**提示缓存依赖前缀匹配**，因此系统提示、工具定义、模式切换、压缩历史等都必须围绕“缓存不失效”来设计，否则成本和延迟会显著恶化。</p>
-
-<p>**为什么重要**</p>
-<p>- 这不是小优化，而是 **AI Agent 产品可用性/成本结构** 的底层约束。</p>
-<p>- 对所有长上下文、多轮调用、工具调用频繁的产品都直接相关，包括：编码 Agent、链上研究 Agent、客服 Agent、投研 Agent。</p>
-<p>- 对 Web3 团队尤其重要：如果你在做 **链上情报、交易辅助、自动审计、DAO 工作流**，提示缓存设计会直接影响推理成本、响应速度和单位经济模型。</p>
-<p>- 这也解释了为什么很多 Agent Demo 能跑、产品却难规模化：**架构没有围绕 cache 命中来设计**。</p>
+<p>### 为什么重要</p>
+<p>- 这是今天**最强的一条平台级信号**：Anthropic 不再只是模型提供方，而是在同步推进 **算力供给、企业入口、Agent 产品能力、行业模板** 四条线。</p>
+<p>- **算力侧**：与 SpaceX 合作新增 300MW+ 计算能力，说明高增长已把供给端推成核心瓶颈，也印证 Anthropic 所说的使用量/收入爆发。</p>
+<p>- **产品侧**：Claude Code 和 API 限额提高，直接改善开发者与企业生产环境可用性。</p>
+<p>- **Agent 侧**：托管智能体新增“梦境（长期记忆整理）/成果评估（自我纠错）/多智能体编排”，显示 Agent 正从单轮执行，走向**长期运行、自治纠偏、团队化协作**。</p>
+<p>- **企业入口侧**：Office 集成意味着 Claude 正进入最真实的办公流；而 financial-services 仓库则把金融行业的 Agent 模板、技能、MCP 连接器标准化，明显在抢占**高价值垂直场景**。</p>
+<p>- 对 Web3/加密行业的间接意义：未来机构研究、法务、投后、财务、合规、投研自动化，都会优先受益于这类“可审计+可集成+可编排”的 Agent 框架。</p>
 
 <p>---</p>
 
-<p>### 3. jcode 登上 GitHub Trending：多会话、多代理编码基础设施，强调性能与自演化</p>
-<p>**来源**：GitHub Trending Daily  </p>
-<p>**核心摘要**：jcode 是一个面向多会话工作流的 coding agent harness，突出 **低内存占用、超快启动、Swarm 多代理协作、记忆系统、Browser automation、MCP/多 Provider 接入、自我修改（self-dev）**。</p>
+<h2>2. AI Coding Agent 进入“终端原生 + 开放标准 + 多提供商路由”加速期</h2>
+<p>**相关来源已合并**：  </p>
+<p>- Hmbown/DeepSeek-TUI  </p>
+<p>- aaif-goose/goose  </p>
+<p>- addyosmani/agent-skills  </p>
+<p>- decolua/9router  </p>
+<p>- Claude Code 产品经理使用指南</p>
 
-<p>**为什么重要**</p>
-<p>- 它代表了新一代 AI 编码工具竞争方向：不是单点模型，而是 **“调度层 / 运行时 / 协作层 / 记忆层”**。</p>
-<p>- 与 Codex/Claude Code/Warp 的趋势高度一致：AI 编码正在从“单助手”升级为“**多代理操作系统**”。</p>
-<p>- jcode 特别强调 **多 session 的资源效率**，这对本地部署、团队并发、私有环境很有现实意义。</p>
-<p>- 对 Web3 开发尤其 relevant：智能合约、索引器、前端、审计脚本通常天然适合并行拆分，多代理协作价值更高。</p>
-
-<p>---</p>
-
-<p>### 4. WorkOS Cross-App Access：试图解决 MCP 生态的“重复 OAuth 授权”与企业治理问题</p>
-<p>**来源**：BestBlogs AI Featured  </p>
-<p>**核心摘要**：WorkOS/AI Engineer 演讲提出通过 **Cross-App Access（XAA）+ ID-JAG**，让身份提供商在 AI Client 与 MCP Server 之间建立信任桥，实现 **一次登录、多 MCP 服务复用短期访问令牌**。</p>
-
-<p>**为什么重要**</p>
-<p>- MCP 现在的最大落地障碍之一不是“能不能连”，而是 **身份、授权、撤销、审计**。</p>
-<p>- 企业级 AI Agent 要进入真实工作流，必须解决 **重复授权疲劳** 和 **IT 可见性不足**。</p>
-<p>- 这和 Web3 世界里的 **账户抽象 / 权限委托 / Session Key** 有相似问题结构：都在寻找“更顺滑但仍可控”的权限体系。</p>
-<p>- 如果 XAA / ID-JAG 这类模式被广泛接受，MCP 才可能真正从开发者玩具演进为企业标准组件。</p>
+<p>### 为什么重要</p>
+<p>- 这批项目共同说明：**AI 编程助手正在从“聊天补全”进化为“可执行工作流系统”**。</p>
+<p>- **DeepSeek-TUI**：终端内 coding agent，支持文件编辑、shell、git、MCP、子代理、1M context、HTTP/SSE runtime，且强调本地工作区审批与恢复机制，说明“终端即 Agent 操作台”正在成型。</p>
+<p>- **Goose**：项目已迁移至 Linux Foundation 旗下 AAIF，释放出一个重要信号——**开放 Agent 基础设施开始机构化、基金会化**，未来标准和生态竞争会越来越像 Kubernetes / Linux 早期演进。</p>
+<p>- **agent-skills**：把“规格、计划、实现、测试、审查、发布”包装成可复用技能层，说明 Agent 的核心竞争正在从“模型本身”转向**流程约束、工程纪律、可验证性**。</p>
+<p>- **9Router**：把多模型、多订阅、多免费源、自动 fallback、token 节流统一成一个本地 OpenAI-compatible 路由层。这说明开发者已经在主动构建**模型供给抽象层**，避免被单一厂商限额、价格、可用性卡住。</p>
+<p>- 从 PM 使用 Claude Code 的案例看，Agent 已不止写代码，而是在进入 **路线图拆解、工单生成、用户分析、研究助手** 等上游知识工作。</p>
 
 <p>---</p>
 
-<p>### 5. TradingAgents 持续更新：多智能体金融研究框架走向更完整的持久化与多模型编排</p>
-<p>**来源**：GitHub Trending Daily  </p>
-<p>**核心摘要**：TradingAgents 是一个多智能体金融交易研究框架，近期版本强化了 **结构化输出 agent**、**LangGraph checkpoint 恢复**、**持久化决策日志**、**DeepSeek/Qwen/GLM/Azure 等多 provider 支持** 和 Docker/Windows 兼容。</p>
+<h2>3. MCP 正从“工具协议”升级为“应用分发层”，UI Agent 化趋势明显</h2>
+<p>**相关来源已合并**：  </p>
+<p>- MCP UI 演讲  </p>
+<p>- anthropics/financial-services 中大量 MCP connectors  </p>
+<p>- InsForge MCP 接入  </p>
+<p>- DeepSeek-TUI / Goose / Open Agents 对 MCP 或工具协议的支持</p>
 
-<p>**为什么重要**</p>
-<p>- 它反映出“**多 Agent 金融分析**”正从概念验证走向更工程化的框架形态。</p>
-<p>- 其新增的 **checkpoint 恢复 + 决策记忆** 非常关键，说明这类系统开始关注长期运行、失败恢复、经验沉淀。</p>
-<p>- 对 Web3/加密研究团队有借鉴意义：虽然它面向传统金融，但其架构可迁移到 **链上交易、治理分析、事件驱动研究**。</p>
-<p>- 需要注意的是，它强调“研究用途”，说明 **Agent 在金融决策中的可靠性边界仍然明显**。</p>
-
-<p>---</p>
-
-<h2>2）其他值得注意但未进前五的信号</h2>
-
-<p>### Warp 开源并强化 agentic development environment</p>
-<p>- 和 jcode、Codex 一样，都指向“终端/IDE 正在变成 Agent 运行时”。</p>
-<p>- OpenAI 作为赞助方，也说明头部模型厂商在积极渗透开发环境层。</p>
-
-<p>### Superpowers + Matt Pocock Skills</p>
-<p>- 两者都说明 **“技能层 / 方法论层 / 过程约束层”** 正成为 Agent 成功率提升的重要抓手。</p>
-<p>- 趋势上看，未来不是只有模型能力，**工作流模板、领域技能包、组织知识沉淀** 会越来越值钱。</p>
-
-<p>### SimplePDF Copilot（客户端工具调用）</p>
-<p>- 很值得关注，核心不是 PDF，而是 **client-side tool calling**。</p>
-<p>- 这是一个兼顾隐私与可操作性的模式，适合医疗、法务、财务，也可类比到链上签名/本地钱包/敏感文档处理场景。</p>
-
-<p>### Sim</p>
-<p>- 代表通用型 agent orchestration 平台持续升温，强调可视化编排、1,000+ 集成、自托管。</p>
-<p>- 对企业采用 AI Agent 很友好，但差异化仍需观察。</p>
-
-<p>### Claude Code 遗留代码库实践</p>
-<p>- 再次印证：**上下文工程 &gt; 魔法提示词**。</p>
-<p>- 对任何大型代码库、复杂协议、长周期项目都适用，包括 Web3 基础设施项目。</p>
+<p>### 为什么重要</p>
+<p>- 今天一个关键变化是：**MCP 不只是让模型调用工具，而是开始承载 UI、连接器、工作流和分发能力**。</p>
+<p>- MCP UI 的核心判断非常关键：如果一个交互式 UI surface 能跨 Claude、ChatGPT、VS Code、Cursor 等 host 运行，那么开发者面对的就不再是“给某个平台写插件”，而是“给多个 AI 宿主写应用”。</p>
+<p>- financial-services 仓库把金融数据服务商（FactSet、PitchBook、LSEG、S&amp;P 等）统一放到 MCP 连接器语境下，意味着 **企业数据接入层可能被 MCP 标准化**。</p>
+<p>- InsForge、DeepSeek-TUI、Goose、Open Agents 都围绕工具调用、上下文、执行环境展开，说明 Agent 平台的下一个争夺点不是单一模型，而是：  </p>
+<p class="meta">**协议标准 + 工具生态 + 宿主分发 + 可视化交互**。</p>
+<p>- 对 Web3 的映射非常直接：链上数据、钱包签名、风控、治理投票、研究终端、合规流水，将来都可能被包装成 MCP server / app，被多个智能体宿主直接消费。</p>
 
 <p>---</p>
 
-<h2>3）继续跟踪的 3 个信号</h2>
+<h2>4. Agent 生产化的关键矛盾从“能不能做”转向“如何稳定运行、可观测、可恢复、可审计”</h2>
+<p>**相关来源已合并**：  </p>
+<p>- vercel-labs/open-agents  </p>
+<p>- Agent Observability 实战  </p>
+<p>- DeepSeek-TUI 的会话恢复/审批/回滚/任务队列  </p>
+<p>- Claude 托管智能体成果评估与多代理编排</p>
 
-<p>### 信号一：MCP 会不会从“接口标准”升级为“身份与权限标准”？</p>
-<p>**关注点**</p>
-<p>- XAA / ID-JAG 是否被更多 MCP 客户端和服务端支持</p>
-<p>- 是否出现统一的 scope、metadata、动态注册规范</p>
-<p>- 企业是否愿意把内部系统通过 MCP 暴露给 Agent</p>
+<p>### 为什么重要</p>
+<p>- 行业焦点正在从 demo 转向 production。  </p>
+<p>- **Open Agents** 提供的不是单个 agent，而是完整三层：Web → Agent Workflow → Sandbox VM，强调 agent 不应和执行沙盒绑定。这是非常成熟的架构思想。</p>
+<p>- **Observability** 讨论点很关键：生产中的 agent 失败，很多不是 500 error，而是“用户挫败、偷懒、绕过步骤、拒答、任务偏航”。这意味着传统日志和离线 benchmark 不够，需要**语义级监控**。</p>
+<p>- **DeepSeek-TUI** 的审批门、workspace rollback、durable task queue、session resume，本质上都在解决 agent 生产化中的三件事：**可控、可恢复、可追责**。</p>
+<p>- **Claude 成果评估** 则补上了自动化自检闭环：让 agent 按 rubric 自我打分与返工，这是走向稳定交付的重要一步。</p>
+<p>- 对企业和 Web3 场景尤其重要：涉及资产、权限、合规、链上执行时，没有 observability 和 rollback，Agent 很难进入核心流程。</p>
+
+<p>---</p>
+
+<h2>5. 底层推理与检索基础设施仍在快速演进：DFlash、PageIndex、TabPFN、NLA 分别指向速度、检索、结构化数据、可解释性</h2>
+<p>**相关来源已合并**：  </p>
+<p>- z-lab/dflash  </p>
+<p>- VectifyAI/PageIndex  </p>
+<p>- PriorLabs/TabPFN  </p>
+<p>- 自然语言自编码器（NLA）  </p>
+<p>- OpenAI Podcast 的 MRC 网络协议</p>
+
+<p>### 为什么重要</p>
+<p>- 这组信息说明，AI 的真正护城河不只在前台 Agent，而在后台四类能力：</p>
+<p class="meta">1. **推理速度/吞吐**：DFlash 用 block diffusion 做 speculative decoding，目标是更快并行 draft，适配 vLLM / SGLang / MLX，说明推理优化仍是高热赛道。</p>
+<p class="meta">2. **检索范式替代**：PageIndex 主打“无向量、基于推理的 RAG”，尤其针对长文档、金融文档，表明向量检索并非唯一主流路线。</p>
+<p class="meta">3. **结构化数据智能**：TabPFN 继续强化表格基础模型地位，适合中小数据集、高精度分类回归，对风控、运营分析、链上行为评分都有潜在参考价值。</p>
+<p class="meta">4. **可解释性与安全**：Anthropic 的 NLA 尝试把内部激活翻译成自然语言，帮助识别未言明意图，是高风险 Agent 和模型审计的重要前沿。</p>
+<p>- OpenAI 的 MRC 网络协议则提醒：前沿模型竞争已进入**网络协议、集群通信、尾延迟控制**层面，基础设施门槛继续抬高。</p>
+
+<p>---</p>
+
+<h1>2）每条为什么重要（更简明版）</h1>
+
+<h2>1. Anthropic 平台级推进</h2>
+<p>- 因为它同时覆盖 **算力、产品、企业入口、行业模板、Agent 能力**。</p>
+<p>- 说明头部模型厂商竞争已经从“模型分数”升级为“完整工作平台”。</p>
+
+<h2>2. Coding Agent 生态加速</h2>
+<p>- 因为开发者正在形成新的默认工作流：**终端 Agent + 技能包 + 路由层 + 多模型 fallback**。</p>
+<p>- 这会改变软件开发、研究、自动化的生产方式。</p>
+
+<h2>3. MCP 成为应用层标准候选</h2>
+<p>- 因为 MCP 正从“工具协议”变成“跨宿主分发协议 + UI 承载层”。</p>
+<p>- 谁掌握协议生态，谁更可能掌握 Agent 时代的入口。</p>
+
+<h2>4. Agent 生产化方法论成型</h2>
+<p>- 因为真实业务里，稳定性、恢复、审计、监控比一次性 demo 更重要。</p>
+<p>- 这是 Agent 从“能玩”走向“能上线”的分水岭。</p>
+
+<h2>5. 底层基础设施持续创新</h2>
+<p>- 因为速度、检索、结构化推理、可解释性是下一阶段能力上限的关键。</p>
+<p>- 应用层繁荣最终取决于底层效率与可信度。</p>
+
+<p>---</p>
+
+<h1>3）继续跟踪的 3 个信号</h1>
+
+<h2>信号一：MCP 是否真的成为跨平台标准</h2>
+<p>**重点观察**</p>
+<p>- Claude、ChatGPT、Cursor、VS Code、企业办公套件，是否继续增加对 MCP / MCP apps / MCP UI 的原生支持。</p>
+<p>- 是否出现更多“写一次，到处运行”的 agent app / connector。</p>
+<p>- Web3 领域是否出现成熟的链上数据、签名、交易模拟、风控 MCP 服务。</p>
 
 <p>**为什么要跟踪**</p>
-<p>- 这决定 MCP 是停留在 demo 生态，还是变成真正的企业 AI 中间层。</p>
-<p>- 对 Web3 而言，这也会影响未来钱包、托管、审计、链上数据服务如何接入 Agent。</p>
+<p>- 这决定 Agent 生态未来是“平台割裂”，还是形成类似浏览器/应用商店级别的新分发层。</p>
 
 <p>---</p>
 
-<p>### 信号二：多智能体架构会不会从“炫技”变成“默认配置”？</p>
-<p>**关注点**</p>
-<p>- Codex、jcode、Warp、Sim 是否都持续强化子智能体/Swarm</p>
-<p>- 是否出现更成熟的任务拆解、冲突解决、权限隔离、结果聚合机制</p>
-<p>- 多代理在真实工程/研究任务中的收益，是否足以覆盖其更高复杂度</p>
+<h2>信号二：Anthropic 的供给改善是否真正转化为开发者与企业采用提升</h2>
+<p>**重点观察**</p>
+<p>- Claude Code / API 限额提升后，社区反馈是否明显改善。</p>
+<p>- SpaceX 算力合作是否缓解高峰期拥塞与可用性问题。</p>
+<p>- 托管智能体的新能力（梦境、成果评估、多智能体）是否出现更多真实案例与第三方集成。</p>
 
 <p>**为什么要跟踪**</p>
-<p>- 现在几乎所有头部产品都在 converging 到这个方向。</p>
-<p>- 一旦多代理成为默认范式，开发工具、研究工具、链上自动化工具的产品设计都会被重写。</p>
+<p>- 这决定 Anthropic 是“发布很多功能”，还是能真正建立企业级 Agent 平台护城河。</p>
 
 <p>---</p>
 
-<p>### 信号三：缓存、记忆、恢复机制是否成为 Agent 产品的核心护城河？</p>
-<p>**关注点**</p>
-<p>- 提示缓存命中率是否被产品方当作核心指标公开</p>
-<p>- 是否更多产品提供 checkpoint resume、长期记忆、跨会话上下文</p>
-<p>- 成本/延迟优化是否从模型层转向运行时架构层</p>
+<h2>信号三：Agent 工具链是否朝“可观测 + 可恢复 + 多模型路由”统一收敛</h2>
+<p>**重点观察**</p>
+<p>- 是否有更多项目集成：审批流、回滚、任务持久化、轨迹可视化、语义监控、自评估。</p>
+<p>- 9Router 这类路由层是否从极客工具走向团队/企业部署。</p>
+<p>- Open Agents、DeepSeek-TUI、Goose 这类开源项目是否形成事实标准架构。</p>
 
 <p>**为什么要跟踪**</p>
-<p>- 这直接决定 Agent 能否稳定商业化。</p>
-<p>- 对高频、长任务、复杂工具调用场景尤其关键，比如代码生成、链上分析、审计、研究自动化。</p>
+<p>- 这会决定未来主流 Agent 是零散插件，还是像 CI/CD 一样成为标准基础设施。</p>
 
 <p>---</p>
 
-<h2>一句话总结</h2>
-<p>今天最重要的主线不是单个模型更新，而是：**AI Agent 正快速进入“平台化、工作流化、权限化、成本工程化”阶段**；其中 **MCP、子智能体、缓存架构、身份授权** 是最值得持续跟踪的四个核心方向。</p>
+<h1>额外补充：Web3 相关弱信号</h1>
+<p>今天直接的 Web3 重磅不多，Aave/Alkemi/Anchorage/Aptos 列表里多为**历史或简略公告源**，信息密度有限；但从更大趋势看，Web3 值得关注的是：</p>
+<p>- **MCP + 链上数据/签名/风控** 的结合；</p>
+<p>- **企业 Agent** 在合规、财务、研究、审计、文档处理中的采用；</p>
+<p>- **可审计的自动化工作流** 是否进入钱包、托管、研究终端、投后系统。</p>
+
+<p>如果你愿意，我下一步可以继续把这份内容整理成更适合转发的版本，比如：</p>
+<p class="item">1. **3分钟晨报版**  </p>
+<p class="item">2. **适合投研群的要点版**  </p>
+<p class="item">3. **Web3 + AI 交叉视角版**</p>
 
 <h2>今日最重要</h2>
 
-<p class="item">1. <a href="https://github.com/1jehuang/jcode" target="_blank" rel="noreferrer">1jehuang/jcode</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：27 | `base` `openai` `anthropic` `claude` `gemini`</p>
-<p class="meta">Coding Agent Harness jcode The next generation coding agent harness to raise the skill ceiling. Built for multi-session workflows, infinite customizability, and performance. Features · Install · Quick Start · Further Rea...</p>
-<p class="item">2. <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noreferrer">TauricResearch/TradingAgents</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：23 | `base` `openai` `anthropic` `claude` `gemini`</p>
-<p class="meta">TradingAgents: Multi-Agents LLM Financial Trading Framework Deutsch | Español | français | 日本語 | 한국어 | Português | Русский | 中文 TradingAgents: Multi-Agents LLM Financial Trading Framework News [2026-04] TradingAgents v0....</p>
-<p class="item">3. <a href="https://github.com/obra/superpowers" target="_blank" rel="noreferrer">obra/superpowers</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：19 | `openai` `anthropic` `claude` `gemini` `cursor`</p>
-<p class="meta">An agentic skills framework &amp; software development methodology that works. Superpowers Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and som...</p>
-<p class="item">4. <a href="https://github.com/warpdotdev/warp" target="_blank" rel="noreferrer">warpdotdev/warp</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：17 | `openai` `claude` `gemini` `github` `model`</p>
-<p class="meta">Warp is an agentic development environment, born out of the terminal. Website · Code · Agents · Terminal · Drive · Docs · How Warp Works Note OpenAI is the founding sponsor of the new, open-source Warp repository, and th...</p>
-<p class="item">5. <a href="https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en" target="_blank" rel="noreferrer">Show HN: Filling PDF forms with AI using client-side tool calling</a></p>
-<p class="meta">来源：Hacker News Front Page | 分数：13.7 | `claude` `mcp` `llm` `github` `model`</p>
-<p class="meta">Hey HN! I built SimplePDF Copilot: an AI assistant that can interact with the PDF editor. It fills fields, answers questions, focuses on a specific field, adds fields, deletes pages, and so on. It's built on top of Simpl...</p>
+<p class="item">1. <a href="https://github.com/Hmbown/DeepSeek-TUI" target="_blank" rel="noreferrer">Hmbown/DeepSeek-TUI</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：27 | `base` `openai` `claude` `mcp` `cursor`</p>
+<p class="meta">Coding agent for DeepSeek models that runs in your terminal DeepSeek TUI Terminal coding agent for DeepSeek V4. It runs from the deepseek command, streams reasoning blocks, edits local workspaces with approval gates, and...</p>
+<p class="item">2. <a href="https://github.com/aaif-goose/goose" target="_blank" rel="noreferrer">aaif-goose/goose</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：23 | `openai` `anthropic` `claude` `gemini` `ai agent`</p>
+<p class="meta">an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM 🦆 goose has moved! This project has moved from block/goose to the Agentic AI Foundation (AAIF) at the...</p>
+<p class="item">3. <a href="https://github.com/anthropics/financial-services" target="_blank" rel="noreferrer">anthropics/financial-services</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：22 | `anthropic` `claude` `mcp` `llm` `github`</p>
+<p class="meta">Claude for Financial Services Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management. Everything here i...</p>
+<p class="item">4. <a href="https://github.com/decolua/9router" target="_blank" rel="noreferrer">decolua/9router</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：22 | `base` `openai` `anthropic` `claude` `gemini`</p>
+<p class="meta">🆓 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. 9Router - FREE AI Router &amp; Token...</p>
+<p class="item">5. <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noreferrer">addyosmani/agent-skills</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：21 | `claude` `gemini` `ai agent` `mcp` `cursor`</p>
+<p class="meta">Production-grade engineering skills for AI coding agents. Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use wh...</p>
 
 <h2>Web3 / Crypto</h2>
 
-<p class="item">1. <a href="https://github.com/mattpocock/skills" target="_blank" rel="noreferrer">mattpocock/skills</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：10 | `claude` `github` `model` `hack`</p>
-<p class="meta">Skills for Real Engineers. Straight from my .claude directory. Skills For Real Engineers My agent skills that I use every day to do real engineering - not vibe coding. Developing real applications is hard. Approaches lik...</p>
-<p class="item">2. <a href="https://github.com/soxoj/maigret" target="_blank" rel="noreferrer">soxoj/maigret</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：9 | `github` `launch` `release`</p>
-<p class="meta">🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites Maigret Maigret collects a dossier on a person by username only, checking for accounts on a huge number of sites and gathering all the available informati...</p>
-<p class="item">3. <a href="https://snewpapers.com/" target="_blank" rel="noreferrer">Show HN: Large Scale Article Extract of Newspapers 1730s-1960s</a></p>
-<p class="meta">来源：Hacker News Front Page | 分数：8.69 | `llm` `github` `model` `paper`</p>
-<p class="meta">Hello HN, over the past 7 months I've spent nearly 3,000 hours on building SNEWPAPERS, the first historical newpaper archive with full-text extractions, nearly perfect OCR, a vast categorization taxonomy and of course wi...</p>
-<p class="item">4. <a href="https://github.com/simstudioai/sim" target="_blank" rel="noreferrer">simstudioai/sim</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：7 | `ai agent` `github` `model`</p>
-<p class="meta">Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce. The open-source platform to build AI agents and run your agentic workforce. Connect 1,000+ integrations and LLMs to o...</p>
-<p class="item">5. <a href="https://iesna.eu/?wasm=skyglow_demo" target="_blank" rel="noreferrer">Show HN: Browser-based light pollution simulator using real photometric data</a></p>
-<p class="meta">来源：Hacker News Front Page | 分数：4.71 | `github` `model`</p>
-<p class="meta">Hi HN — author here. iesna.eu is a browser-based ecosystem for working with photometric data: parsing standard luminaire files (LDT/EULUMDAT, IES LM-63, Oxytech, ATLA-S001), running design calculations against EN 13201 /...</p>
+<p class="item">1. <a href="https://github.com/z-lab/dflash" target="_blank" rel="noreferrer">z-lab/dflash</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：19 | `base` `openai` `llm` `github` `model`</p>
+<p class="meta">DFlash: Block Diffusion for Flash Speculative Decoding DFlash: Block Diffusion for Flash Speculative Decoding Paper | Blog | Models DFlash is a lightweight block diffusion model designed for speculative decoding. It enab...</p>
+<p class="item">2. <a href="https://github.com/VectifyAI/PageIndex" target="_blank" rel="noreferrer">VectifyAI/PageIndex</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：19 | `openai` `ai agent` `mcp` `llm` `github`</p>
+<p class="meta">📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG PageIndex: Vectorless, Reasoning-based RAG Reasoning-based RAG ◦ No Vector DB or Chunking ◦ Context-Aware ◦ Human-like Retrieval 🌐 Homepage • 🖥️ Chat Pla...</p>
+<p class="item">3. <a href="https://github.com/InsForge/InsForge" target="_blank" rel="noreferrer">InsForge/InsForge</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：17 | `openai` `mcp` `llm` `github` `model`</p>
+<p class="meta">InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents. The backend platform for AI-native developers. ⭐ Help us reach more developers and grow the InsForge com...</p>
+<p class="item">4. <a href="https://github.com/vercel-labs/open-agents" target="_blank" rel="noreferrer">vercel-labs/open-agents</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：10 | `base` `github` `model` `open source`</p>
+<p class="meta">An open source template for building cloud agents. Open Agents Open Agents is an open-source reference app for building and running background coding agents on Vercel. It includes the web UI, the agent runtime, sandbox o...</p>
+<p class="item">5. <a href="https://github.com/docusealco/docuseal" target="_blank" rel="noreferrer">docusealco/docuseal</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：9 | `github` `security` `open source`</p>
+<p class="meta">Open source DocuSign alternative. Create, fill, and sign digital documents ✍️ DocuSeal Open source document filling and signing DocuSeal is an open source platform that provides secure and efficient digital document sign...</p>
+<p class="item">6. <a href="https://github.com/Augani/openreel-video" target="_blank" rel="noreferrer">Augani/openreel-video</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：8 | `claude` `github` `open source`</p>
+<p class="meta">OpenReel Video - Professional browser-based video editor. Open source CapCut alternative. 100% browser-based, no installation, no cloud uploads, no watermarks. OpenReel Video The open source CapCut alternative. Professio...</p>
+<p class="item">7. <a href="https://github.com/PriorLabs/TabPFN" target="_blank" rel="noreferrer">PriorLabs/TabPFN</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：7 | `github` `model` `paper`</p>
+<p class="meta">⚡ TabPFN: Foundation Model for Tabular Data ⚡ TabPFN Quick Start Interactive Notebook Tutorial Tip Dive right in with our interactive Colab notebook! It's the best way to get a hands-on feel for TabPFN, walking you throu...</p>
+<p class="item">8. <a href="https://www.bestblogs.dev/en/article/9ffaba9a?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Claude 托管智能体新功能：梦境、成果评估与多智能体编排 | Claude</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `anthropic` `claude`</p>
+<p class="meta">📌 One-Sentence Summary Claude 托管智能体引入了梦境功能以实现自我改进的记忆、成果评估功能以基于评分标准进行自我修正，以及多智能体编排以处理复杂任务委派。 📝 Summary Anthropic 的这篇博文宣布了 Claude 托管智能体的三项重大更新：梦境、成果评估和多智能体编排。梦境是一个定时执行的过程，它会回顾过去的智能体会话和记忆存储，从中提取模式、整理记忆，并实现随时间推移的自我改进，对于长期运...</p>
+<p class="item">9. <a href="https://medium.com/alliancedao/the-bitcoin-l2-opportunity-9d90517da6f8?source=rss----8cbc249b47fe---4" target="_blank" rel="noreferrer">The Bitcoin L2 Opportunity</a></p>
+<p class="meta">来源：Alliance DAO - Medium | 分数：2 | `bitcoin`</p>
+<p class="item">10. <a href="https://arcana-network.medium.com/arcana-partners-with-bob-network-to-make-bitcoin-l2s-more-accessible-f9dbe574b991?source=rss-aa460d59ab5d------2" target="_blank" rel="noreferrer">Arcana Partners with BOB Network to Make Bitcoin L2s More Accessible</a></p>
+<p class="meta">来源：Arcana Network on Medium | 分数：2 | `bitcoin`</p>
 
 <h2>AI / 开源 / 技术</h2>
 
-<p class="item">1. <a href="https://www.bestblogs.dev/en/video/8460a7a?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Codex 与子智能体：OpenAI AI 工程平台深度解析</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：9 | `openai` `mcp` `github` `security`</p>
-<p class="meta">📌 One-Sentence Summary OpenAI 开发者全面演示 Codex 平台——子智能体并行执行、插件生态、后台自动化、Guardian 安全门控与 MCP 集成——揭示其达到 300 万周活跃用户背后的工程能力。 📝 Summary 这场来自 AI Engineer 大会的 59 分钟研讨会由 OpenAI 开发者体验团队的 Vaibhav Srivastav 和 Katia Gil Guzman 主讲，是迄今最完...</p>
-<p class="item">2. <a href="https://github.com/Flowseal/zapret-discord-youtube" target="_blank" rel="noreferrer">Flowseal/zapret-discord-youtube</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：6 | `github` `release`</p>
-<p class="meta">Flowseal/zapret-discord-youtube NEW: Ускорение Telegram Desktop - https://github.com/Flowseal/tg-ws-proxy Альтернатива https://github.com/bol-van/zapret-win-bundle Также вы можете материально поддержать оригинального раз...</p>
-<p class="item">3. <a href="https://www.bestblogs.dev/en/article/68065f88?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">构建 Claude Code 的经验教训：提示缓存至关重要 | Claude</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `claude` `llm`</p>
-<p class="meta">📌 One-Sentence Summary 本文详细阐述了在优化 Claude Code 提示缓存过程中得出的关键且常反直觉的经验教训，强调围绕前缀匹配缓存来设计智能体的整体架构对于性能和成本至关重要。 📝 Summary 这篇来自 Claude 博客的文章解释了提示缓存如何成为使 Claude Code 这类长时间运行的智能体产品变得可行的基础技术。其核心原理是提示缓存基于前缀匹配运作，这意味着对请求开头的任何更改都会使整个缓存...</p>
-<p class="item">4. <a href="https://www.bestblogs.dev/en/video/adebf6b?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `ai agent` `mcp`</p>
-<p class="meta">📌 One-Sentence Summary Garrett Galow 解释了 Cross-App Access 和 ID-JAG 如何让身份提供商在 AI 客户端与 MCP 服务器之间建立安全信任桥，减少重复授权。 📝 Summary 这场 AI Engineer 演讲清楚解释了 MCP 生态里一个非常现实的问题：每接入一个服务，就多一个 OAuth 授权页、多一套 token 生命周期，也多一个可能出错的环节。Garrett ...</p>
-<p class="item">5. <a href="https://www.bestblogs.dev/en/article/c1ecbe08?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">像带新人一样引导 Claude Code：来自 17 年开发经验的启示 | Claude</a></p>
+<p class="item">1. <a href="https://www.bestblogs.dev/en/video/2fc238b?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">MCP UI：Liad Yosef 与 Ido Salomon 讲交互式智能体界面的新边界</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：9 | `claude` `mcp` `cursor` `launch`</p>
+<p class="meta">📌 One-Sentence Summary Liad Yosef 和 Ido Salomon 解释了 MCP apps 这一标准：通过 MCP 传递交互式 UI，让 AI host 渲染有品牌、有功能的应用体验。 📝 Summary 这场演讲高信号地解释了 MCP apps，以及智能体响应从纯文本走向嵌入式交互 UI 的平台变化。Liad Yosef 与 Ido Salomon 覆盖了产品动机、生态支持、技术架构、沙箱渲染、双向消...</p>
+<p class="item">2. <a href="https://www.bestblogs.dev/en/article/d44c94e3?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">在 Excel、PowerPoint、Word 和 Outlook 中与 Claude 协作 | Claude</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：6 | `anthropic` `claude` `llm`</p>
+<p class="meta">📌 One-Sentence Summary Claude 现已正式支持 Excel、PowerPoint 和 Word，同时 Outlook 进入公开测试阶段，可在保持完整对话上下文的前提下实现跨应用无缝协作。 📝 Summary Anthropic 宣布 Claude 对 Excel、PowerPoint 和 Word 的支持已全面开放，同时 Outlook 进入公开测试阶段，所有付费计划均可使用。其核心创新在于 Claude ...</p>
+<p class="item">3. <a href="https://www.bestblogs.dev/en/article/18c8f013?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">自然语言自编码器</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4.56 | `anthropic` `claude`</p>
+<p class="meta">📌 One-Sentence Summary Anthropic 推出自然语言自编码器（NLA），该方法将 Claude 的内部激活转换为人类可读的文本解释，从而直接洞察模型未言明的想法，提升安全性与可解释性。 📝 Summary 这篇来自 Anthropic 研究的文章介绍了自然语言自编码器（NLA），一种新颖的可解释性技术，能将语言模型的内部激活转换为自然语言描述。NLA 架构使用两个训练模块：激活言语化器（AV）将激活转换为文...</p>
+<p class="item">4. <a href="https://www.bestblogs.dev/en/video/5035e8c?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Agent Observability 实战：Raindrop 团队讲生产智能体如何监控和调试</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4.21 | `ai agent` `llm`</p>
+<p class="meta">📌 One-Sentence Summary Raindrop 团队给出 Agent observability 的实用框架，覆盖显性与隐性信号、生产实验、自诊断，以及用于调试非确定性智能体的轨迹可视化。 📝 Summary 这场工作坊讨论的是一个真实且越来越紧迫的问题：生产环境中的智能体会以传统软件监控和离线 eval 难以捕捉的方式失败。Raindrop 团队的框架很有用，因为它把延迟、错误、成本等显性信号，与用户挫败感、拒答、...</p>
+<p class="item">5. <a href="https://www.bestblogs.dev/en/video/e7b6490?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Dario 与 Daniela Amodei 谈 Anthropic 的指数增长、算力压力和开发者生态</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `anthropic` `claude`</p>
+<p class="meta">📌 One-Sentence Summary Dario 和 Daniela Amodei 讨论 Anthropic 经历的 AI 指数增长、算力压力、开发者反馈，以及公司围绕 builder 和企业用户的定位。 📝 Summary 这场 Code with Claude 对话不长，但有价值，因为它捕捉到了 Anthropic 创始人对前沿 AI 增长背后运营现实的反思。Daniela Amodei 用过山车比喻描述增长体验，Dar...</p>
+<p class="item">6. <a href="https://www.bestblogs.dev/en/video/12616ab?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">为什么 AI 需要新型超级计算机网络 | OpenAI Podcast Ep. 18</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `openai` `model`</p>
+<p class="meta">📌 One-Sentence Summary OpenAI 的 Mark Handley 和 Greg Steinbrecher 解释了 Multi-Path Reliable Connection，这是一种面向大规模 GPU 同步训练的新型网络协议。 📝 Summary 这期 OpenAI Podcast 是一次扎实的 AI 基础设施讨论，主题是为什么前沿模型训练对网络的压力不同于普通互联网服务。Mark Handley 和 Gr...</p>
+<p class="item">7. <a href="https://www.bestblogs.dev/en/article/b026bfed?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Claude 使用额度提升及与 SpaceX 的计算资源合作</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `anthropic` `claude`</p>
+<p class="meta">📌 One-Sentence Summary Anthropic 宣布提升 Claude Code 和 API 的使用额度，并与 SpaceX 达成新的计算资源合作，以获取超过 300 兆瓦的计算能力。 📝 Summary 本文来自 Anthropic，详细介绍了旨在改善其最忠实客户服务体验的两项重大公告。首先，即刻生效，使用额度得到提升：Pro、Max、Team 和 Enterprise 套餐的 Claude Code 五小时速率...</p>
+<p class="item">8. <a href="https://www.bestblogs.dev/en/article/e80b2d9f?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Claude Code 产品经理使用指南</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：4 | `claude` `mcp`</p>
-<p class="meta">📌 One-Sentence Summary 拥有 70 万行代码的 Skyline 代码库的首席开发者 Brendan MacLean，将他 17 年来引导人类开发者的方法论应用于 Claude Code，通过上下文、技能和 MCP 集成，让遗留代码库重新变得易于管理。 📝 Summary 本文详细介绍了 Skyline（一款拥有超过 70 万行 C# 代码、已维护 17 年的开源蛋白质分析软件）的首席开发者 Brendan Ma...</p>
+<p class="meta">📌 One-Sentence Summary 一位产品经理分享了 Claude Code 如何通过处理路线图拆解、工单创建和用户分析，消除 PM 的繁琐工作，让他能专注于战略和创造性思考。 📝 Summary Spiral 的总经理 Marcus Moretti 描述了他如何作为独立从业者使用 Claude Code 进行产品管理。他解释说，唯一需要自己撰写的文档是路线图；Claude 会据此生成所有 PRD 和工单。他使用自定义的...</p>
+<p class="item">9. <a href="https://github.com/graemeg/blaise" target="_blank" rel="noreferrer">Blaise – A modern self-hosting zero-legacy Object Pascal compiler targeting QBE</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：2.87 | `github`</p>
+<p class="meta">Article URL: https://github.com/graemeg/blaise Comments URL: https://news.ycombinator.com/item?id=48058644 Points: 35 # Comments: 6</p>
+<p class="item">10. <a href="https://github.com/robertdfrench/ifuncd-up" target="_blank" rel="noreferrer">GNU IFUNC is the real culprit behind CVE-2024-3094</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：2.67 | `github`</p>
+<p class="meta">Article URL: https://github.com/robertdfrench/ifuncd-up Comments URL: https://news.ycombinator.com/item?id=48056749 Points: 69 # Comments: 32</p>
+<p class="item">11. <a href="https://www.bestblogs.dev/en/status/2052438194625593804?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">OpenAI 在 API 中推出 GPT-Realtime-2</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：2.39 | `openai`</p>
+<p class="meta">📌 One-Sentence Summary OpenAI 发布了其最智能的语音模型 GPT-Realtime-2，具备 GPT-5 级别的推理能力，同时还推出了用于翻译和转录的新型流式模型。 📝 Summary OpenAI 在其 API 中发布了 GPT-Realtime-2，这是一款全新的语音模型，为语音代理带来了 GPT-5 级别的推理能力。该模型支持实时语音代理，能够在对话过程中进行聆听、推理并解决复杂问题。与此同时，Op...</p>
+<p class="item">12. <a href="https://www.bestblogs.dev/en/article/6daee900?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">通过 API 新模型推进语音智能</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：2.09 | `openai`</p>
+<p class="meta">📌 One-Sentence Summary OpenAI 在 API 中推出了三个新的音频模型——GPT-Realtime-2、GPT-Realtime-Translate 和 GPT-Realtime-Whisper——为开发者提供更智能、更自然且可操作的实时语音应用能力。 📝 Summary OpenAI 在其 API 中发布了三个新的音频模型，旨在推进开发者的实时语音智能。GPT-Realtime-2 是旗舰模型，具备 GP...</p>
 
 <h2>市场与政策信号</h2>
 
-<p class="item">1. <a href="https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave AMM Market Released</a></p>
+<p class="item">1. <a href="https://www.openwall.com/lists/oss-security/2026/05/07/8" target="_blank" rel="noreferrer">Dirtyfrag: Universal Linux LPE</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：3.48 | `security`</p>
+<p class="meta">Article URL: https://www.openwall.com/lists/oss-security/2026/05/07/8 Comments URL: https://news.ycombinator.com/item?id=48053623 Points: 597 # Comments: 242</p>
+<p class="item">2. <a href="https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave AMM Market Released</a></p>
 <p class="meta">来源：Aave Blog - Medium | 分数：3 | `release`</p>
 
 <h2>继续跟踪</h2>
 
-<p class="item">1. <a href="https://32bits.substack.com/p/under-the-microscope-pyramid-unreleased" target="_blank" rel="noreferrer">An unknown Sega Saturn project has come to light after 29 years</a></p>
-<p class="meta">来源：Hacker News Front Page | 分数：3.85 | `release`</p>
-<p class="meta">Article URL: https://32bits.substack.com/p/under-the-microscope-pyramid-unreleased Comments URL: https://news.ycombinator.com/item?id=47985901 Points: 50 # Comments: 1</p>
-<p class="item">2. <a href="https://medium.com/aave/aave-protocol-migration-tool-released-22cdde51c852?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave Protocol migration tool released</a></p>
+<p class="item">1. <a href="https://medium.com/aave/aave-protocol-migration-tool-released-22cdde51c852?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave Protocol migration tool released</a></p>
 <p class="meta">来源：Aave Blog - Medium | 分数：3 | `release`</p>
-<p class="item">3. <a href="https://medium.com/alkemi/alkemi-network-x-atato-custody-partnership-4b1649f75f60?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Atato | Custody Partnership</a></p>
+<p class="item">2. <a href="https://medium.com/alkemi/alkemi-network-x-atato-custody-partnership-4b1649f75f60?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Atato | Custody Partnership</a></p>
 <p class="meta">来源：Alkemi Network - Medium | 分数：3 | `partnership`</p>
-<p class="item">4. <a href="https://medium.com/alkemi/alkemi-network-x-banxa-integration-partnership-901a9d536b32?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Banxa | Integration Partnership</a></p>
+<p class="item">3. <a href="https://medium.com/alkemi/alkemi-network-x-banxa-integration-partnership-901a9d536b32?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Banxa | Integration Partnership</a></p>
 <p class="meta">来源：Alkemi Network - Medium | 分数：3 | `partnership`</p>
+<p class="item">4. <a href="https://medium.com/anchorage/anchorage-announces-custody-for-axelars-newly-launched-axl-token-88ca955ce1c4?source=rss----ce238f71fc69---4" target="_blank" rel="noreferrer">Anchorage Digital Announces Custody for Axelar’s Newly-Launched AXL Token</a></p>
+<p class="meta">来源：Anchorage Digital - Medium | 分数：3 | `launch`</p>
+<p class="item">5. <a href="https://medium.com/aptoslabs/shelby-early-access-is-open-on-aptos-testnet-452e8de5613b?source=rss-70211828fe2e------2" target="_blank" rel="noreferrer">Shelby Early Access Is Open on Aptos Testnet</a></p>
+<p class="meta">来源：Aptos | 分数：3 | `testnet`</p>
 
   </main>
 </body>
