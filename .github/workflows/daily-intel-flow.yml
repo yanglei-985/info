@@ -52,11 +52,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase --strategy-option=theirs || true
           git add public/index.html index.html
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "chore(report): daily intel update [skip ci]"
-            git pull --rebase origin main
             git push
           fi
