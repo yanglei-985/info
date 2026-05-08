@@ -79,21 +79,100 @@ function buildMarkdown(config, items, aiSummary) {
   return lines.join("\n");
 }
 
+function inlineMarkdown(text) {
+  let s = escapeHtml(text);
+  // bold
+  s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  // italic
+  s = s.replace(/\*(.+?)\*/g, "<em>$1</em>");
+  // inline code
+  s = s.replace(/`(.+?)`/g, "<code>$1</code>");
+  // links
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>');
+  return s;
+}
+
 function markdownToHtml(markdown) {
-  const html = markdown
-    .split("\n")
-    .map((line) => {
-      if (line.startsWith("# ")) return `<h1>${escapeHtml(line.slice(2))}</h1>`;
-      if (line.startsWith("## ")) return `<h2>${escapeHtml(line.slice(3))}</h2>`;
-      if (/^\d+\. /.test(line)) {
-        const linked = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>');
-        return `<p class="item">${linked}</p>`;
-      }
-      if (line.startsWith("  ")) return `<p class="meta">${escapeHtml(line.trim())}</p>`;
-      if (!line.trim()) return "";
-      return `<p>${escapeHtml(line)}</p>`;
-    })
-    .join("\n");
+  const lines = markdown.split("\n");
+  const output = [];
+  let inList = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // blank line
+    if (!line.trim()) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      continue;
+    }
+
+    // horizontal rule
+    if (/^---+$/.test(line.trim())) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      output.push("<hr />");
+      continue;
+    }
+
+    // headings
+    if (line.startsWith("# ")) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      output.push(`<h1>${inlineMarkdown(line.slice(2))}</h1>`);
+      continue;
+    }
+    if (line.startsWith("## ")) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      output.push(`<h2>${inlineMarkdown(line.slice(3))}</h2>`);
+      continue;
+    }
+    if (line.startsWith("### ")) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      output.push(`<h3>${inlineMarkdown(line.slice(4))}</h3>`);
+      continue;
+    }
+    if (line.startsWith("#### ")) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      output.push(`<h4>${inlineMarkdown(line.slice(5))}</h4>`);
+      continue;
+    }
+
+    // numbered list items (report items)
+    if (/^\d+\. /.test(line)) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      const content = line.replace(/^\d+\.\s*/, "");
+      const linked = inlineMarkdown(content);
+      output.push(`<p class="item">${linked}</p>`);
+      continue;
+    }
+
+    // unordered list items (- or *)
+    if (/^[-*]\s+/.test(line)) {
+      if (!inList) { output.push("<ul>"); inList = true; }
+      const content = line.replace(/^[-*]\s+/, "");
+      output.push(`<li>${inlineMarkdown(content)}</li>`);
+      continue;
+    }
+
+    // indented meta lines (from report items)
+    if (line.startsWith("  ")) {
+      output.push(`<p class="meta">${inlineMarkdown(line.trim())}</p>`);
+      continue;
+    }
+
+    // blockquote
+    if (line.startsWith("> ")) {
+      if (inList) { output.push("</ul>"); inList = false; }
+      output.push(`<blockquote><p>${inlineMarkdown(line.slice(2))}</p></blockquote>`);
+      continue;
+    }
+
+    // default paragraph
+    if (inList) { output.push("</ul>"); inList = false; }
+    output.push(`<p>${inlineMarkdown(line)}</p>`);
+  }
+
+  if (inList) output.push("</ul>");
+
+  const html = output.join("\n");
 
   return `<!doctype html>
 <html lang="zh-CN">
@@ -107,11 +186,18 @@ function markdownToHtml(markdown) {
     main { max-width: 920px; margin: 0 auto; padding: 40px 20px 72px; }
     h1 { font-size: 36px; line-height: 1.15; margin: 0 0 16px; }
     h2 { font-size: 22px; line-height: 1.3; margin: 34px 0 14px; border-top: 1px solid #d8d8cf; padding-top: 20px; }
+    h3 { font-size: 18px; line-height: 1.3; margin: 24px 0 10px; }
+    h4 { font-size: 16px; line-height: 1.3; margin: 20px 0 8px; }
     p { font-size: 16px; line-height: 1.72; margin: 8px 0; }
     a { color: #146c6c; text-decoration-thickness: 1px; text-underline-offset: 3px; }
     .item { font-weight: 650; margin-top: 16px; }
     .meta { color: #5d625d; font-size: 14px; margin-left: 20px; }
     code { background: #ecebe3; padding: 2px 5px; border-radius: 4px; }
+    ul { padding-left: 24px; margin: 8px 0; }
+    li { font-size: 16px; line-height: 1.72; margin: 4px 0; }
+    hr { border: none; border-top: 1px solid #d8d8cf; margin: 24px 0; }
+    blockquote { border-left: 3px solid #d8d8cf; margin: 12px 0; padding: 4px 16px; color: #5d625d; }
+    strong { font-weight: 700; }
   </style>
 </head>
 <body>
