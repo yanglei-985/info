@@ -42,11 +42,14 @@ jobs:
       - name: Generate daily report
         run: npm run once
 
+      - name: Copy report to root for GitHub Pages
+        run: cp public/index.html index.html
+
       - name: Commit and push updated report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/index.html
+          git add public/index.html index.html
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
