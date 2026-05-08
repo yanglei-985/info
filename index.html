@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>每日信息流</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #f7f7f4; color: #1d1d1b; }
+    main { max-width: 920px; margin: 0 auto; padding: 40px 20px 72px; }
+    h1 { font-size: 36px; line-height: 1.15; margin: 0 0 16px; }
+    h2 { font-size: 22px; line-height: 1.3; margin: 34px 0 14px; border-top: 1px solid #d8d8cf; padding-top: 20px; }
+    p { font-size: 16px; line-height: 1.72; margin: 8px 0; }
+    a { color: #146c6c; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .item { font-weight: 650; margin-top: 16px; }
+    .meta { color: #5d625d; font-size: 14px; margin-left: 20px; }
+    code { background: #ecebe3; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+<h1>每日信息流</h1>
+
+<p>生成时间：2026年5月2日星期六 23:09</p>
+
+<p>采集命中：20 条</p>
+
+<h2>AI 主编摘要</h2>
+
+<p>以下基于你给出的信息，做了去重与重要性排序，重点偏向 **Web3 + AI 基础设施/工作流/安全**，不构成投资建议。</p>
+
+<p>---</p>
+
+<h2>1）今日最重要 5 条</h2>
+
+<p>### 1. OpenAI Codex 平台深度解析：子智能体、MCP、Guardian、安全门控、300万周活</p>
+<p>**来源**：BestBlogs AI Featured  </p>
+<p>**核心摘要**：Codex 被定位为“软件工程智能体平台”，而不只是代码补全工具。重点展示了 **子智能体并行执行**、**Skills/Apps/MCP 插件生态**、**后台自动化**、**Guardian Approvals 安全门控**，并披露其已达 **300 万周活跃用户**。</p>
+
+<p>**为什么重要**</p>
+<p>- 这是当前 AI Agent 工程化能力最完整的公开信号之一，说明竞争已从“模型能力”转向“平台能力 + 工作流能力 + 安全能力”。</p>
+<p>- **子智能体并行化** 已成为主流范式，和 Web3/开发者工具中的多代理协作趋势一致。</p>
+<p>- **MCP 生态**继续强化，意味着未来 AI 工具的互操作标准正在形成，影响链上工具、钱包、DevOps、审计等场景。</p>
+<p>- **Guardian 审批机制**说明高权限 Agent 不再只拼自动化，还要拼可审计与可控性，这对企业与链上安全都很关键。</p>
+
+<p>---</p>
+
+<p>### 2. Claude 披露 Claude Code 关键经验：提示缓存应成为 Agent 架构一级约束</p>
+<p>**来源**：Claude Blog  </p>
+<p>**核心摘要**：Claude 官方总结 Claude Code 的核心经验：**提示缓存依赖前缀匹配**，因此系统提示、工具定义、模式切换、压缩历史等都必须围绕“缓存不失效”来设计，否则成本和延迟会显著恶化。</p>
+
+<p>**为什么重要**</p>
+<p>- 这不是小优化，而是 **AI Agent 产品可用性/成本结构** 的底层约束。</p>
+<p>- 对所有长上下文、多轮调用、工具调用频繁的产品都直接相关，包括：编码 Agent、链上研究 Agent、客服 Agent、投研 Agent。</p>
+<p>- 对 Web3 团队尤其重要：如果你在做 **链上情报、交易辅助、自动审计、DAO 工作流**，提示缓存设计会直接影响推理成本、响应速度和单位经济模型。</p>
+<p>- 这也解释了为什么很多 Agent Demo 能跑、产品却难规模化：**架构没有围绕 cache 命中来设计**。</p>
+
+<p>---</p>
+
+<p>### 3. jcode 登上 GitHub Trending：多会话、多代理编码基础设施，强调性能与自演化</p>
+<p>**来源**：GitHub Trending Daily  </p>
+<p>**核心摘要**：jcode 是一个面向多会话工作流的 coding agent harness，突出 **低内存占用、超快启动、Swarm 多代理协作、记忆系统、Browser automation、MCP/多 Provider 接入、自我修改（self-dev）**。</p>
+
+<p>**为什么重要**</p>
+<p>- 它代表了新一代 AI 编码工具竞争方向：不是单点模型，而是 **“调度层 / 运行时 / 协作层 / 记忆层”**。</p>
+<p>- 与 Codex/Claude Code/Warp 的趋势高度一致：AI 编码正在从“单助手”升级为“**多代理操作系统**”。</p>
+<p>- jcode 特别强调 **多 session 的资源效率**，这对本地部署、团队并发、私有环境很有现实意义。</p>
+<p>- 对 Web3 开发尤其 relevant：智能合约、索引器、前端、审计脚本通常天然适合并行拆分，多代理协作价值更高。</p>
+
+<p>---</p>
+
+<p>### 4. WorkOS Cross-App Access：试图解决 MCP 生态的“重复 OAuth 授权”与企业治理问题</p>
+<p>**来源**：BestBlogs AI Featured  </p>
+<p>**核心摘要**：WorkOS/AI Engineer 演讲提出通过 **Cross-App Access（XAA）+ ID-JAG**，让身份提供商在 AI Client 与 MCP Server 之间建立信任桥，实现 **一次登录、多 MCP 服务复用短期访问令牌**。</p>
+
+<p>**为什么重要**</p>
+<p>- MCP 现在的最大落地障碍之一不是“能不能连”，而是 **身份、授权、撤销、审计**。</p>
+<p>- 企业级 AI Agent 要进入真实工作流，必须解决 **重复授权疲劳** 和 **IT 可见性不足**。</p>
+<p>- 这和 Web3 世界里的 **账户抽象 / 权限委托 / Session Key** 有相似问题结构：都在寻找“更顺滑但仍可控”的权限体系。</p>
+<p>- 如果 XAA / ID-JAG 这类模式被广泛接受，MCP 才可能真正从开发者玩具演进为企业标准组件。</p>
+
+<p>---</p>
+
+<p>### 5. TradingAgents 持续更新：多智能体金融研究框架走向更完整的持久化与多模型编排</p>
+<p>**来源**：GitHub Trending Daily  </p>
+<p>**核心摘要**：TradingAgents 是一个多智能体金融交易研究框架，近期版本强化了 **结构化输出 agent**、**LangGraph checkpoint 恢复**、**持久化决策日志**、**DeepSeek/Qwen/GLM/Azure 等多 provider 支持** 和 Docker/Windows 兼容。</p>
+
+<p>**为什么重要**</p>
+<p>- 它反映出“**多 Agent 金融分析**”正从概念验证走向更工程化的框架形态。</p>
+<p>- 其新增的 **checkpoint 恢复 + 决策记忆** 非常关键，说明这类系统开始关注长期运行、失败恢复、经验沉淀。</p>
+<p>- 对 Web3/加密研究团队有借鉴意义：虽然它面向传统金融，但其架构可迁移到 **链上交易、治理分析、事件驱动研究**。</p>
+<p>- 需要注意的是，它强调“研究用途”，说明 **Agent 在金融决策中的可靠性边界仍然明显**。</p>
+
+<p>---</p>
+
+<h2>2）其他值得注意但未进前五的信号</h2>
+
+<p>### Warp 开源并强化 agentic development environment</p>
+<p>- 和 jcode、Codex 一样，都指向“终端/IDE 正在变成 Agent 运行时”。</p>
+<p>- OpenAI 作为赞助方，也说明头部模型厂商在积极渗透开发环境层。</p>
+
+<p>### Superpowers + Matt Pocock Skills</p>
+<p>- 两者都说明 **“技能层 / 方法论层 / 过程约束层”** 正成为 Agent 成功率提升的重要抓手。</p>
+<p>- 趋势上看，未来不是只有模型能力，**工作流模板、领域技能包、组织知识沉淀** 会越来越值钱。</p>
+
+<p>### SimplePDF Copilot（客户端工具调用）</p>
+<p>- 很值得关注，核心不是 PDF，而是 **client-side tool calling**。</p>
+<p>- 这是一个兼顾隐私与可操作性的模式，适合医疗、法务、财务，也可类比到链上签名/本地钱包/敏感文档处理场景。</p>
+
+<p>### Sim</p>
+<p>- 代表通用型 agent orchestration 平台持续升温，强调可视化编排、1,000+ 集成、自托管。</p>
+<p>- 对企业采用 AI Agent 很友好，但差异化仍需观察。</p>
+
+<p>### Claude Code 遗留代码库实践</p>
+<p>- 再次印证：**上下文工程 &gt; 魔法提示词**。</p>
+<p>- 对任何大型代码库、复杂协议、长周期项目都适用，包括 Web3 基础设施项目。</p>
+
+<p>---</p>
+
+<h2>3）继续跟踪的 3 个信号</h2>
+
+<p>### 信号一：MCP 会不会从“接口标准”升级为“身份与权限标准”？</p>
+<p>**关注点**</p>
+<p>- XAA / ID-JAG 是否被更多 MCP 客户端和服务端支持</p>
+<p>- 是否出现统一的 scope、metadata、动态注册规范</p>
+<p>- 企业是否愿意把内部系统通过 MCP 暴露给 Agent</p>
+
+<p>**为什么要跟踪**</p>
+<p>- 这决定 MCP 是停留在 demo 生态，还是变成真正的企业 AI 中间层。</p>
+<p>- 对 Web3 而言，这也会影响未来钱包、托管、审计、链上数据服务如何接入 Agent。</p>
+
+<p>---</p>
+
+<p>### 信号二：多智能体架构会不会从“炫技”变成“默认配置”？</p>
+<p>**关注点**</p>
+<p>- Codex、jcode、Warp、Sim 是否都持续强化子智能体/Swarm</p>
+<p>- 是否出现更成熟的任务拆解、冲突解决、权限隔离、结果聚合机制</p>
+<p>- 多代理在真实工程/研究任务中的收益，是否足以覆盖其更高复杂度</p>
+
+<p>**为什么要跟踪**</p>
+<p>- 现在几乎所有头部产品都在 converging 到这个方向。</p>
+<p>- 一旦多代理成为默认范式，开发工具、研究工具、链上自动化工具的产品设计都会被重写。</p>
+
+<p>---</p>
+
+<p>### 信号三：缓存、记忆、恢复机制是否成为 Agent 产品的核心护城河？</p>
+<p>**关注点**</p>
+<p>- 提示缓存命中率是否被产品方当作核心指标公开</p>
+<p>- 是否更多产品提供 checkpoint resume、长期记忆、跨会话上下文</p>
+<p>- 成本/延迟优化是否从模型层转向运行时架构层</p>
+
+<p>**为什么要跟踪**</p>
+<p>- 这直接决定 Agent 能否稳定商业化。</p>
+<p>- 对高频、长任务、复杂工具调用场景尤其关键，比如代码生成、链上分析、审计、研究自动化。</p>
+
+<p>---</p>
+
+<h2>一句话总结</h2>
+<p>今天最重要的主线不是单个模型更新，而是：**AI Agent 正快速进入“平台化、工作流化、权限化、成本工程化”阶段**；其中 **MCP、子智能体、缓存架构、身份授权** 是最值得持续跟踪的四个核心方向。</p>
+
+<h2>今日最重要</h2>
+
+<p class="item">1. <a href="https://github.com/1jehuang/jcode" target="_blank" rel="noreferrer">1jehuang/jcode</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：27 | `base` `openai` `anthropic` `claude` `gemini`</p>
+<p class="meta">Coding Agent Harness jcode The next generation coding agent harness to raise the skill ceiling. Built for multi-session workflows, infinite customizability, and performance. Features · Install · Quick Start · Further Rea...</p>
+<p class="item">2. <a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noreferrer">TauricResearch/TradingAgents</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：23 | `base` `openai` `anthropic` `claude` `gemini`</p>
+<p class="meta">TradingAgents: Multi-Agents LLM Financial Trading Framework Deutsch | Español | français | 日本語 | 한국어 | Português | Русский | 中文 TradingAgents: Multi-Agents LLM Financial Trading Framework News [2026-04] TradingAgents v0....</p>
+<p class="item">3. <a href="https://github.com/obra/superpowers" target="_blank" rel="noreferrer">obra/superpowers</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：19 | `openai` `anthropic` `claude` `gemini` `cursor`</p>
+<p class="meta">An agentic skills framework &amp; software development methodology that works. Superpowers Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and som...</p>
+<p class="item">4. <a href="https://github.com/warpdotdev/warp" target="_blank" rel="noreferrer">warpdotdev/warp</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：17 | `openai` `claude` `gemini` `github` `model`</p>
+<p class="meta">Warp is an agentic development environment, born out of the terminal. Website · Code · Agents · Terminal · Drive · Docs · How Warp Works Note OpenAI is the founding sponsor of the new, open-source Warp repository, and th...</p>
+<p class="item">5. <a href="https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en" target="_blank" rel="noreferrer">Show HN: Filling PDF forms with AI using client-side tool calling</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：13.7 | `claude` `mcp` `llm` `github` `model`</p>
+<p class="meta">Hey HN! I built SimplePDF Copilot: an AI assistant that can interact with the PDF editor. It fills fields, answers questions, focuses on a specific field, adds fields, deletes pages, and so on. It's built on top of Simpl...</p>
+
+<h2>Web3 / Crypto</h2>
+
+<p class="item">1. <a href="https://github.com/mattpocock/skills" target="_blank" rel="noreferrer">mattpocock/skills</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：10 | `claude` `github` `model` `hack`</p>
+<p class="meta">Skills for Real Engineers. Straight from my .claude directory. Skills For Real Engineers My agent skills that I use every day to do real engineering - not vibe coding. Developing real applications is hard. Approaches lik...</p>
+<p class="item">2. <a href="https://github.com/soxoj/maigret" target="_blank" rel="noreferrer">soxoj/maigret</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：9 | `github` `launch` `release`</p>
+<p class="meta">🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites Maigret Maigret collects a dossier on a person by username only, checking for accounts on a huge number of sites and gathering all the available informati...</p>
+<p class="item">3. <a href="https://snewpapers.com/" target="_blank" rel="noreferrer">Show HN: Large Scale Article Extract of Newspapers 1730s-1960s</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：8.69 | `llm` `github` `model` `paper`</p>
+<p class="meta">Hello HN, over the past 7 months I've spent nearly 3,000 hours on building SNEWPAPERS, the first historical newpaper archive with full-text extractions, nearly perfect OCR, a vast categorization taxonomy and of course wi...</p>
+<p class="item">4. <a href="https://github.com/simstudioai/sim" target="_blank" rel="noreferrer">simstudioai/sim</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：7 | `ai agent` `github` `model`</p>
+<p class="meta">Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce. The open-source platform to build AI agents and run your agentic workforce. Connect 1,000+ integrations and LLMs to o...</p>
+<p class="item">5. <a href="https://iesna.eu/?wasm=skyglow_demo" target="_blank" rel="noreferrer">Show HN: Browser-based light pollution simulator using real photometric data</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：4.71 | `github` `model`</p>
+<p class="meta">Hi HN — author here. iesna.eu is a browser-based ecosystem for working with photometric data: parsing standard luminaire files (LDT/EULUMDAT, IES LM-63, Oxytech, ATLA-S001), running design calculations against EN 13201 /...</p>
+
+<h2>AI / 开源 / 技术</h2>
+
+<p class="item">1. <a href="https://www.bestblogs.dev/en/video/8460a7a?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">Codex 与子智能体：OpenAI AI 工程平台深度解析</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：9 | `openai` `mcp` `github` `security`</p>
+<p class="meta">📌 One-Sentence Summary OpenAI 开发者全面演示 Codex 平台——子智能体并行执行、插件生态、后台自动化、Guardian 安全门控与 MCP 集成——揭示其达到 300 万周活跃用户背后的工程能力。 📝 Summary 这场来自 AI Engineer 大会的 59 分钟研讨会由 OpenAI 开发者体验团队的 Vaibhav Srivastav 和 Katia Gil Guzman 主讲，是迄今最完...</p>
+<p class="item">2. <a href="https://github.com/Flowseal/zapret-discord-youtube" target="_blank" rel="noreferrer">Flowseal/zapret-discord-youtube</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：6 | `github` `release`</p>
+<p class="meta">Flowseal/zapret-discord-youtube NEW: Ускорение Telegram Desktop - https://github.com/Flowseal/tg-ws-proxy Альтернатива https://github.com/bol-van/zapret-win-bundle Также вы можете материально поддержать оригинального раз...</p>
+<p class="item">3. <a href="https://www.bestblogs.dev/en/article/68065f88?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">构建 Claude Code 的经验教训：提示缓存至关重要 | Claude</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `claude` `llm`</p>
+<p class="meta">📌 One-Sentence Summary 本文详细阐述了在优化 Claude Code 提示缓存过程中得出的关键且常反直觉的经验教训，强调围绕前缀匹配缓存来设计智能体的整体架构对于性能和成本至关重要。 📝 Summary 这篇来自 Claude 博客的文章解释了提示缓存如何成为使 Claude Code 这类长时间运行的智能体产品变得可行的基础技术。其核心原理是提示缓存基于前缀匹配运作，这意味着对请求开头的任何更改都会使整个缓存...</p>
+<p class="item">4. <a href="https://www.bestblogs.dev/en/video/adebf6b?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">一次登录打通所有 MCP：WorkOS 的 Cross-App Access 方案</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `ai agent` `mcp`</p>
+<p class="meta">📌 One-Sentence Summary Garrett Galow 解释了 Cross-App Access 和 ID-JAG 如何让身份提供商在 AI 客户端与 MCP 服务器之间建立安全信任桥，减少重复授权。 📝 Summary 这场 AI Engineer 演讲清楚解释了 MCP 生态里一个非常现实的问题：每接入一个服务，就多一个 OAuth 授权页、多一套 token 生命周期，也多一个可能出错的环节。Garrett ...</p>
+<p class="item">5. <a href="https://www.bestblogs.dev/en/article/c1ecbe08?utm_source=rss&utm_medium=feed&utm_campaign=resources&entry=rss_article_item" target="_blank" rel="noreferrer">像带新人一样引导 Claude Code：来自 17 年开发经验的启示 | Claude</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | `claude` `mcp`</p>
+<p class="meta">📌 One-Sentence Summary 拥有 70 万行代码的 Skyline 代码库的首席开发者 Brendan MacLean，将他 17 年来引导人类开发者的方法论应用于 Claude Code，通过上下文、技能和 MCP 集成，让遗留代码库重新变得易于管理。 📝 Summary 本文详细介绍了 Skyline（一款拥有超过 70 万行 C# 代码、已维护 17 年的开源蛋白质分析软件）的首席开发者 Brendan Ma...</p>
+
+<h2>市场与政策信号</h2>
+
+<p class="item">1. <a href="https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave AMM Market Released</a></p>
+<p class="meta">来源：Aave Blog - Medium | 分数：3 | `release`</p>
+
+<h2>继续跟踪</h2>
+
+<p class="item">1. <a href="https://32bits.substack.com/p/under-the-microscope-pyramid-unreleased" target="_blank" rel="noreferrer">An unknown Sega Saturn project has come to light after 29 years</a></p>
+<p class="meta">来源：Hacker News Front Page | 分数：3.85 | `release`</p>
+<p class="meta">Article URL: https://32bits.substack.com/p/under-the-microscope-pyramid-unreleased Comments URL: https://news.ycombinator.com/item?id=47985901 Points: 50 # Comments: 1</p>
+<p class="item">2. <a href="https://medium.com/aave/aave-protocol-migration-tool-released-22cdde51c852?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave Protocol migration tool released</a></p>
+<p class="meta">来源：Aave Blog - Medium | 分数：3 | `release`</p>
+<p class="item">3. <a href="https://medium.com/alkemi/alkemi-network-x-atato-custody-partnership-4b1649f75f60?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Atato | Custody Partnership</a></p>
+<p class="meta">来源：Alkemi Network - Medium | 分数：3 | `partnership`</p>
+<p class="item">4. <a href="https://medium.com/alkemi/alkemi-network-x-banxa-integration-partnership-901a9d536b32?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Banxa | Integration Partnership</a></p>
+<p class="meta">来源：Alkemi Network - Medium | 分数：3 | `partnership`</p>
+
+  </main>
+</body>
+</html>
