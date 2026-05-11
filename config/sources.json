@@ -105,6 +105,32 @@
       "name": "Reddit r/LocalLLaMA",
       "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
       "limit": 2
+    },
+
+    {
+      "name": "Martin Fowler (架构思维)",
+      "url": "https://martinfowler.com/feed.atom",
+      "limit": 2
+    },
+    {
+      "name": "Julia Evans (概念图解)",
+      "url": "https://jvns.ca/atom.xml",
+      "limit": 2
+    },
+    {
+      "name": "Coding Horror (编程哲学)",
+      "url": "https://blog.codinghorror.com/rss/",
+      "limit": 1
+    },
+    {
+      "name": "The Pragmatic Engineer",
+      "url": "https://newsletter.pragmaticengineer.com/feed",
+      "limit": 2
+    },
+    {
+      "name": "ByteByteGo (系统设计)",
+      "url": "https://blog.bytebytego.com/feed",
+      "limit": 2
     }
   ],
   "api": [
