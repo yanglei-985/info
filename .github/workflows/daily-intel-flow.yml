@@ -54,6 +54,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # Save our generated files in case rebase overwrites them
+          cp public/index.html /tmp/public-index.html
+          cp docs/index.html /tmp/docs-index.html
+
           git add public/index.html docs/index.html
           if git diff --staged --quiet; then
             echo "No changes to commit."
@@ -62,14 +66,30 @@ jobs:
 
           git commit -m "chore(report): daily intel update [skip ci]"
 
-          # Retry up to 5 times with rebase on conflict
+          # Retry up to 5 times. On push rejection: reset to origin/main,
+          # restore our generated files, re-commit, then push.
           for i in 1 2 3 4 5; do
             if git push origin main; then
               echo "Push successful on attempt $i."
               exit 0
             fi
-            echo "Push rejected on attempt $i/5. Pulling latest and retrying..."
-            git pull --rebase origin main
+            echo "Push rejected on attempt $i/5. Resetting to remote and re-applying our report..."
+
+            git rebase --abort 2>/dev/null || true
+            git fetch origin main
+            git reset --hard origin/main
+
+            mkdir -p docs
+            cp /tmp/public-index.html public/index.html
+            cp /tmp/docs-index.html docs/index.html
+
+            git add public/index.html docs/index.html
+            if git diff --staged --quiet; then
+              echo "Report already up-to-date on remote. Exiting cleanly."
+              exit 0
+            fi
+            git commit -m "chore(report): daily intel update [skip ci]"
+
             sleep 2
           done
 
