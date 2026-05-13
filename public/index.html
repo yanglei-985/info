@@ -27,58 +27,64 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年5月12日星期二 10:56</p>
+<p>生成时间：2026年5月13日星期三 11:25</p>
 <p>采集命中：39 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>字节开源多模态 Agent 栈，强化 GUI 自动化。</li>
-<li>推理模型“想得越久”位置偏差越强。</li>
-<li>KV Cache 压缩走向学习化与混合精度。</li>
+<li>agentmemory走热，AI编码长期记忆成为基础设施。</li>
+<li>Codex computer use扩展到本地GUI自动化。</li>
+<li>多项研究显示，AI评测需关注行为一致性而非表象。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>Agent 正从聊天转向操作系统、浏览器和工具链。MCP、事件流、沙箱成为基础设施关键。</li>
-<li>CoT 不天然消除偏差，长推理可能累积启发式错误。评测需加入顺序鲁棒性审计。</li>
-<li>长上下文成本主要受 KV Cache 限制。LKV、RateQuant显示可用数据驱动替代手工规则。</li>
+<li>记忆、检索、审计、跨代理共享，正在补齐编码智能体的连续性短板。</li>
+<li>智能体可操作应用、后台执行任务；权限边界从文件扩展到具体应用。</li>
+<li>SalesSim、幻觉检测、VLM可靠性研究均指向：流畅输出不等于可信决策。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>GUI Agent 的安全边界与沙箱能力。</li>
-<li>本地模型是否足以替代云端工作流。</li>
+<li>观察长期记忆工具的隐私、遗忘和可移植性。</li>
+<li>观察GUI智能体的授权粒度与失败模式。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Event Stream</strong> (事件流) — 用连续事件驱动状态更新；场景：Agent 调试追踪。</li>
-<li><strong>KV Cache Eviction</strong> (键值缓存淘汰) — 删除低价值上下文缓存；场景：长文本推理降内存。</li>
-<li><strong>Divide and Conquer</strong> (分治) — 拆小问题再合并结果；场景：多 Agent 图推理。</li>
+<li><strong>Hybrid Search</strong> (混合检索) — 融合关键词、向量、图关系检索。应用：智能体记忆召回</li>
+<li><strong>Race Condition</strong> (竞态条件) — 并发时序不同导致结果异常。应用：连接关闭崩溃排查</li>
+<li><strong>Capability-Based Security</strong> (能力式安全) — 只授予完成任务所需权限。应用：按应用授权GUI代理</li>
 </ul>
 <h2>今日最重要</h2>
-<p class="item"><a href="https://github.com/bytedance/UI-TARS-desktop" target="_blank" rel="noreferrer">bytedance/UI-TARS-desktop</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：33 | <code>anthropic</code> <code>claude</code> <code>ai agent</code> <code>mcp</code> <code>github</code></p>
-<p class="meta">The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra Introduction English | 简体中文 TARS* is a Multimodal AI Agent stack, currently shipping two projects: Agent TARS and UI-TARS-deskt...</p>
-<p class="item"><a href="https://github.com/CloakHQ/CloakBrowser" target="_blank" rel="noreferrer">CloakHQ/CloakBrowser</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：24 | <code>ai agent</code> <code>github</code> <code>nvidia</code> <code>gpu</code> <code>security</code></p>
-<p class="meta">Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. Stealth Chromium that passes every bot detection test. Not a patched config...</p>
-<p class="item"><a href="https://arxiv.org/abs/2605.06673" target="_blank" rel="noreferrer">Domain-level metacognitive monitoring in frontier LLMs: A 33-model atlas</a></p>
-<p class="meta">来源：arXiv cs.CL (NLP) | 分数：19.04 | <code>openai</code> <code>anthropic</code> <code>gemini</code> <code>deepseek</code> <code>qwen</code></p>
-<p class="meta">arXiv:2605.06673v1 Announce Type: new Abstract: Aggregate metacognitive quality scores mask within-model variation across MMLU benchmark domains. We administered 1,500 MMLU items (250 per domain, under an a priori six-do...</p>
-<p class="item"><a href="https://arxiv.org/abs/2605.06672" target="_blank" rel="noreferrer">More Thinking, More Bias: Length-Driven Position Bias in Reasoning Models</a></p>
-<p class="meta">来源：arXiv cs.AI | 分数：17.04 | <code>base</code> <code>deepseek</code> <code>qwen</code> <code>llama</code> <code>model</code></p>
-<p class="meta">arXiv:2605.06672v1 Announce Type: new Abstract: Chain-of-thought (CoT) reasoning and reasoning-tuned models such as DeepSeek-R1 are commonly assumed to reduce shallow heuristic biases by thinking carefully. We test this ...</p>
-<p class="item"><a href="https://arxiv.org/abs/2605.06676" target="_blank" rel="noreferrer">LKV: End-to-End Learning of Head-wise Budgets and Token Selection for LLM KV Cache Eviction</a></p>
-<p class="meta">来源：arXiv cs.LG (ML) | 分数：17.04 | <code>llm</code> <code>model</code> <code>arxiv</code> <code>inference</code> <code>benchmark</code></p>
-<p class="meta">arXiv:2605.06676v1 Announce Type: new Abstract: Long-context inference in Large Language Models (LLMs) is bottlenecked by the linear growth of Key-Value (KV) cache memory. Existing KV cache compression paradigms are fund...</p>
+<p class="item"><a href="https://github.com/rohitg00/agentmemory" target="_blank" rel="noreferrer">rohitg00/agentmemory</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：34 | <code>base</code> <code>openai</code> <code>anthropic</code> <code>claude</code> <code>gemini</code></p>
+<p class="meta">#1 Persistent memory for AI coding agents based on real-world benchmarks Your coding agent remembers everything. No more re-explaining. Built on iii engine Persistent memory for Claude Code, Cursor, Gemini CLI, Codex CLI...</p>
+<p class="item"><a href="https://github.com/tinyhumansai/openhuman" target="_blank" rel="noreferrer">tinyhumansai/openhuman</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：23 | <code>base</code> <code>claude</code> <code>llama</code> <code>llm</code> <code>github</code></p>
+<p class="meta">Your Personal AI super intelligence. Private, Simple and extremely powerful. OpenHuman OpenHuman is your Personal AI super intelligence. Private, Simple and extremely powerful. Discord • Reddit • X/Twitter • Docs • Follo...</p>
+<p class="item"><a href="https://arxiv.org/abs/2605.08334" target="_blank" rel="noreferrer">SalesSim: Benchmarking and Aligning Multimodal Language Models as Retail User Simulators</a></p>
+<p class="meta">来源：arXiv cs.CL (NLP) | 分数：19.02 | <code>model</code> <code>arxiv</code> <code>multimodal</code> <code>reinforcement learning</code> <code>agentic</code></p>
+<p class="meta">arXiv:2605.08334v1 Announce Type: new Abstract: We present SalesSim, a framework and testbed for evaluating the ability of Multimodal Large Language Models (MLLMs) to simulate realistic, persona-driven customer behavior ...</p>
+<p class="item"><a href="https://arxiv.org/abs/2605.08220" target="_blank" rel="noreferrer">Spatial Priming Outperforms Semantic Prompting: A Grid-Based Approach to Improving LLM Accuracy on Chart Data Extraction</a></p>
+<p class="meta">来源：arXiv cs.AI | 分数：16.02 | <code>llm</code> <code>model</code> <code>paper</code> <code>arxiv</code> <code>multimodal</code></p>
+<p class="meta">arXiv:2605.08220v1 Announce Type: new Abstract: The automated extraction of data from scientific charts is a critical task for large-scale literature analysis. While multimodal Large Language Models (LLMs) show promise, ...</p>
+<p class="item"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/" target="_blank" rel="noreferrer">Best Local LLMs - Apr 2026</a></p>
+<p class="meta">来源：Reddit r/LocalLLaMA | 分数：15 | <code>model</code> <code>open weight</code> <code>agentic</code> <code>release</code> <code>benchmark</code></p>
+<p class="meta">We're back with another Best Local LLMs Megathread! We have continued feasting in the months since the previous thread with the much anticipated release of the Qwen3.5 and Gemma4 series. If that wasn't enough, we are hav...</p>
 <h2>Web3 / Crypto</h2>
 <p class="item"><a href="https://martinfowler.com/fragments/2026-05-05.html" target="_blank" rel="noreferrer">Fragments: May  5</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：12 | <code>claude</code> <code>model</code> <code>agentic</code> <code>open source</code> <code>open-source</code></p>
 <p class="meta">Over the last couple of months Rahul Garg published a series of posts here on how to reduce the friction in AI-assisted programming. To make it easier to put these ideas into practice he’s now built an open-source framew...</p>
-<p class="item"><a href="https://arxiv.org/abs/2605.06671" target="_blank" rel="noreferrer">GraphDC: A Divide-and-Conquer Multi-Agent System for Scalable Graph Algorithm Reasoning</a></p>
-<p class="meta">来源：arXiv cs.AI | 分数：6.04 | <code>model</code> <code>arxiv</code> <code>reasoning</code></p>
-<p class="meta">arXiv:2605.06671v1 Announce Type: new Abstract: Large Language Models (LLMs) have demonstrated strong potential for many mathematical problems. However, their performance on graph algorithmic tasks is still unsatisfying,...</p>
-<p class="item"><a href="https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything" target="_blank" rel="noreferrer">Thoughts on GitLab's workforce reduction&quot; and &quot;structural and strategic decisions&quot;</a></p>
-<p class="meta">来源：Simon Willison | 分数：4.88 | <code>github</code> <code>agentic</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://about.gitlab.com/blog/gitlab-act-2/&quot;&gt;GitLab Act 2&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; There's a lot going on in this announcement from GitLab about the &quot;workforce reduction&quot; and &quot;structural and strategic decisio...</p>
+<p class="item"><a href="https://arxiv.org/abs/2605.08346" target="_blank" rel="noreferrer">Sanity Checks for Long-Form Hallucination Detection</a></p>
+<p class="meta">来源：arXiv cs.CL (NLP) | 分数：9.02 | <code>model</code> <code>arxiv</code> <code>reasoning</code> <code>exploit</code></p>
+<p class="meta">arXiv:2605.08346v1 Announce Type: new Abstract: Hallucination detection methods for large language models increasingly operate on chain-of-thought reasoning traces, yet it remains unclear whether they evaluate the reason...</p>
+<p class="item"><a href="https://arxiv.org/abs/2605.08098" target="_blank" rel="noreferrer">Reinforcement learning for inverse structural design and rapid laser cutting of kirigami prototypes</a></p>
+<p class="meta">来源：arXiv cs.LG (ML) | 分数：9.02 | <code>arxiv</code> <code>reinforcement learning</code> <code>pretrain</code> <code>evaluation</code></p>
+<p class="meta">arXiv:2605.08098v1 Announce Type: new Abstract: Kirigami is an increasingly useful fabrication method to produce shape-programmable metamaterial structures. However, inverse design remains difficult because deployment is...</p>
+<p class="item"><a href="https://simonwillison.net/2026/May/12/datasette/#atom-everything" target="_blank" rel="noreferrer">datasette 1.0a29</a></p>
+<p class="meta">来源：Simon Willison | 分数：5.84 | <code>github</code> <code>release</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/simonw/datasette/releases/tag/1.0a29&quot;&gt;datasette 1.0a29&lt;/a&gt;&lt;/p&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;li&gt;New &lt;code&gt;TokenRestrictions.abbreviated(datasette)&lt;/code&gt; &lt;a href=&quot;https://doc...</p>
+<p class="item"><a href="https://arxiv.org/abs/2605.08102" target="_blank" rel="noreferrer">Path-Based Gradient Boosting for Graph-Level Prediction</a></p>
+<p class="meta">来源：arXiv cs.LG (ML) | 分数：5.02 | <code>arxiv</code> <code>benchmark</code></p>
+<p class="meta">arXiv:2605.08102v1 Announce Type: new Abstract: We propose PathBoost, a gradient tree boosting method for graph-level classification and regression that learns discriminative path-based features directly from the input g...</p>
 <p class="item"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages" target="_blank" rel="noreferrer">The Pulse: Did capacity shortages turn Anthropic hostile to devs?</a></p>
 <p class="meta">来源：The Pragmatic Engineer | 分数：4 | <code>anthropic</code> <code>claude</code></p>
 <p class="meta">Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small “AI-forward” teams, and more</p>
@@ -87,49 +93,48 @@
 <p class="item"><a href="https://arcana-network.medium.com/arcana-partners-with-bob-network-to-make-bitcoin-l2s-more-accessible-f9dbe574b991?source=rss-aa460d59ab5d------2" target="_blank" rel="noreferrer">Arcana Partners with BOB Network to Make Bitcoin L2s More Accessible</a></p>
 <p class="meta">来源：Arcana Network on Medium | 分数：2 | <code>bitcoin</code></p>
 <h2>AI / 开源 / 技术</h2>
-<p class="item"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/" target="_blank" rel="noreferrer">Best Local LLMs - Apr 2026</a></p>
-<p class="meta">来源：Reddit r/LocalLLaMA | 分数：15 | <code>model</code> <code>open weight</code> <code>agentic</code> <code>release</code> <code>benchmark</code></p>
-<p class="meta">We're back with another Best Local LLMs Megathread! We have continued feasting in the months since the previous thread with the much anticipated release of the Qwen3.5 and Gemma4 series. If that wasn't enough, we are hav...</p>
-<p class="item"><a href="https://arxiv.org/abs/2605.06765" target="_blank" rel="noreferrer">VITA-QinYu: Expressive Spoken Language Model for Role-Playing and Singing</a></p>
-<p class="meta">来源：arXiv cs.CL (NLP) | 分数：13.04 | <code>model</code> <code>arxiv</code> <code>open-source</code> <code>benchmark</code> <code>state-of-the-art</code></p>
-<p class="meta">arXiv:2605.06765v1 Announce Type: new Abstract: Human speech conveys expressiveness beyond linguistic content, including personality, mood, or performance elements, such as a comforting tone or humming a song, which we f...</p>
-<p class="item"><a href="https://arxiv.org/abs/2605.06675" target="_blank" rel="noreferrer">RateQuant: Optimal Mixed-Precision KV Cache Quantization via Rate-Distortion Theory</a></p>
-<p class="meta">来源：arXiv cs.LG (ML) | 分数：8.04 | <code>model</code> <code>arxiv</code> <code>inference</code> <code>gpu</code></p>
-<p class="meta">arXiv:2605.06675v1 Announce Type: new Abstract: Large language models cache all previously computed key-value (KV) pairs during generation, and this KV cache grows linearly with sequence length, making it a primary memor...</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/video/cc94ab1?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Codex 的 computer use：OpenAI 展示新的 AI 队友能力</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：7.72 | <code>openai</code> <code>cursor</code> <code>benchmark</code></p>
+<p class="meta">📌 One-Sentence Summary OpenAI 演示 Codex computer use，展示智能体如何操作本地 GUI 应用、在后台多任务执行、利用 accessibility 数据，并受限于按应用授权的权限边界。 📝 Summary 这是一次信息密度很高的 Codex computer use 产品与架构演示。它的价值不只是展示功能，而是说明当一个 coding agent 能够操作图形界面后，工作边界会发生什么变...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms" target="_blank" rel="noreferrer">My Workflow for Understanding LLM Architectures</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：7 | <code>llm</code> <code>model</code> <code>release</code></p>
 <p class="meta">A learning-oriented workflow for understanding new open-weight model releases</p>
+<p class="item"><a href="https://arxiv.org/abs/2605.08200" target="_blank" rel="noreferrer">Where Reliability Lives in Vision-Language Models: A Mechanistic Study of Attention, Hidden States, and Causal Circuits</a></p>
+<p class="meta">来源：arXiv cs.AI | 分数：6.02 | <code>model</code> <code>arxiv</code> <code>inference</code></p>
+<p class="meta">arXiv:2605.08200v1 Announce Type: new Abstract: A pervasive intuition holds that vision-language models (VLMs) are most trustworthy when their attention maps look sharp: concentrated attention on the queried region shoul...</p>
 <p class="item"><a href="https://huggingface.co/blog/amazon/foundation-model-building-blocks" target="_blank" rel="noreferrer">Building Blocks for Foundation Model Training and Inference on AWS</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：6.85 | <code>model</code> <code>inference</code> <code>foundation model</code></p>
+<p class="meta">来源：Hugging Face Blog | 分数：6 | <code>model</code> <code>inference</code> <code>foundation model</code></p>
 <p class="item"><a href="https://tldr.tech/ai/2026-05-11" target="_blank" rel="noreferrer">Nvidia invests $40B 💰, Anthropic acquires compute 🤝, Mistral’s growth 📈</a></p>
 <p class="meta">来源：TLDR AI | 分数：6 | <code>anthropic</code> <code>mistral</code> <code>nvidia</code></p>
-<p class="item">[[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice APIs](https://www.latent.space/p/ainews-gpt-realtime-2-translate-and)</p>
-<p class="meta">来源：Latent Space | 分数：5 | <code>openai</code> <code>sota</code></p>
-<p class="meta">OpenAI continues deploying GPT-5 everywhere</p>
-<p class="item"><a href="https://fireflysentinel.github.io/posts/fake-building-claude-3000-lines/" target="_blank" rel="noreferrer">Fake building: Claude wrote 3k lines instead of import pywikibot</a></p>
-<p class="meta">来源：Hacker News Front Page | 分数：4.98 | <code>claude</code> <code>github</code></p>
-<p class="meta">Article URL: https://fireflysentinel.github.io/posts/fake-building-claude-3000-lines/ Comments URL: https://news.ycombinator.com/item?id=48103459 Points: 3 # Comments: 0</p>
-<p class="item"><a href="https://simonwillison.net/2026/May/11/james-shore/#atom-everything" target="_blank" rel="noreferrer">Quoting James Shore</a></p>
-<p class="meta">来源：Simon Willison | 分数：4.7 | <code>llm</code> <code>agentic</code></p>
-<p class="meta">&lt;blockquote cite=&quot;https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs&quot;&gt;&lt;p&gt;Your AI coding agent, the one you use to write code, needs to reduce your maintenance costs. Not by a little b...</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/f648cbd2?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">OpenAI 推出 OpenAI 部署公司，助力企业围绕智能构建业务</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4.13 | <code>openai</code> <code>gemini</code></p>
-<p class="meta">📌 One-Sentence Summary OpenAI 推出 OpenAI 部署公司，这是一家由 OpenAI 持有多数股权的子公司，初始投资超过 40 亿美元，旨在将专门的现场部署工程师嵌入企业，为其构建和部署持久、生产级的 AI 系统。 📝 Summary OpenAI 宣布成立 OpenAI 部署公司（DeployCo），这是一个新的独立业务单元，旨在帮助大型组织为其最关键的工作流程构建和部署可靠的 AI 系统。该公司将把...</p>
-<p class="item"><a href="https://claude.com/blog/claude-platform-on-aws" target="_blank" rel="noreferrer">Claude Platform on AWS</a></p>
-<p class="meta">来源：Hacker News Front Page | 分数：2.94 | <code>claude</code></p>
-<p class="meta">Article URL: https://claude.com/blog/claude-platform-on-aws Comments URL: https://news.ycombinator.com/item?id=48103042 Points: 19 # Comments: 5</p>
-<p class="item"><a href="https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist/" target="_blank" rel="noreferrer">Three things in AI to watch, according to a Nobel-winning economist</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：2.61 | <code>paper</code></p>
-<p class="meta">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. A few months before he was awarded the Nobel Prize in economics in 2024, Daron Ace...</p>
+<p class="item">[[AINews] Thinking Machines' Native Interaction Models - TML-Interaction-Small 276B-A12B - advances SOTA Realtime Voice and kills standard VAD](https://www.latent.space/p/ainews-thinking-machines-native-interaction)</p>
+<p class="meta">来源：Latent Space | 分数：5.05 | <code>model</code> <code>sota</code></p>
+<p class="meta">well done, Team Thinky.</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-05-12" target="_blank" rel="noreferrer">Interaction Models 🤖, Gemini Omni surfaces 🎥, SpaceXAI 🚀</a></p>
+<p class="meta">来源：TLDR AI | 分数：4 | <code>gemini</code> <code>model</code></p>
+<p class="item"><a href="https://www.qbitai.com/2026/05/416628.html" target="_blank" rel="noreferrer">何恺明首个语言模型：105M参数，不走GPT自回归老路</a></p>
+<p class="meta">来源：QbitAI 量子位 | 分数：2.92 | <code>llm</code></p>
+<p class="meta">顶级CV大佬也来卷LLM？</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/video/fdb963a?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">给你的 Agent 一台电脑：Nico Albanese 的 Vercel AI SDK 实战 workshop</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：2.61 | <code>ai agent</code></p>
+<p class="meta">📌 One-Sentence Summary Nico Albanese 用 Vercel AI SDK 演示如何构建持久化 tool-loop Agent，覆盖 web search、sandbox、bash 执行、文件式 memory、context pruning 和 sub-agent 模式。 📝 Summary 这是一次很扎实的技术 workshop，主题是如何用 Vercel AI SDK 6 和 Vercel Sand...</p>
+<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/revisiting-no-silver-bullets-in-the" target="_blank" rel="noreferrer">Revisiting “No Silver Bullets” in the age of AI</a></p>
+<p class="meta">来源：The Pragmatic Engineer | 分数：2.57 | <code>paper</code></p>
+<p class="meta">Does the noted “No Silver Bullets” paper by the author of a classic engineering book still hold up, 40 years later? Is AI the long-sought single silver bullet – or has one been around for years?</p>
+<p class="item"><a href="https://www.qbitai.com/2026/05/416597.html" target="_blank" rel="noreferrer">原来Ilya还有70亿美元OpenAI股权</a></p>
+<p class="meta">来源：QbitAI 量子位 | 分数：2.44 | <code>openai</code></p>
+<p class="meta">世纪庭审实锤OpenAI「造富神话」</p>
+<p class="item"><a href="https://martinfowler.com/articles/what-is-code.html" target="_blank" rel="noreferrer">What is Code</a></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：2.42 | <code>model</code></p>
+<p class="meta">Increasingly humans delegate writing code to agents. Will there even be source code in the future? To wrestle with this question, we have to understand what code is. Unmesh Joshi sees code as having two distinct but inte...</p>
 <h2>市场与政策信号</h2>
 <p class="item"><a href="https://jack-clark.net/2026/05/11/import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-a-neural-computer/" target="_blank" rel="noreferrer">Import AI 456: RSI and economic growth; radical optionality for AI regulation; and a neural computer</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：8.41 | <code>arxiv</code> <code>regulation</code> <code>research</code></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：8 | <code>arxiv</code> <code>regulation</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Regulate? Don’t regulate. There’s a th...</p>
 <p class="item"><a href="https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave AMM Market Released</a></p>
 <p class="meta">来源：Aave Blog - Medium | 分数：3 | <code>release</code></p>
 <h2>继续跟踪</h2>
 <p class="item"><a href="https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering/" target="_blank" rel="noreferrer">Fostering breakthrough AI innovation through customer-back engineering</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：6.44 | <code>breakthrough</code> <code>research</code></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：6 | <code>breakthrough</code> <code>research</code></p>
 <p class="meta">Despite years of digitization, organizations capture less than one-third of the value expected from digital investments, according to McKinsey research. That’s because most big companies begin with technological capabili...</p>
 <p class="item"><a href="https://jack-clark.net/2026/05/04/import-ai-455-automating-ai-research/" target="_blank" rel="noreferrer">Import AI 455: Automating AI Research</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：5 | <code>arxiv</code> <code>research</code></p>
