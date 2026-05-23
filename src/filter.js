@@ -52,20 +52,50 @@ export function scoreAndFilter(items, keywords) {
     .slice(0, 80);
 }
 
+// Source-name → bucket. Most reliable signal.
+const SOURCE_BUCKETS = {
+  // 法语经济学
+  "Le Monde - Économie": "fr",
+  "Alternatives Économiques": "fr",
+
+  // 工程与思维武器
+  "Martin Fowler (架构思维)": "eng",
+  "Julia Evans (概念图解)": "eng",
+  "Coding Horror (编程哲学)": "eng",
+  "The Pragmatic Engineer": "eng",
+  "ByteByteGo (系统设计)": "eng",
+  "GitHub Trending Daily": "eng",
+
+  // 商业与产品
+  "Paul Graham": "biz",
+  "Patrick McKenzie - Bits about Money": "biz"
+
+  // Everything else (HF, Karpathy, OpenAI, Anthropic, ...) defaults to "ai"
+};
+
 export function classify(item) {
-  const text = `${item.title} ${item.content}`.toLowerCase();
-
-  if (/(bitcoin|btc|ethereum|eth|solana|base|eigenlayer|zk|rwa|depin|airdrop|etf|stablecoin|crypto|web3)/i.test(text)) {
-    return "web3";
+  if (item.source && SOURCE_BUCKETS[item.source]) {
+    return SOURCE_BUCKETS[item.source];
   }
 
-  if (/(openai|anthropic|claude|gemini|ai agent|mcp|llm|cursor|sora|model|paper|github|open source)/i.test(text)) {
-    return "ai";
+  const text = `${item.title || ""} ${item.content || ""}`.toLowerCase();
+
+  // French content fallback (accented chars + economy term)
+  if (/[éèàçùâêîôûœ]/i.test(item.title || "") &&
+      /(économ|france|français|marché|entreprise|banque)/i.test(text)) {
+    return "fr";
   }
 
-  if (/(sec|regulation|policy|market|funding|raises|acquisition|etf)/i.test(text)) {
-    return "market";
+  // Engineering / CS thinking
+  if (/(architect|refactor|design pattern|concurren|cache|distributed|database|kernel|protocol|algorithm|system design)/i.test(text)) {
+    return "eng";
   }
 
-  return "watch";
+  // Business
+  if (/(startup|founder|funding|venture|business|product[ -]market|essay)/i.test(text)) {
+    return "biz";
+  }
+
+  // Default = AI
+  return "ai";
 }

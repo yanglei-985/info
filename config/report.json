@@ -1,25 +1,11 @@
 {
   "title": "每日信息流",
   "sections": [
-    {
-      "id": "top",
-      "title": "今日最重要"
-    },
-    {
-      "id": "web3",
-      "title": "Web3 / Crypto"
-    },
-    {
-      "id": "ai",
-      "title": "AI / 开源 / 技术"
-    },
-    {
-      "id": "market",
-      "title": "市场与政策信号"
-    },
-    {
-      "id": "watch",
-      "title": "继续跟踪"
-    }
+    { "id": "top", "title": "今日最重要" },
+    { "id": "ai", "title": "AI 前沿与思维" },
+    { "id": "eng", "title": "工程与思维武器" },
+    { "id": "biz", "title": "商业与产品" },
+    { "id": "fr", "title": "法语经济学" },
+    { "id": "watch", "title": "继续跟踪" }
   ]
 }

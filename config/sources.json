@@ -1,148 +1,32 @@
 {
   "rss": [
-    {
-      "name": "ChainFeeds Web3 RAW",
-      "type": "opml",
-      "path": "data/chainfeeds-raw.opml",
-      "limit": 20
-    },
-    {
-      "name": "BestBlogs AI Featured",
-      "url": "https://www.bestblogs.dev/zh/feeds/rss?category=ai&featured=y&timeFilter=1w&minScore=70",
-      "limit": 3
-    },
-    {
-      "name": "Hacker News Front Page",
-      "url": "https://hnrss.org/frontpage",
-      "limit": 2
-    },
-    {
-      "name": "GitHub Trending Daily",
-      "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-      "limit": 2
-    },
+    { "name": "BestBlogs AI Featured", "url": "https://www.bestblogs.dev/zh/feeds/rss?category=ai&featured=y&timeFilter=1w&minScore=70", "limit": 3 },
+    { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "limit": 4 },
+    { "name": "Hugging Face Daily Papers", "url": "https://jamesg.blog/hf-papers.xml", "limit": 3 },
+    { "name": "The Batch (DeepLearning.AI)", "url": "https://www.deeplearning.ai/the-batch/rss/", "limit": 2 },
+    { "name": "Import AI (Jack Clark)", "url": "https://jack-clark.net/feed/", "limit": 2 },
+    { "name": "Ahead of AI (Sebastian Raschka)", "url": "https://magazine.sebastianraschka.com/feed", "limit": 2 },
+    { "name": "TLDR AI", "url": "https://tldr.tech/api/rss/ai", "limit": 2 },
+    { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "limit": 2 },
+    { "name": "Latent Space", "url": "https://www.latent.space/feed", "limit": 2 },
+    { "name": "MIT Technology Review - AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "limit": 2 },
+    { "name": "Andrej Karpathy", "url": "https://karpathy.github.io/feed.xml", "limit": 2 },
+    { "name": "Lex Fridman Podcast", "url": "https://lexfridman.com/feed/podcast/", "limit": 1 },
+    { "name": "Anthropic Blog", "url": "https://www.anthropic.com/news/rss.xml", "limit": 2 },
+    { "name": "OpenAI Blog", "url": "https://openai.com/blog/rss.xml", "limit": 2 },
 
-    {
-      "name": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/feed.xml",
-      "limit": 4
-    },
-    {
-      "name": "Hugging Face Daily Papers",
-      "url": "https://jamesg.blog/hf-papers.xml",
-      "limit": 3
-    },
+    { "name": "Martin Fowler (架构思维)", "url": "https://martinfowler.com/feed.atom", "limit": 2 },
+    { "name": "Julia Evans (概念图解)", "url": "https://jvns.ca/atom.xml", "limit": 2 },
+    { "name": "Coding Horror (编程哲学)", "url": "https://blog.codinghorror.com/rss/", "limit": 1 },
+    { "name": "The Pragmatic Engineer", "url": "https://newsletter.pragmaticengineer.com/feed", "limit": 2 },
+    { "name": "ByteByteGo (系统设计)", "url": "https://blog.bytebytego.com/feed", "limit": 2 },
+    { "name": "GitHub Trending Daily", "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml", "limit": 1 },
 
-    {
-      "name": "The Batch (DeepLearning.AI)",
-      "url": "https://www.deeplearning.ai/the-batch/rss/",
-      "limit": 2
-    },
-    {
-      "name": "Import AI (Jack Clark)",
-      "url": "https://jack-clark.net/feed/",
-      "limit": 2
-    },
-    {
-      "name": "Ahead of AI (Sebastian Raschka)",
-      "url": "https://magazine.sebastianraschka.com/feed",
-      "limit": 2
-    },
-    {
-      "name": "TLDR AI",
-      "url": "https://tldr.tech/api/rss/ai",
-      "limit": 2
-    },
-    {
-      "name": "Simon Willison",
-      "url": "https://simonwillison.net/atom/everything/",
-      "limit": 2
-    },
-    {
-      "name": "Latent Space",
-      "url": "https://www.latent.space/feed",
-      "limit": 2
-    },
-    {
-      "name": "MIT Technology Review - AI",
-      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-      "limit": 2
-    },
+    { "name": "Paul Graham", "url": "http://www.aaronsw.com/2002/feeds/pgessays.rss", "limit": 2 },
+    { "name": "Patrick McKenzie - Bits about Money", "url": "https://www.bitsaboutmoney.com/archive/rss/", "limit": 1 },
 
-    {
-      "name": "arXiv cs.AI",
-      "url": "http://export.arxiv.org/rss/cs.AI",
-      "limit": 2
-    },
-    {
-      "name": "arXiv cs.CL (NLP)",
-      "url": "http://export.arxiv.org/rss/cs.CL",
-      "limit": 2
-    },
-    {
-      "name": "arXiv cs.LG (ML)",
-      "url": "http://export.arxiv.org/rss/cs.LG",
-      "limit": 2
-    },
-
-    {
-      "name": "QbitAI 量子位",
-      "url": "https://www.qbitai.com/feed",
-      "limit": 2
-    },
-    {
-      "name": "机器之心",
-      "url": "https://www.jiqizhixin.com/rss",
-      "limit": 2
-    },
-
-    {
-      "name": "Reddit r/MachineLearning",
-      "url": "https://www.reddit.com/r/MachineLearning/.rss",
-      "limit": 2
-    },
-    {
-      "name": "Reddit r/LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
-      "limit": 2
-    },
-
-    {
-      "name": "Martin Fowler (架构思维)",
-      "url": "https://martinfowler.com/feed.atom",
-      "limit": 2
-    },
-    {
-      "name": "Julia Evans (概念图解)",
-      "url": "https://jvns.ca/atom.xml",
-      "limit": 2
-    },
-    {
-      "name": "Coding Horror (编程哲学)",
-      "url": "https://blog.codinghorror.com/rss/",
-      "limit": 1
-    },
-    {
-      "name": "The Pragmatic Engineer",
-      "url": "https://newsletter.pragmaticengineer.com/feed",
-      "limit": 2
-    },
-    {
-      "name": "ByteByteGo (系统设计)",
-      "url": "https://blog.bytebytego.com/feed",
-      "limit": 2
-    }
+    { "name": "Le Monde - Économie", "url": "https://www.lemonde.fr/economie/rss_full.xml", "limit": 3 },
+    { "name": "Alternatives Économiques", "url": "https://www.alternatives-economiques.fr/rss.xml", "limit": 2 }
   ],
-  "api": [
-    {
-      "name": "cryptocurrency.cv Latest",
-      "url": "https://cryptocurrency.cv/api/news",
-      "limit": 15
-    },
-    {
-      "name": "cryptocurrency.cv Trending",
-      "url": "https://cryptocurrency.cv/api/trending",
-      "limit": 10
-    }
-  ]
+  "api": []
 }
