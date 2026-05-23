@@ -5,139 +5,279 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>每日信息流</title>
   <style>
-    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { margin: 0; background: #f7f7f4; color: #1d1d1b; }
-    main { max-width: 920px; margin: 0 auto; padding: 40px 20px 72px; }
-    h1 { font-size: 36px; line-height: 1.15; margin: 0 0 16px; }
-    h2 { font-size: 22px; line-height: 1.3; margin: 34px 0 14px; border-top: 1px solid #d8d8cf; padding-top: 20px; }
-    h3 { font-size: 18px; line-height: 1.3; margin: 24px 0 10px; }
-    h4 { font-size: 16px; line-height: 1.3; margin: 20px 0 8px; }
-    p { font-size: 16px; line-height: 1.72; margin: 8px 0; }
-    a { color: #146c6c; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    .item { font-weight: 650; margin-top: 16px; }
-    .meta { color: #5d625d; font-size: 14px; margin-left: 20px; }
-    code { background: #ecebe3; padding: 2px 5px; border-radius: 4px; }
-    ul { padding-left: 24px; margin: 8px 0; }
-    li { font-size: 16px; line-height: 1.72; margin: 4px 0; }
-    hr { border: none; border-top: 1px solid #d8d8cf; margin: 24px 0; }
-    blockquote { border-left: 3px solid #d8d8cf; margin: 12px 0; padding: 4px 16px; color: #5d625d; }
-    strong { font-weight: 700; }
+    :root {
+      color-scheme: light;
+      --bg: #faf9f5;
+      --ink: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #b8472b;
+      --rule: #e8e6df;
+      --code-bg: #f1efe8;
+      --serif: ui-serif, "Charter", "Iowan Old Style", "Source Serif Pro", Georgia, Cambria, serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    h1 {
+      font-family: var(--sans);
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin: 0 0 8px;
+    }
+    h2 {
+      font-family: var(--sans);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 56px 0 20px;
+      padding-top: 24px;
+      border-top: 2px solid var(--ink);
+    }
+    h3 {
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 700;
+      margin: 28px 0 10px;
+    }
+    h4 {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 20px 0 6px;
+    }
+
+    p {
+      font-family: var(--serif);
+      font-size: 17px;
+      line-height: 1.72;
+      margin: 12px 0;
+    }
+    h1 + p {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 0;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 4px;
+      transition: color 0.15s ease;
+    }
+    a:hover { color: var(--accent); }
+
+    .item {
+      font-family: var(--sans);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin: 28px 0 4px;
+    }
+    .item a {
+      text-decoration: none;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 1px;
+    }
+    .item a:hover {
+      background: rgba(184, 71, 43, 0.08);
+    }
+
+    .meta {
+      font-family: var(--sans);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 4px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+    li {
+      font-family: var(--serif);
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 6px 0;
+    }
+    li strong { color: var(--ink); }
+
+    code {
+      font-family: var(--mono);
+      background: var(--code-bg);
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 0.88em;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 32px 0;
+    }
+    blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 18px 0;
+      padding: 4px 0 4px 18px;
+      color: var(--muted);
+      font-style: italic;
+    }
+    strong { font-weight: 700; color: var(--ink); }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 18px 64px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 20px; margin-top: 40px; }
+      p, li { font-size: 16px; }
+      .item { font-size: 16px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --ink: #ebe9e2;
+        --muted: #9c9a91;
+        --accent: #e07b5c;
+        --rule: #2c2c2c;
+        --code-bg: #2a2a2a;
+        color-scheme: dark;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年5月23日星期六 17:56</p>
-<p>采集命中：31 条</p>
+<p>生成时间：2026年5月23日星期六 21:44</p>
+<p>采集命中：27 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>CodeGraph用本地代码图降低AI编程成本。</li>
-<li>Fowler界定Vibe Coding边界与风险。</li>
-<li>智能体基础设施转向有状态计算机。</li>
+<li>Karpathy 用 200 行 Python 还原 GPT 核心。</li>
+<li>Vibe coding 边界被重新澄清。</li>
+<li>专业小模型在 OCR 中胜过前沿 API。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>预索引代码关系可减少探索调用、Token和延迟，尤其适合大仓库AI协作。</li>
-<li>不看代码适合一次性原型，但在安全、正确性、可维护性上风险高。</li>
-<li>智能体需要可恢复、长期运行环境；沙箱从临时执行变为核心计算层。</li>
+<li>它把 LLM 拆成数据、分词、反传、注意力、优化、采样。证明复杂系统可被压缩到算法本质。</li>
+<li>Fowler 区分“不看代码”的 vibe coding 与审查代码的 agentic programming。前者适合一次性工具，不适合高风险系统。</li>
+<li>30 亿参数模型以更低成本胜出，信号是任务分布对齐可能比规模更关键。企业评估需回到真实工作负载。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>CodeGraph在真实团队中的节省率。</li>
-<li>智能体沙箱的安全隔离与成本。</li>
+<li>Claude 插件生态的安全审查与权限边界。</li>
+<li>HBM 挤占消费内存产能的价格影响。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Knowledge Graph</strong> (知识图谱) — 用关系表达实体结构；代码依赖分析。</li>
-<li><strong>Stateful Sandbox</strong> (有状态沙箱) — 隔离环境保留运行状态；智能体长任务。</li>
-<li><strong>Debouncing</strong> (防抖) — 合并短时间重复事件；文件自动同步。</li>
+<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度；训练神经网络。</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态；长文本推理加速。</li>
+<li><strong>Distribution Alignment</strong> (分布对齐) — 训练数据贴近任务分布；垂直 OCR 模型。</li>
 </ul>
 <h2>今日最重要</h2>
-<p class="item"><a href="https://github.com/colbymchenry/codegraph" target="_blank" rel="noreferrer">colbymchenry/codegraph</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：23 | <code>claude</code> <code>mcp</code> <code>cursor</code> <code>github</code> <code>model</code></p>
-<p class="meta">Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local CodeGraph Supercharge Claude Code, Cursor, Codex, OpenCode, and Hermes Agent with S...</p>
+<p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
+<p class="meta">来源：Andrej Karpathy | 分数：33 | <code>gemini</code> <code>karpathy</code> <code>llm</code> <code>github</code> <code>model</code></p>
+<p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } This is a brief guide to my new art project microgpt, a single file of 2...</p>
+<p class="item"><a href="http://karpathy.github.io/2022/03/14/lecun1989/" target="_blank" rel="noreferrer">Deep Neural Nets: 33 years ago and 33 years from now</a></p>
+<p class="meta">来源：Andrej Karpathy | 分数：32 | <code>openai</code> <code>karpathy</code> <code>github</code> <code>model</code> <code>paper</code></p>
+<p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritte...</p>
 <p class="item"><a href="https://martinfowler.com/bliki/VibeCoding.html" target="_blank" rel="noreferrer">Bliki: Vibe Coding</a></p>
-<p class="meta">来源：Martin Fowler (架构思维) | 分数：13 | <code>llm</code> <code>cursor</code> <code>model</code> <code>diffusion</code> <code>agentic</code></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：12 | <code>karpathy</code> <code>llm</code> <code>cursor</code> <code>model</code> <code>diffusion</code></p>
 <p class="meta">Vibe coding is building a software application by prompting an LLM, telling it what to build, trying it out, prompting for changes - but without looking at any of the code that the LLM generates. This technique can be us...</p>
-<p class="item"><a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noreferrer">anthropics/claude-plugins-official</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：10 | <code>anthropic</code> <code>claude</code> <code>mcp</code> <code>security</code></p>
-<p class="meta">Official, Anthropic-managed directory of high quality Claude Code Plugins. Claude Code Plugins Directory A curated directory of high-quality plugins for Claude Code. ⚠️ Important: Make sure you trust a plugin before inst...</p>
-<p class="item"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tl1wpd/g4meromero26ba4bituncensoredheretic_is_out_now_a/" target="_blank" rel="noreferrer">G4-MeroMero-26B-A4B-it-uncensored-heretic Is Out Now, a Finetune of gemma-4-26B-A4B-it, With KLD of 0.0152 and 12/100 Refusals!</a></p>
-<p class="meta">来源：Reddit r/LocalLLaMA | 分数：9.64 | <code>model</code> <code>huggingface</code> <code>finetune</code> <code>benchmark</code></p>
-<p class="meta">When I previously posted the uncensored version of the 31B version of the MeroMero finetune, quite a few people asked for the 26B-A4B version, I wasn't so keen on it because I considered the 31B to be the better version,...</p>
-<p class="item"><a href="https://jack-clark.net/2026/05/11/import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-a-neural-computer/" target="_blank" rel="noreferrer">Import AI 456: RSI and economic growth; radical optionality for AI regulation; and a neural computer</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：8 | <code>arxiv</code> <code>regulation</code> <code>research</code></p>
-<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Regulate? Don’t regulate. There’s a th...</p>
-<h2>Web3 / Crypto</h2>
-<p class="item"><a href="https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything" target="_blank" rel="noreferrer">FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service</a></p>
-<p class="meta">来源：Simon Willison | 分数：3 | <code>release</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived&quot;&gt;FTC to Require Cox Media Group, Two Other Fir...</p>
-<p class="item">[[AINews] All Model Labs are now Agent Labs](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)</p>
-<p class="meta">来源：Latent Space | 分数：2.77 | <code>model</code></p>
-<p class="meta">a quiet day lets us tie together a few quotes as all model labs become agent labs</p>
-<p class="item"><a href="https://medium.com/alliancedao/the-bitcoin-l2-opportunity-9d90517da6f8?source=rss----8cbc249b47fe---4" target="_blank" rel="noreferrer">The Bitcoin L2 Opportunity</a></p>
-<p class="meta">来源：Alliance DAO - Medium | 分数：2 | <code>bitcoin</code></p>
-<p class="item"><a href="https://arcana-network.medium.com/arcana-partners-with-bob-network-to-make-bitcoin-l2s-more-accessible-f9dbe574b991?source=rss-aa460d59ab5d------2" target="_blank" rel="noreferrer">Arcana Partners with BOB Network to Make Bitcoin L2s More Accessible</a></p>
-<p class="meta">来源：Arcana Network on Medium | 分数：2 | <code>bitcoin</code></p>
-<p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
-<p class="meta">来源：Julia Evans (概念图解) | 分数：2 | <code>base</code></p>
-<p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
-<h2>AI / 开源 / 技术</h2>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms" target="_blank" rel="noreferrer">My Workflow for Understanding LLM Architectures</a></p>
-<p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：7 | <code>llm</code> <code>model</code> <code>release</code></p>
+<p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：9 | <code>llm</code> <code>model</code> <code>architecture</code> <code>release</code></p>
 <p class="meta">A learning-oriented workflow for understanding new open-weight model releases</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/build-with-claude-code-new-cohort" target="_blank" rel="noreferrer">Build with Claude Code: New Cohort Launch</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：5.23 | <code>claude</code> <code>launch</code></p>
-<p class="meta">The first cohort starts in about a week: May 28-29, 2026.</p>
+<p class="item"><a href="https://lexfridman.com/ffmpeg/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ffmpeg" target="_blank" rel="noreferrer">#496 – FFmpeg: The Incredible Technology Behind Video on the Internet</a></p>
+<p class="meta">来源：Lex Fridman Podcast | 分数：9 | <code>ai agent</code> <code>github</code> <code>business</code> <code>open source</code></p>
+<p class="meta">Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, codec engineer, and the person behind the now-infamous FFmpeg account on X. https://lexfridman.com/s...</p>
+<h2>AI 前沿与思维</h2>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/ac11f217?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Hermes vs. OpenClaw， 网络安全警报频响， 更具互动性的对话， 智能体能胜任人类工作吗？</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：5.04 | <code>llm</code> <code>research</code></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：5 | <code>llm</code> <code>research</code></p>
 <p class="meta">📌 One-Sentence Summary 本期《The Batch》涵盖了开源智能体 Hermes Agent 作为 OpenClaw 的竞争对手崛起、Thinking Machines Lab 推出的新型实时对话式 AI 模型、不断升级的 AI 驱动的网络安全威胁，以及一项将智能体基准测试映射到现实世界人类劳动的研究。 📝 Summary 本期《The Batch》通讯以吴恩达的评论文章开篇，他针对哈佛大学限制 A 等级成绩的...</p>
+<p class="item"><a href="https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/" target="_blank" rel="noreferrer">Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment</a></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：5 | <code>arxiv</code> <code>research</code></p>
+<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Stuxnet before Stuxnet:…Fast16 bugs so...</p>
+<p class="item"><a href="https://jack-clark.net/2026/05/11/import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-a-neural-computer/" target="_blank" rel="noreferrer">Import AI 456: RSI and economic growth; radical optionality for AI regulation; and a neural computer</a></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：5 | <code>arxiv</code> <code>research</code></p>
+<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Regulate? Don’t regulate. There’s a th...</p>
 <p class="item"><a href="https://huggingface.co/blog/nvidia/nemotron-labs-diffusion" target="_blank" rel="noreferrer">Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：4.59 | <code>model</code> <code>diffusion</code></p>
+<p class="meta">来源：Hugging Face Blog | 分数：4.43 | <code>model</code> <code>diffusion</code></p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/ae6e5db1?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">专业化胜过规模：大多数 AI 采购决策忽视的战略变量</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4.23 | <code>claude</code> <code>hugging face</code></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4.07 | <code>claude</code> <code>hugging face</code></p>
 <p class="meta">📌 One-Sentence Summary 一个 30 亿参数的专业化模型在结构化 OCR 基准测试中以大约五十分之一的成本超越了所有商业前沿 API，证明了与部署任务的分布对齐比参数数量更具决定性。 📝 Summary 这篇发表在 Hugging Face 博客上的文章由 Dharma AI 团队撰写，为企业 AI 采购提供了战略性的重新思考。文章指出，主流假设——即更大的前沿模型总是最佳选择——并不完整。作者通过 Dharma...</p>
-<p class="item"><a href="https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures" target="_blank" rel="noreferrer">Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention</a></p>
-<p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：4 | <code>deepseek</code> <code>llm</code></p>
-<p class="meta">From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs</p>
 <p class="item"><a href="https://tldr.tech/ai/2026-05-22" target="_blank" rel="noreferrer">Anthropic Microsoft deal 🤝, Cursor $3B ARR 📈, cloud agent lessons 🤖</a></p>
 <p class="meta">来源：TLDR AI | 分数：4 | <code>anthropic</code> <code>cursor</code></p>
 <p class="item"><a href="https://tldr.tech/ai/2026-05-21" target="_blank" rel="noreferrer">Anthropic SpaceX $45B deal 💰, Google Agent Executor ⚙️, OpenAI races to IPO 🏦</a></p>
 <p class="meta">来源：TLDR AI | 分数：4 | <code>openai</code> <code>anthropic</code></p>
+<p class="item"><a href="https://openai.com/index/gartner-2026-agentic-coding-leader" target="_blank" rel="noreferrer">OpenAI named a Leader in enterprise coding agents by Gartner</a></p>
+<p class="meta">来源：OpenAI Blog | 分数：4 | <code>openai</code> <code>innovation</code></p>
+<p class="meta">OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.</p>
+<p class="item"><a href="https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything" target="_blank" rel="noreferrer">FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service</a></p>
+<p class="meta">来源：Simon Willison | 分数：3 | <code>release</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived&quot;&gt;FTC to Require Cox Media Group, Two Other Fir...</p>
+<p class="item">[[AINews] All Model Labs are now Agent Labs](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)</p>
+<p class="meta">来源：Latent Space | 分数：2.61 | <code>model</code></p>
+<p class="meta">a quiet day lets us tie together a few quotes as all model labs become agent labs</p>
+<p class="item"><a href="https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything" target="_blank" rel="noreferrer">The memory shortage is causing a repricing of consumer electronics</a></p>
+<p class="meta">来源：Simon Willison | 分数：2.35 | <code>product</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone&quot;&gt;The memory shortage is causing a repricing of consumer electronics&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; David Oks provides the clearest explanation I've seen ye...</p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/02d9e6e9?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">为智能体配备计算机 — Ivan Burazin，Daytona</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>mcp</code></p>
 <p class="meta">📌 One-Sentence Summary Daytona CEO Ivan Burazin 探讨了公司从人类开发环境转向为 AI 智能体提供可组合、有状态计算机的历程，详细介绍了技术架构、市场需求以及智能体需要的不仅仅是可丢弃的代码执行沙箱这一核心论点。 📝 Summary 在本期播客中，Daytona CEO Ivan Burazin 解释了公司从 CodeAnywhere（一款基于浏览器的 IDE）到 Daytona 的演变...</p>
-<p class="item"><a href="https://huggingface.co/blog/allenai/olmoearth-v1-1" target="_blank" rel="noreferrer">OlmoEarth v1.1: A more efficient family of Earth observation models</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：2 | <code>model</code></p>
-<p class="item"><a href="https://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/" target="_blank" rel="noreferrer">Roundtables: Can AI Learn to Understand the World?</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：2 | <code>model</code></p>
-<p class="meta">Listen to the session or watch below AI companies want to build systems that understand the external world and overcome the limitations of LLMs. Recent developments have brought world models to the forefront of the AI di...</p>
-<h2>市场与政策信号</h2>
-<p class="item"><a href="https://medium.com/aave/aave-amm-market-released-73ae76a7cbc0?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave AMM Market Released</a></p>
-<p class="meta">来源：Aave Blog - Medium | 分数：3 | <code>release</code></p>
-<p class="item">[[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer](https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa)</p>
-<p class="meta">来源：Latent Space | 分数：3 | <code>raises</code></p>
-<p class="meta">a quiet day lets us feature fundraises!</p>
+<h2>工程与思维武器</h2>
+<p class="item"><a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noreferrer">anthropics/claude-plugins-official</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：7 | <code>anthropic</code> <code>claude</code> <code>mcp</code></p>
+<p class="meta">Official, Anthropic-managed directory of high quality Claude Code Plugins. Claude Code Plugins Directory A curated directory of high-quality plugins for Claude Code. ⚠️ Important: Make sure you trust a plugin before inst...</p>
+<p class="item"><a href="https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures" target="_blank" rel="noreferrer">Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention</a></p>
+<p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：6 | <code>deepseek</code> <code>llm</code> <code>architecture</code></p>
+<p class="meta">From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs</p>
+<p class="item"><a href="https://blog.bytebytego.com/p/build-with-claude-code-new-cohort" target="_blank" rel="noreferrer">Build with Claude Code: New Cohort Launch</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：5.07 | <code>claude</code> <code>launch</code></p>
+<p class="meta">The first cohort starts in about a week: May 28-29, 2026.</p>
+<p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
+<p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>refactor</code> <code>product</code></p>
+<p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
+<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide" target="_blank" rel="noreferrer">The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE</a></p>
+<p class="meta">来源：The Pragmatic Engineer | 分数：2 | <code>product</code></p>
+<p class="meta">Negative feedback greets Google’s redesigned AI IDE, why Google’s product ecosystem is so chaotic, Meta cuts 10% of staff as it hits record revenue and profits, and more</p>
+<h2>商业与产品</h2>
+<p class="item"><a href="https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud/" target="_blank" rel="noreferrer">Notes on a non-profit indicted for bank fraud</a></p>
+<p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
+<p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
+<h2>法语经济学</h2>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/05/23/l-industrie-automobile-europeenne-abdique-face-a-la-chine_6692733_3234.html" target="_blank" rel="noreferrer">L’industrie automobile européenne abdique face à la Chine</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：4.8 | <code>marché</code> <code>européen</code></p>
+<p class="meta">En quelques années, les nouvelles marques chinoises ont imposé le récit de leur domination technologique. Les constructeurs européens leur ouvrent des filiales, des usines et les portes de nombreux marchés.</p>
+<p class="item"><a href="https://www.lemonde.fr/idees/article/2026/05/23/programmes-d-education-financiere-on-eduque-moins-a-comprendre-le-systeme-financier-qu-a-s-y-conformer_6692721_3232.html" target="_blank" rel="noreferrer">Programmes d’éducation financière : « On éduque moins à comprendre le système financier qu’à s’y conformer »</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：4.75 | <code>français</code> <code>européen</code></p>
+<p class="meta">Derrière la volonté louable d’améliorer les connaissances des jeunes et des femmes en finances, Jézabel Couppey-Soubeyran dénonce, dans sa chronique au « Monde », l’absence de tout sens critique dans les programmes d’édu...</p>
 <h2>继续跟踪</h2>
-<p class="item"><a href="https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/" target="_blank" rel="noreferrer">Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：5 | <code>arxiv</code> <code>research</code></p>
-<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Stuxnet before Stuxnet:…Fast16 bugs so...</p>
-<p class="item"><a href="https://medium.com/aave/aave-protocol-migration-tool-released-22cdde51c852?source=rss----b4ab878e405---4" target="_blank" rel="noreferrer">Aave Protocol migration tool released</a></p>
-<p class="meta">来源：Aave Blog - Medium | 分数：3 | <code>release</code></p>
-<p class="item"><a href="https://medium.com/algorand/try-before-you-buy-on-algorand-5acd1b9617d1?source=rss----1841d6b46db8---4" target="_blank" rel="noreferrer">Simulate Smart Contract Evaluation on Algorand</a></p>
-<p class="meta">来源：Algorand - Medium | 分数：3 | <code>evaluation</code></p>
-<p class="item"><a href="https://medium.com/alkemi/alkemi-network-x-atato-custody-partnership-4b1649f75f60?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Atato | Custody Partnership</a></p>
-<p class="meta">来源：Alkemi Network - Medium | 分数：3 | <code>partnership</code></p>
-<p class="item"><a href="https://medium.com/alkemi/alkemi-network-x-banxa-integration-partnership-901a9d536b32?source=rss----d948e2a23d9c---4" target="_blank" rel="noreferrer">Alkemi Network x Banxa | Integration Partnership</a></p>
-<p class="meta">来源：Alkemi Network - Medium | 分数：3 | <code>partnership</code></p>
-<p class="item"><a href="https://medium.com/anchorage/anchorage-announces-custody-for-axelars-newly-launched-axl-token-88ca955ce1c4?source=rss----ce238f71fc69---4" target="_blank" rel="noreferrer">Anchorage Digital Announces Custody for Axelar’s Newly-Launched AXL Token</a></p>
-<p class="meta">来源：Anchorage Digital - Medium | 分数：3 | <code>launch</code></p>
-<p class="item"><a href="https://medium.com/aptoslabs/shelby-early-access-is-open-on-aptos-testnet-452e8de5613b?source=rss-70211828fe2e------2" target="_blank" rel="noreferrer">Shelby Early Access Is Open on Aptos Testnet</a></p>
-<p class="meta">来源：Aptos | 分数：3 | <code>testnet</code></p>
-<p class="item"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/" target="_blank" rel="noreferrer">NVIDIA Removes Gaming Revenue Category From Financial Reports</a></p>
-<p class="meta">来源：Reddit r/LocalLLaMA | 分数：2.47 | <code>nvidia</code></p>
-<p class="meta">submitted by /u/HumanDrone8721 [link] [comments]</p>
+<p>暂无命中。</p>
   </main>
 </body>
 </html>
