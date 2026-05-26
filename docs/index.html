@@ -173,31 +173,31 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年5月26日星期二 06:01</p>
-<p>采集命中：28 条</p>
+<p>生成时间：2026年5月27日星期三 06:15</p>
+<p>采集命中：25 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>Karpathy 发布 microgpt，200 行复现 GPT 核心。</li>
-<li>Glasswing 用 Claude 发现万级高危漏洞。</li>
-<li>Vibe coding 边界被重新划清。</li>
+<li>Karpathy 发布 microgpt，200 行 Python 展示 GPT 核心。</li>
+<li>Anthropic 与 Copilot 案例凸显智能体数据外泄风险。</li>
+<li>代码知识图谱工具走热，AI 编程进入可解释化阶段。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>它把 LLM 还原为数据、分词、反传、注意力、优化和采样，利于理解本质。</li>
-<li>AI 安全瓶颈从“发现”转向“验证、披露、修补”，防御流程需重构。</li>
-<li>不看代码的生成适合原型，但在安全、正确性、可维护性上风险高。</li>
+<li>它把 tokenizer、autograd、Transformer、Adam、推理压缩到最小闭环，利于理解 LLM 本质。</li>
+<li>智能体一旦同时具备读数据、连外网、执行动作，提示注入可转化为真实泄露。</li>
+<li>大代码库不只需要生成代码，更需要结构理解、影响分析和团队共享上下文。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>AI 漏洞修补吞吐与披露机制。</li>
-<li>高速 coding 的测试与审查纪律。</li>
+<li>智能体沙箱、出口控制的默认化进展。</li>
+<li>长上下文成本与 KV 压缩方案落地。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度。场景：神经网络训练</li>
-<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态。场景：长文本推理加速</li>
-<li><strong>Deterministic Parsing</strong> (确定性解析) — 同输入稳定产出结构。场景：代码知识图谱生成</li>
+<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度。场景：训练神经网络</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态。场景：LLM 加速推理</li>
+<li><strong>Sandboxing</strong> (沙箱隔离) — 限制程序可访问资源。场景：约束 AI Agent</li>
 </ul>
 <h2>今日最重要</h2>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
@@ -216,53 +216,42 @@
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：9 | <code>llm</code> <code>model</code> <code>architecture</code> <code>release</code></p>
 <p class="meta">A learning-oriented workflow for understanding new open-weight model releases</p>
 <h2>AI 前沿与思维</h2>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/3eeb7cb3?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Project Glasswing：初步更新</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：7 | <code>anthropic</code> <code>claude</code> <code>research</code></p>
-<p class="meta">📌 One-Sentence Summary Project Glasswing 是一项利用 Claude Mythos Preview 保护关键软件安全的合作项目，在一个月内发现了超过一万个高严重性或严重性漏洞，将瓶颈从发现转移到了修补。 📝 Summary 本文提供了 Project Glasswing 的初步更新，这是 Anthropic 主导的一项计划，旨在主动保护全球最关键软件的安全，防止高级 AI 模型被武器化。在第一个...</p>
-<p class="item"><a href="https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything" target="_blank" rel="noreferrer">datasette-agent 0.1a4</a></p>
-<p class="meta">来源：Simon Willison | 分数：5.05 | <code>github</code> <code>release</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/datasette/datasette-agent/releases/tag/0.1a4&quot;&gt;datasette-agent 0.1a4&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Taking advantage of the new &lt;a href=&quot;https://docs.datasette.io/en/latest/javascript_...</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/status/2058953208782074127?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">RAG、文档上下文与 AI Agent 全景回顾（2023-2026）</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：6 | <code>llama</code> <code>ai agent</code> <code>rag</code></p>
+<p class="meta">📌 One-Sentence Summary Jerry Liu 分享了一份来自研讨会的 116 页幻灯片，全面追溯了 RAG、Agent 工作流和文档理解从 2023 年到 2026 年的演变历程。 📝 Summary 本条推文宣布发布一份 116 页的幻灯片，内容源自 Pierre-Loic Doulcet 在 AI Engineer Singapore 大会上所做的 90 分钟研讨会。该幻灯片对过去三年间关键 AI 模式的发展...</p>
 <p class="item"><a href="https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/" target="_blank" rel="noreferrer">Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：5 | <code>arxiv</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Stuxnet before Stuxnet:…Fast16 bugs so...</p>
-<p class="item"><a href="https://jack-clark.net/2026/05/11/import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-a-neural-computer/" target="_blank" rel="noreferrer">Import AI 456: RSI and economic growth; radical optionality for AI regulation; and a neural computer</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：5 | <code>arxiv</code> <code>research</code></p>
-<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Regulate? Don’t regulate. There’s a th...</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/78fc7f8e?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">混合 AI：将确定性分析与 LLM 推理相结合</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>gemini</code> <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary 本文提出了一种混合 AI 架构，将确定性数据分析与基于 LLM 的推理分离，以确保企业应用获得可靠、可复现的分析结果。 📝 Summary 本文探讨了基于 LLM 的企业 AI 系统中的一个关键失败模式：概率模型会产生看似合理但不可靠的数值和分析结果。作者在构建用于制造工厂成熟度评估的智能体 AI 时发现，ChatGPT 和 Gemini 等 LLM 经常跳过数据行、应用错误的过滤器或捏...</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/article/ccb45878?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">我们如何在多个产品中约束 Claude</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4.84 | <code>anthropic</code> <code>claude</code></p>
+<p class="meta">📌 One-Sentence Summary Anthropic 分享了其在多个产品中约束 AI 智能体的工程方法，详细介绍了三种隔离模式以及在此过程中遇到的意外失败。 📝 Summary 这篇来自 Anthropic Engineering 的文章详细介绍了该公司在其三个主要产品（claude.ai、Claude Code 和 Claude Cowork）中约束 AI 智能体的演进策略。文章概述了三类风险（用户滥用、模型行为不当、...</p>
+<p class="item"><a href="https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything" target="_blank" rel="noreferrer">Microsoft Copilot Cowork Exfiltrates Files</a></p>
+<p class="meta">来源：Simon Willison | 分数：4.72 | <code>agentic</code> <code>product</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files&quot;&gt;Microsoft Copilot Cowork Exfiltrates Files&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; The biggest challenge in designing agentic systems continu...</p>
+<p class="item"><a href="https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/" target="_blank" rel="noreferrer">Rethinking organizational design in the age of agentic AI</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：4.69 | <code>ai agent</code> <code>agentic</code></p>
+<p class="meta">Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution. Although 85% of organizations say they want to be agentic within the next three years, 76% say th...</p>
 <p class="item"><a href="https://huggingface.co/blog/nvidia/nemotron-labs-diffusion" target="_blank" rel="noreferrer">Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models</a></p>
 <p class="meta">来源：Hugging Face Blog | 分数：4 | <code>model</code> <code>diffusion</code></p>
-<p class="item"><a href="https://tldr.tech/ai/2026-05-22" target="_blank" rel="noreferrer">Anthropic Microsoft deal 🤝, Cursor $3B ARR 📈, cloud agent lessons 🤖</a></p>
-<p class="meta">来源：TLDR AI | 分数：4 | <code>anthropic</code> <code>cursor</code></p>
 <p class="item"><a href="https://huggingface.co/blog/agent-glossary" target="_blank" rel="noreferrer">Harness, Scaffold, and the AI Agent Terms Worth Getting Right</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：2.08 | <code>ai agent</code></p>
-<p class="item"><a href="https://tldr.tech/ai/2026-05-25" target="_blank" rel="noreferrer">Mythos 1 🤖, neocloud boom 📈, MCP goes stateless 💻</a></p>
-<p class="meta">来源：TLDR AI | 分数：2.08 | <code>mcp</code></p>
-<p class="item"><a href="https://openai.com/index/grupo-folha-grupo-uol-partnership" target="_blank" rel="noreferrer">OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：2.08 | <code>openai</code></p>
-<p class="meta">OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.</p>
+<p class="meta">来源：Hugging Face Blog | 分数：2 | <code>ai agent</code></p>
 <p class="item"><a href="https://huggingface.co/blog/allenai/olmoearth-v1-1" target="_blank" rel="noreferrer">OlmoEarth v1.1: A more efficient family of Earth observation models</a></p>
 <p class="meta">来源：Hugging Face Blog | 分数：2 | <code>model</code></p>
+<p class="item"><a href="https://tldr.tech/ai/2026-05-25" target="_blank" rel="noreferrer">Mythos 1 🤖, neocloud boom 📈, MCP goes stateless 💻</a></p>
+<p class="meta">来源：TLDR AI | 分数：2 | <code>mcp</code></p>
 <p class="item">[[AINews] All Model Labs are now Agent Labs](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)</p>
 <p class="meta">来源：Latent Space | 分数：2 | <code>model</code></p>
 <p class="meta">a quiet day lets us tie together a few quotes as all model labs become agent labs</p>
+<p class="item"><a href="https://openai.com/index/grupo-folha-grupo-uol-partnership" target="_blank" rel="noreferrer">OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership</a></p>
+<p class="meta">来源：OpenAI Blog | 分数：2 | <code>openai</code></p>
+<p class="meta">OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.</p>
 <h2>工程与思维武器</h2>
-<p class="item"><a href="https://www.bestblogs.dev/en/video/fe5bc07?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">快模型需要慢开发者：超高速 AI coding 时代的工程纪律</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：6 | <code>openai</code> <code>inference</code> <code>cache</code></p>
-<p class="meta">📌 One-Sentence Summary Sarah Chieng 认为，超高速代码模型要求开发者更慢、更有纪律地工作，实时监督、持续验证，并用持久上下文文件约束生成过程。 📝 Summary 这场 Cerebras 开发者体验分享是一份适应超高速代码生成的实用 playbook。Sarah Chieng 用 Codex Spark 每秒 1200 token 的速度说明，旧习惯在高速下会变危险：巨大 prompt、无人监管的智...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures" target="_blank" rel="noreferrer">Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：6 | <code>deepseek</code> <code>llm</code> <code>architecture</code></p>
 <p class="meta">From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs</p>
-<p class="item"><a href="https://simonwillison.net/2026/May/24/datasette/#atom-everything" target="_blank" rel="noreferrer">datasette 1.0a30</a></p>
-<p class="meta">来源：Simon Willison | 分数：5.08 | <code>github</code> <code>release</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/simonw/datasette/releases/tag/1.0a30&quot;&gt;datasette 1.0a30&lt;/a&gt;&lt;/p&gt; &lt;p&gt;The big new feature in this alpha is a new customizable &quot;Jump to...&quot; menu, described in detail in...</p>
 <p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>refactor</code> <code>product</code></p>
 <p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/ep216-rags-vs-agents" target="_blank" rel="noreferrer">EP216: RAGs vs Agents</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：4 | <code>llm</code> <code>rag</code></p>
-<p class="meta">Ask an LLM about your company's data and it will guess. The two patterns that fix this are RAG and agents, and they solve different problems.</p>
 <p class="item"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide" target="_blank" rel="noreferrer">The Pulse: Antigravity 2.0 takes ‘IDE’ out of its new IDE</a></p>
 <p class="meta">来源：The Pragmatic Engineer | 分数：2 | <code>product</code></p>
 <p class="meta">Negative feedback greets Google’s redesigned AI IDE, why Google’s product ecosystem is so chaotic, Meta cuts 10% of staff as it hits record revenue and profits, and more</p>
@@ -270,16 +259,22 @@
 <p class="item"><a href="https://lexfridman.com/ffmpeg/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ffmpeg" target="_blank" rel="noreferrer">#496 – FFmpeg: The Incredible Technology Behind Video on the Internet</a></p>
 <p class="meta">来源：Lex Fridman Podcast | 分数：9 | <code>ai agent</code> <code>github</code> <code>business</code> <code>open source</code></p>
 <p class="meta">Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, codec engineer, and the person behind the now-infamous FFmpeg account on X. https://lexfridman.com/s...</p>
+<p class="item"><a href="https://jack-clark.net/2026/05/26/import-ai-458-reckoning-with-the-future-and-a-singularity-story/" target="_blank" rel="noreferrer">Import AI 458: Reckoning with the future; and a singularity story</a></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：7.6 | <code>arxiv</code> <code>essay</code> <code>research</code></p>
+<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. This issue consists of a lengthy essay based on a sp...</p>
+<p class="item"><a href="https://simonwillison.net/2026/May/26/paul-graham/#atom-everything" target="_blank" rel="noreferrer">Quoting Paul Graham</a></p>
+<p class="meta">来源：Simon Willison | 分数：2.7 | <code>founder</code></p>
+<p class="meta">&lt;blockquote cite=&quot;https://twitter.com/paulg/status/2058844147092488401&quot;&gt;&lt;p&gt;A lot of the emails I get from founders are now written in a hard-hitting journalistic style. I know they're written by AI, because no founder ev...</p>
 <p class="item"><a href="https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud/" target="_blank" rel="noreferrer">Notes on a non-profit indicted for bank fraud</a></p>
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.lemonde.fr/economie/video/2026/05/25/en-images-il-y-a-un-risque-reel-que-l-ia-remplace-la-main-d-uvre-humaine-le-patron-d-anthropic-alerte-sur-les-dangers-de-sa-technologie_6693670_3234.html" target="_blank" rel="noreferrer">VIDEO « Un risque réel que l’IA remplace la main-d’œuvre humaine » : le patron d’Anthropic alerte sur les dangers de sa technologie</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：8.72 | <code>anthropic</code> <code>claude</code> <code>intelligence artificielle</code> <code>technologie</code></p>
-<p class="meta">Chris Olah, le cofondateur d’Anthropic, à l’origine du logiciel Claude, a alerté sur les risques liés à l’intelligence artificielle. Il était l’invité du pape Léon XIV ce 25 mai 2026, au Vatican.</p>
-<p class="item"><a href="https://www.lemonde.fr/idees/article/2026/05/25/l-europe-ne-peut-plus-etre-l-amortisseur-des-desequilibres-mondiaux_6693662_3232.html" target="_blank" rel="noreferrer">« L’Europe ne peut plus être l’amortisseur des déséquilibres mondiaux »</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：6.67 | <code>marché</code> <code>européen</code> <code>europe</code></p>
-<p class="meta">Face à la montée du protectionnisme, le professeur de droit Julien Chaisse explique, dans une tribune au « Monde », que l’Union européenne ne peut plus laisser son marché absorber sans conditions les chocs venus des autr...</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/05/26/le-groupe-bayard-s-apprete-a-fermer-je-bouquine_6693962_3234.html" target="_blank" rel="noreferrer">Le groupe Bayard s’apprête à fermer « Je Bouquine »</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.89 | <code>france</code></p>
+<p class="meta">Apparu en 1984, le titre de presse pour jeunes adolescents devrait faire les frais d’un plan de compétitivité annoncé en avril. Quatre postes pourraient être supprimés dans le cadre plus vaste d’un plan de sauvegarde de ...</p>
+<p class="item"><a href="https://www.lemonde.fr/politique/article/2026/05/26/l-influente-xenia-fedorova-ancienne-directrice-de-rt-france-et-desormais-protegee-de-vincent-bollore_6693959_823448.html" target="_blank" rel="noreferrer">L’influente Xenia Fedorova, ancienne directrice de RT France et désormais protégée de Vincent Bolloré</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.87 | <code>france</code></p>
+<p class="meta">Alors que l’Arcom vient d’être saisie de récentes provocations de l’ex-dirigeante de Russia Today France à l’antenne de CNews, l’offensive prorusse de la chaîne d’information embarrasse le sommet de l’Etat.</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
