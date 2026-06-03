@@ -173,33 +173,36 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年6月3日星期三 06:54</p>
-<p>采集命中：32 条</p>
+<p>生成时间：2026年6月4日星期四 07:56</p>
+<p>采集命中：31 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>Karpathy发布200行microgpt，压缩GPT核心机制。</li>
-<li>AI编程瓶颈转向验证、审查与人类注意力。</li>
-<li>微软发布小型MAI模型，强调授权数据与低成本。</li>
+<li>Headroom压缩LLM上下文，降60–95% token。</li>
+<li>微软发布MAI模型，强化自有AI栈。</li>
+<li>AI编程进入成本与注意力瓶颈期。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>它把Tokenizer、自微分、Transformer、Adam和推理放进单文件，利于理解LLM本质。</li>
-<li>多智能体提升产出，但架构判断、合并冲突和质量把关仍是串行资源。</li>
-<li>若35B推理模型接近闭源前沿，模型成本和数据合规竞争会更关键。</li>
+<li>上下文成本正成为智能体规模化约束。可逆压缩、缓存对齐、MCP接入提升工程可用性。</li>
+<li>MAI覆盖推理与代码场景，显示大厂减少单一模型依赖。但训练数据授权争议仍未消失。</li>
+<li>Uber设用量上限，Fowler强调人类审查是串行资源。产出变快后，协调、验证、质量更稀缺。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>开源模型追赶周期、授权训练数据披露。</li>
-<li>AI代码缺陷率、PR周期与人工审查负载。</li>
+<li>token成本、缓存命中率变化。</li>
+<li>开源模型追赶周期与企业采用率。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Backpropagation</strong> (反向传播) — 沿计算图反算参数影响；训练神经网络。</li>
-<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力结果降成本；长文本推理。</li>
-<li><strong>Global Interpreter Lock</strong> (全局解释器锁) — 并发中唯一串行瓶颈；管理AI代理。</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力，降低推理开销。场景：长对话服务</li>
+<li><strong>Reversible Compression</strong> (可逆压缩) — 压缩后仍可按需取回原文。场景：RAG上下文瘦身</li>
+<li><strong>Global Interpreter Lock</strong> (全局解释器锁) — 并发任务共享单一执行入口。场景：多智能体人工审查</li>
 </ul>
 <h2>今日最重要</h2>
+<p class="item"><a href="https://github.com/chopratejas/headroom" target="_blank" rel="noreferrer">chopratejas/headroom</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：39 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>gemini</code> <code>ai agent</code></p>
+<p class="meta">Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server. ██╗ ██╗███████╗ █████╗ ██████╗ ██████╗ ██████╗ ██████╗ ███╗ ███╗ ██║ ██║██╔════...</p>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：33 | <code>gemini</code> <code>karpathy</code> <code>llm</code> <code>github</code> <code>model</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } This is a brief guide to my new art project microgpt, a single file of 2...</p>
@@ -207,52 +210,42 @@
 <p class="meta">来源：Andrej Karpathy | 分数：32 | <code>openai</code> <code>karpathy</code> <code>github</code> <code>model</code> <code>paper</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritte...</p>
 <p class="item"><a href="https://martinfowler.com/fragments/2026-06-02.html" target="_blank" rel="noreferrer">Fragments: June  2</a></p>
-<p class="meta">来源：Martin Fowler (架构思维) | 分数：30.43 | <code>ai agent</code> <code>llm</code> <code>model</code> <code>architecture</code> <code>product</code></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：30 | <code>ai agent</code> <code>llm</code> <code>model</code> <code>architecture</code> <code>product</code></p>
 <p class="meta">Greg Wilson has noticed that lots of folks are using dodgy metrics to figure out if AI tools are worth their costs. Would you measure lines of code generated, or tickets closed? Or would you send out a survey asking whet...</p>
 <p class="item"><a href="https://martinfowler.com/fragments/2026-05-27.html" target="_blank" rel="noreferrer">Fragments: May 27</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：24 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>ai agent</code> <code>llm</code></p>
 <p class="meta">At the GOTO Conference in Copenhagen in 2025, Kent Beck and I spent some time on stage talking and answering questions from the audience - a format I refer to as “two old geezers on a park bench”. We talk about our exper...</p>
-<p class="item"><a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything" target="_blank" rel="noreferrer">Microsoft's new MAI models</a></p>
-<p class="meta">来源：Simon Willison | 分数：17.98 | <code>llm</code> <code>github</code> <code>model</code> <code>reasoning</code> <code>release</code></p>
-<p class="meta">&lt;p&gt;Microsoft &lt;a href=&quot;https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/&quot;&gt;announced two new text LLMs&lt;/a&gt; this morning - &lt;strong&gt;&lt;a href=&quot;https://microsoft.ai/news/introducing-mai-t...</p>
 <h2>AI 前沿与思维</h2>
+<p class="item"><a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything" target="_blank" rel="noreferrer">Microsoft's new MAI models</a></p>
+<p class="meta">来源：Simon Willison | 分数：19 | <code>llm</code> <code>github</code> <code>model</code> <code>paper</code> <code>reasoning</code></p>
+<p class="meta">&lt;p&gt;Microsoft &lt;a href=&quot;https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/&quot;&gt;announced two new text LLMs&lt;/a&gt; this morning - &lt;strong&gt;&lt;a href=&quot;https://microsoft.ai/news/introducing-mai-t...</p>
 <p class="item"><a href="https://jack-clark.net/2026/06/01/import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-and-pricing-the-extinction-risk-of-ai-systems/" target="_blank" rel="noreferrer">Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：7 | <code>model</code> <code>arxiv</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now The AI economy in the US is growing at...</p>
-<p class="item"><a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" target="_blank" rel="noreferrer">Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：6 | <code>model</code> <code>reasoning</code> <code>nvidia</code></p>
-<p class="item"><a href="https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything" target="_blank" rel="noreferrer">California Brown Pelican</a></p>
-<p class="meta">来源：Simon Willison | 分数：5.81 | <code>llm</code> <code>release</code></p>
-<p class="meta">&lt;p&gt;&lt;img src=&quot;https://static.inaturalist.org/photos/671786719/large.jpg&quot; alt=&quot;California Brown Pelican&quot;&gt;&lt;/p&gt;&lt;p&gt;California Brown Pelican, in Fort Mason, CA, US&lt;/p&gt;&lt;p&gt;I'm at the &lt;a href=&quot;https://build.microsoft.com/&quot;&gt;Micros...</p>
-<p class="item"><a href="https://www.latent.space/p/github" target="_blank" rel="noreferrer">GitHub's plan for Agents — Kyle Daigle, GitHub</a></p>
-<p class="meta">来源：Latent Space | 分数：4.75 | <code>github</code> <code>agentic</code></p>
-<p class="meta">GitHub pioneered the modern AI coding era with Copilot, and the resulting explosion in agentic coding has led to notable strains on the most popular developer platform in the world. Here's the plan.</p>
+<p class="item"><a href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind" target="_blank" rel="noreferrer">Introducing new capabilities to GPT-Rosalind</a></p>
+<p class="meta">来源：OpenAI Blog | 分数：5.55 | <code>reasoning</code> <code>research</code></p>
+<p class="meta">GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/article/7ffd8109?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">⚡️萨提亚·纳德拉：Microsoft Build 上的 No Priors x Latent Space 特别跨界对话</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4.72 | <code>llm</code> <code>github</code></p>
+<p class="meta">📌 One-Sentence Summary 萨提亚·纳德拉阐述了微软的 AI 生态系统平台愿景：企业通过多模型套件、私有评估和丰富的上下文层构建自己的前沿智能，重新定义知识产权和商业模式。 📝 Summary 在 Microsoft Build 的这期跨界播客中，萨提亚·纳德拉讨论了微软的 AI 战略——将其定位为生态系统玩法，而非单一模型或平台。他提出了“前沿智能平台”的概念，在该平台上，客户通过构建在 OpenClaw 和 S...</p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/f781c46a?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">打造 AI 原生工程组织 | Claude</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4.71 | <code>claude</code> <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary 本文阐述了 Claude Code 团队如何改造其工程流程——规划、上下文收集、代码审查和团队构成——以在 AI 原生环境中高效运作。 📝 Summary 作者是 Claude Code 团队的工程负责人，描述了由智能体编程驱动的工程工作流的根本性转变。核心论点是，围绕人类编码时间稀缺性构建的传统流程现已过时。文章详细阐述了四个关键变化领域：从长期路线图转向即时规划；用“先问 Claud...</p>
-<p class="item"><a href="https://tldr.tech/ai/2026-06-02" target="_blank" rel="noreferrer">Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍</a></p>
-<p class="meta">来源：TLDR AI | 分数：4.05 | <code>openai</code> <code>anthropic</code></p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/d9ee6dfe?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">为每项任务量身打造：Claude Code 中的动态工作流 | Claude</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>claude</code> <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary Claude Code 的动态工作流让 Claude 能够即时编写自定义的智能体编排程序，从而处理单个上下文窗口无法可靠完成的复杂多步骤任务。 📝 Summary 本文介绍了 Claude Code 中的动态工作流这一新功能，它允许 Claude 编写自己的智能体编排程序——一个包含用于生成和协调子智能体的特殊函数的 JavaScript 文件——为当前任务量身定制。作者解释了这一功能如...</p>
-<p class="item"><a href="https://openai.com/index/travelers" target="_blank" rel="noreferrer">Travelers deploys AI-powered claims countrywide with OpenAI</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：2.55 | <code>openai</code></p>
-<p class="meta">Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.</p>
-<p class="item"><a href="https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/" target="_blank" rel="noreferrer">Rehumanizing global health care with agentic AI</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：2.52 | <code>agentic</code></p>
-<p class="meta">The global health care sector is under increasing strain. Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populations. Gaps in provision are ...</p>
-<p class="item">[[AINews] NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark](https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3)</p>
-<p class="meta">来源：Latent Space | 分数：2.19 | <code>nvidia</code></p>
-<p class="meta">Jensen scores a huge win.</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/status/2061477558693384395?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">AI 现场部署工程师的崛起与 AI 工程角色的未来</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary 吴恩达探讨了 AI 现场部署工程师角色的复兴，将其与更广泛的 AI 工程师角色进行对比，并预测了未来 AI 工程领域的专业化分工。 📝 Summary 吴恩达的这条推文深入分析了新兴的 AI 现场部署工程师角色，该角色需要工程师深入客户组织内部，为其定制 AI 解决方案（如智能体工作流）。他追溯了这一角色二十年前在 Palantir 的起源，并解释了其因定制化 LLM 的复杂性而重新受到...</p>
+<p class="meta">📌 One-Sentence Summary 本文阐述了 Claude Code 团队如何改造其工程流程——规划、上下文收集、代码审查和团队构成——以在 AI 原生环境中高效运作。 📝 Summary 作者是 Claude Code 团队的工程负责人，描述了由智能体编程驱动的工程工作流的根本性转变。核心论点是，围绕人类编码时间稀缺性构建的传统流程现已过时。文章详细阐述了四个关键变化领域：从长期路线图转向即时规划；用“先问 Claud...</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-06-03" target="_blank" rel="noreferrer">Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸</a></p>
+<p class="meta">来源：TLDR AI | 分数：4 | <code>anthropic</code> <code>model</code></p>
+<p class="item"><a href="https://tldr.tech/ai/2026-06-02" target="_blank" rel="noreferrer">Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍</a></p>
+<p class="meta">来源：TLDR AI | 分数：4 | <code>openai</code> <code>anthropic</code></p>
+<p class="item"><a href="https://www.bestblogs.dev/en/video/db0be12?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Cisco CX 如何从聊天机器人走向 AI 原生企业智能体队友</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：2.53 | <code>llm</code></p>
+<p class="meta">📌 One-Sentence Summary Cisco CX 首席架构师 Carlos 讲述了 Cisco 如何把续约聊天机器人演进为基于 LangGraph、面向大规模客户体验工作流的 AI 原生智能体队友。 📝 Summary 这场会议演讲是一份扎实的生产级案例，展示 Cisco CX 如何为数十亿美元规模的续约业务，从引导式聊天机器人转向 AI 原生队友。Carlos 先解释 Cisco 客户体验背后的业务生命周期，再指出把...</p>
+<p class="item"><a href="https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini" target="_blank" rel="noreferrer">Adding MCP Tools to Reachy Mini</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：2 | <code>mcp</code></p>
 <p class="item"><a href="https://huggingface.co/blog/JetBrains/mellum2-launch" target="_blank" rel="noreferrer">Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains</a></p>
 <p class="meta">来源：Hugging Face Blog | 分数：2 | <code>model</code></p>
+<p class="item"><a href="https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/" target="_blank" rel="noreferrer">Rehumanizing global health care with agentic AI</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：2 | <code>agentic</code></p>
+<p class="meta">The global health care sector is under increasing strain. Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populations. Gaps in provision are ...</p>
 <h2>工程与思维武器</h2>
-<p class="item"><a href="https://github.com/microsoft/markitdown" target="_blank" rel="noreferrer">microsoft/markitdown</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：16 | <code>openai</code> <code>llm</code> <code>github</code> <code>model</code> <code>multimodal</code></p>
-<p class="meta">Python tool for converting files and office documents to Markdown. MarkItDown Important MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms" target="_blank" rel="noreferrer">My Workflow for Understanding LLM Architectures</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：9 | <code>llm</code> <code>model</code> <code>architecture</code> <code>release</code></p>
 <p class="meta">A learning-oriented workflow for understanding new open-weight model releases</p>
@@ -262,22 +255,28 @@
 <p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>refactor</code> <code>product</code></p>
 <p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
+<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/kubernetes-and-retiring-at-the-top" target="_blank" rel="noreferrer">Kubernetes and retiring at the top with Kelsey Hightower</a></p>
+<p class="meta">来源：The Pragmatic Engineer | 分数：3.75 | <code>open source</code></p>
+<p class="meta">Kelsey Hightower reflects on his journey from self-taught technician to Google Distinguished Engineer, sharing lessons on open source, Kubernetes, AI, and building technology that serves people.</p>
+<p class="item"><a href="https://blog.bytebytego.com/p/how-openai-built-its-data-agent" target="_blank" rel="noreferrer">How OpenAI Built Its Data Agent</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：2.62 | <code>openai</code></p>
+<p class="meta">The hardest part of data analysis isn’t writing SQL. It’s finding the right tables to use in the first place and understanding semantically how to use data.</p>
 <p class="item"><a href="https://newsletter.pragmaticengineer.com/p/ideas-slow-down-to-speed-up-when" target="_blank" rel="noreferrer">Ideas: slow down to speed up when working with AI agents</a></p>
-<p class="meta">来源：The Pragmatic Engineer | 分数：2.74 | <code>ai agent</code></p>
+<p class="meta">来源：The Pragmatic Engineer | 分数：2 | <code>ai agent</code></p>
 <p class="meta">Devs are generating twice as much code (or more) than just 6 months ago, which is a problem for quality, reliability, and tech debt. A rational fix is available for these, but who’s acting rationally?</p>
 <p class="item"><a href="https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an" target="_blank" rel="noreferrer">A Practical Guide to Becoming an AI-Native Engineer</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：2.65 | <code>product</code></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：2 | <code>product</code></p>
 <p class="meta">This piece is a working guide for engineers who want to land on the productive side of that split.</p>
-<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut" target="_blank" rel="noreferrer">The Pulse: a trend of trying to cut back on AI spend within eng departments?</a></p>
-<p class="meta">来源：The Pragmatic Engineer | 分数：2 | <code>cursor</code></p>
-<p class="meta">Top-down and bottom-up efforts to rationalize AI token spend, interesting AI coding stats from Cursor, GCP suspends $2M/month customer without warning, and more</p>
 <h2>商业与产品</h2>
-<p class="item"><a href="https://www.technologyreview.com/2026/06/02/1138227/how-small-businesses-can-leverage-ai/" target="_blank" rel="noreferrer">How small businesses can leverage AI</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：7.42 | <code>product</code> <code>business</code> <code>research</code></p>
-<p class="meta">This article is from Making AI Work, MIT Technology Review’s limited-run newsletter examining how to apply LLMs across industries. To receive it in your inbox,sign up here. From accounting to design to market research an...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything" target="_blank" rel="noreferrer">Uber Caps Usage of AI Tools Like Claude Code to Manage Costs</a></p>
+<p class="meta">来源：Simon Willison | 分数：14.5 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>llm</code> <code>cursor</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs&quot;&gt;Uber Caps Usage of AI Tools Like Claude Code to Manage Costs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; I wrote &lt;a h...</p>
 <p class="item"><a href="https://jack-clark.net/2026/05/26/import-ai-458-reckoning-with-the-future-and-a-singularity-story/" target="_blank" rel="noreferrer">Import AI 458: Reckoning with the future; and a singularity story</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：7 | <code>arxiv</code> <code>essay</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. This issue consists of a lengthy essay based on a sp...</p>
+<p class="item"><a href="https://www.technologyreview.com/2026/06/02/1138227/how-small-businesses-can-leverage-ai/" target="_blank" rel="noreferrer">How small businesses can leverage AI</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：7 | <code>product</code> <code>business</code> <code>research</code></p>
+<p class="meta">This article is from Making AI Work, MIT Technology Review’s limited-run newsletter examining how to apply LLMs across industries. To receive it in your inbox,sign up here. From accounting to design to market research an...</p>
 <p class="item"><a href="https://lexfridman.com/don-lincoln/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=don-lincoln" target="_blank" rel="noreferrer">#497 – Biggest Mysteries in Physics: Antimatter, Dark Energy &amp; ToE – Don Lincoln</a></p>
 <p class="meta">来源：Lex Fridman Podcast | 分数：4 | <code>ai agent</code> <code>business</code></p>
 <p class="meta">Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics. https://lexfridman.com/sponsors/ep497-sc CONTACT LEX: Feedback – give feedback to Lex: https://lexfri...</p>
@@ -285,12 +284,15 @@
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.lemonde.fr/politique/article/2026/06/02/polemique-autour-de-xenia-fedorova-chroniqueuse-pro-kremlin-des-eurodeputes-reclament-des-sanctions-europeennes_6696450_823448.html" target="_blank" rel="noreferrer">Polémique autour de Xenia Fedorova, chroniqueuse pro-Kremlin : des eurodéputés réclament des sanctions européennes</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：4.95 | <code>france</code> <code>européen</code></p>
-<p class="meta">La chroniqueuse des médias Bolloré, ancienne patronne de la chaîne russe RT en France, est accusée de relayer des narratifs pro-Kremlin à l’antenne.</p>
-<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/06/02/crise-energetique-l-italie-obtient-un-amenagement-minimal-du-pacte-de-stabilite-et-de-croissance_6696444_3234.html" target="_blank" rel="noreferrer">Crise énergétique : l’Italie obtient un aménagement minimal du pacte de stabilité et de croissance</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：4.83 | <code>entreprise</code> <code>croissance</code></p>
-<p class="meta">Les Etats membres pourront, sous certaines conditions, utiliser jusqu’à 0,3 % de leur produit intérieur brut par an pour aider les entreprises et les ménages à faire face à la flambée des prix de l’énergie.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/06/03/ia-microsoft-lance-ses-propres-modeles-pour-s-emanciper-davantage-d-openai_6696654_3234.html" target="_blank" rel="noreferrer">Microsoft lance ses propres modèles pour s’émanciper davantage d’OpenAI</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：6.73 | <code>openai</code> <code>intelligence artificielle</code> <code>modèle</code></p>
+<p class="meta">La firme de Redmond a annoncé mardi sept modèles, afin d’être moins dépendance, dans l’intelligence artificielle, de son partenariat avec la maison mère de ChatGPT.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/06/04/spacex-vise-la-plus-grosse-introduction-en-bourse-de-l-histoire-a-75-milliards-de-dollars_6696736_3234.html" target="_blank" rel="noreferrer">SpaceX vise la plus grosse introduction en Bourse de l’histoire, à 75 milliards de dollars</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.99 | <code>marché</code></p>
+<p class="meta">La société aérospatiale d’Elon Musk, qui s’apprête à battre tous les records en Bourse, pourrait voir sa valorisation dépasser celle de Tesla dès ses premiers pas sur les marchés.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie-francaise/article/2026/06/03/les-prix-des-voitures-neuves-ont-baisse-en-france-en-2025-dans-le-sillage-des-tarifs-des-vehicules-electriques_6696661_1656968.html" target="_blank" rel="noreferrer">Les prix des voitures neuves ont baissé en France en 2025, dans le sillage des tarifs des véhicules électriques</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.77 | <code>france</code></p>
+<p class="meta">L’Institut Mobilités en transition montre que le prix moyen des voitures électriques a fléchi de 4 % en 2025 par rapport à 2024, ce qui soutient la demande. En mai, une voiture sur trois achetée par un particulier foncti...</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
