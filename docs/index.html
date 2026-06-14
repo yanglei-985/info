@@ -173,31 +173,31 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年6月14日星期日 05:56</p>
-<p>采集命中：32 条</p>
+<p>生成时间：2026年6月15日星期一 06:02</p>
+<p>采集命中：34 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>美国要求 Anthropic 暂停 Fable/Mythos，AI 出口管制升温。</li>
-<li>Karpathy 发布 microgpt，用 200 行 Python 还原 GPT 核心。</li>
-<li>AI 编程从“生成代码”转向“流程、验证、治理”。</li>
+<li>Karpathy 发布 200 行 microgpt，拆解 GPT 本质。</li>
+<li>AI 编程进入验证驱动阶段，瓶颈转向人类注意力。</li>
+<li>Pyodide 支持 WASM wheel 直发 PyPI，生态门槛下降。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>模型访问开始受地缘与安全政策影响，欧洲担忧美国控制力外溢。</li>
-<li>它把 tokenizer、autograd、attention、训练和推理压缩到最小形态，利于理解 LLM 本质。</li>
-<li>Agent 能提升产出，但瓶颈转向测试、评审、上下文和人的注意力。</li>
+<li>它把 tokenizer、autograd、attention、Adam 串成最小闭环，有助于去神秘化 LLM。</li>
+<li>多代理并行不等于线性提效；测试、静态分析和架构约束决定可放手程度。</li>
+<li>C/Rust 扩展可更容易在浏览器 Python 中分发，利于沙箱化和前端计算。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>Fable/Mythos 恢复、替代模型迁移。</li>
-<li>Agent 并行后的验证成本与安全缺陷率。</li>
+<li>开源模型追平闭源模型的周期是否继续缩短。</li>
+<li>AI 生成报告的虚假引用与数据污染。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Autograd</strong> (自动微分) — 自动计算参数对损失的影响。场景：训练神经网络。</li>
-<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力结果降推理成本。场景：长文本生成。</li>
-<li><strong>Quality Gate</strong> (质量门禁) — 用测试和审查阻止低质变更。场景：AI 代码合并。</li>
+<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度。场景：训练神经网络。</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力中间结果。场景：LLM 推理加速。</li>
+<li><strong>Global Interpreter Lock</strong> (全局解释器锁) — 串行化关键执行资源。场景：多智能体任务调度。</li>
 </ul>
 <h2>今日最重要</h2>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
@@ -209,19 +209,16 @@
 <p class="item"><a href="https://martinfowler.com/fragments/2026-06-02.html" target="_blank" rel="noreferrer">Fragments: June  2</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：30 | <code>ai agent</code> <code>llm</code> <code>model</code> <code>architecture</code> <code>product</code></p>
 <p class="meta">Greg Wilson has noticed that lots of folks are using dodgy metrics to figure out if AI tools are worth their costs. Would you measure lines of code generated, or tickets closed? Or would you send out a survey asking whet...</p>
-<p class="item"><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noreferrer">addyosmani/agent-skills</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：28 | <code>claude</code> <code>gemini</code> <code>ai agent</code> <code>mcp</code> <code>cursor</code></p>
-<p class="meta">Production-grade engineering skills for AI coding agents. Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use wh...</p>
 <p class="item"><a href="https://martinfowler.com/fragments/2026-05-27.html" target="_blank" rel="noreferrer">Fragments: May 27</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：24 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>ai agent</code> <code>llm</code></p>
 <p class="meta">At the GOTO Conference in Copenhagen in 2025, Kent Beck and I spent some time on stage talking and answering questions from the audience - a format I refer to as “two old geezers on a park bench”. We talk about our exper...</p>
-<h2>AI 前沿与思维</h2>
-<p class="item"><a href="https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything" target="_blank" rel="noreferrer">Statement on the US government directive to suspend access to Fable 5 and Mythos 5</a></p>
-<p class="meta">来源：Simon Willison | 分数：12.13 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>llm</code> <code>github</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.anthropic.com/news/fable-mythos-access&quot;&gt;Statement on the US government directive to suspend access to Fable 5 and Mythos 5&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Well this is &lt;em&gt;nuts&lt;/em&gt;:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;...</p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/08a9c3c1?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">神话催生寓言，Cursor 的 Composer 2.5，智能体构建智能体</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：10 | <code>anthropic</code> <code>claude</code> <code>ai agent</code> <code>llm</code> <code>cursor</code></p>
 <p class="meta">📌 One-Sentence Summary 本期《The Batch》涵盖了 Anthropic 的 Claude Mythos 5 和 Fable 5 模型、Cursor 的 Composer 2.5，以及由 Anthropic 的生产力数据引发的关于递归自我改进的讨论。 📝 Summary 本期 DeepLearning.AI 的通讯涵盖了三大 AI 发展动态。首先，Anthropic 发布了 Claude Mythos 5，...</p>
+<h2>AI 前沿与思维</h2>
+<p class="item"><a href="https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything" target="_blank" rel="noreferrer">Publishing WASM wheels to PyPI for use with Pyodide</a></p>
+<p class="meta">来源：Simon Willison | 分数：8.08 | <code>github</code> <code>release</code> <code>research</code></p>
+<p class="meta">&lt;p&gt;The &lt;a href=&quot;https://blog.pyodide.org/posts/314-release/&quot;&gt;Pyodide 314.0 release announcement&lt;/a&gt; (via &lt;a href=&quot;https://news.ycombinator.com/item?id=48462759&quot;&gt;Hacker News&lt;/a&gt;) includes news I've been looking forward to...</p>
 <p class="item"><a href="https://huggingface.co/blog/allenai/olmo-eval" target="_blank" rel="noreferrer">olmo-eval: An evaluation workbench for the model development loop</a></p>
 <p class="meta">来源：Hugging Face Blog | 分数：8 | <code>model</code> <code>evaluation</code> <code>eval</code></p>
 <p class="item"><a href="https://jack-clark.net/2026/06/08/import-ai-460-reward-hacking-society-rsi-data-from-anthropic-and-rl-based-quadcopter-racing/" target="_blank" rel="noreferrer">Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing</a></p>
@@ -233,36 +230,41 @@
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1" target="_blank" rel="noreferrer">LLM Research Papers: The 2026 List (January to May)</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：7 | <code>llm</code> <code>paper</code> <code>research</code></p>
 <p class="meta">A curated roundup of notable LLM research papers that came out this year</p>
-<p class="item"><a href="https://simonwillison.net/2026/Jun/12/openai-webrtc/#atom-everything" target="_blank" rel="noreferrer">OpenAI WebRTC Audio Session, now with document context</a></p>
-<p class="meta">来源：Simon Willison | 分数：6.08 | <code>openai</code> <code>model</code> <code>reasoning</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://tools.simonwillison.net/openai-webrtc&quot;&gt;OpenAI WebRTC Audio Session, now with document context&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; I built the first version of this tool &lt;a href=&quot;https://simonwillison.net/2024/De...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jun/13/luau-wasm/#atom-everything" target="_blank" rel="noreferrer">luau-wasm 0.1a0</a></p>
+<p class="meta">来源：Simon Willison | 分数：5.05 | <code>github</code> <code>release</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/simonw/luau-wasm/releases/tag/0.1a0&quot;&gt;luau-wasm 0.1a0&lt;/a&gt;&lt;/p&gt; &lt;p&gt;See &lt;a href=&quot;https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/&quot;&gt;Publishing WASM wheels ...</p>
 <p class="item"><a href="https://openai.com/index/preply" target="_blank" rel="noreferrer">How Preply combines AI and human tutors to personalize learning</a></p>
 <p class="meta">来源：OpenAI Blog | 分数：5 | <code>openai</code> <code>launch</code></p>
 <p class="meta">Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.</p>
 <p class="item"><a href="https://www.bestblogs.dev/en/status/2065597531644743999?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">美国政府要求 Anthropic 暂停外国公民访问 Fable 5 和 Mythos 5</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4.12 | <code>anthropic</code> <code>claude</code></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>anthropic</code> <code>claude</code></p>
 <p class="meta">📌 One-Sentence Summary Anthropic 宣布，由于美国政府以国家安全为由发布出口管制指令，必须立即为所有客户禁用 Fable 5 和 Mythos 5，该指令影响包括其外籍员工在内的所有外国公民。 📝 Summary Anthropic 官方账号发布重大消息：美国政府依据国家安全权限，发布出口管制指令，要求暂停所有外国公民（无论身处美国境内还是境外，包括 Anthropic 的外籍员工）对 Fable 5 ...</p>
 <p class="item"><a href="https://tldr.tech/ai/2026-06-12" target="_blank" rel="noreferrer">OpenAI buys Ona 🤝, Anthropic backtracks 🔁, Xiaomi’s MiMo code 👨‍💻</a></p>
 <p class="meta">来源：TLDR AI | 分数：4 | <code>openai</code> <code>anthropic</code></p>
 <p class="item">[[AINews] Fable and Mythos officially too dangerous to release](https://www.latent.space/p/ainews-fable-and-mythos-officially)</p>
-<p class="meta">来源：Latent Space | 分数：3.27 | <code>release</code></p>
+<p class="meta">来源：Latent Space | 分数：3 | <code>release</code></p>
 <p class="meta">We are in the strangest timeline.</p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/05a21063?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Anthropic 首份公开记录调查结果</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>anthropic</code></p>
 <p class="meta">📌 One-Sentence Summary Anthropic 首份「公开记录」调查了近 52，000 名美国人，揭示了广泛的两党共识：对 AI 治愈疾病寄予厚望，普遍担忧失业和认知依赖，并强烈要求政府监管及 AI 公司承担法律责任。 📝 Summary 本文介绍了 Anthropic 公开记录第一波调查的结果，该调查于 2025 年底进行，样本量为 51，993 名美国人。调查旨在了解公众对 AI 的希望、担忧和治理偏好。主要发...</p>
+<p class="item"><a href="https://huggingface.co/blog/CohereLabs/introducing-north-mini-code" target="_blank" rel="noreferrer">Introducing North Mini Code: Cohere’s First Model For Developers</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：2 | <code>model</code></p>
 <h2>工程与思维武器</h2>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures" target="_blank" rel="noreferrer">Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：6 | <code>deepseek</code> <code>llm</code> <code>architecture</code></p>
 <p class="meta">From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/ep218-the-typical-ai-agent-stack" target="_blank" rel="noreferrer">EP218: The Typical AI Agent Stack, Explained</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：4.73 | <code>ai agent</code> <code>product</code></p>
-<p class="meta">Over to you: Which layer of the stack do you think is the hardest to get right in production?</p>
+<p class="item"><a href="https://github.com/iptv-org/iptv" target="_blank" rel="noreferrer">iptv-org/iptv</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：5 | <code>github</code> <code>protocol</code></p>
+<p class="meta">Collection of publicly available IPTV channels from all over the world IPTV Collection of publicly available IPTV (Internet Protocol television) channels from all over the world. Table of contents 🚀 How to use? 📺 Playl...</p>
 <p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>refactor</code> <code>product</code></p>
 <p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
 <p class="item"><a href="https://newsletter.pragmaticengineer.com/p/did-anthropics-new-model-just-boost" target="_blank" rel="noreferrer">The Pulse: Did Anthropic’s new model just boost rival Codex’s market share?</a></p>
 <p class="meta">来源：The Pragmatic Engineer | 分数：4 | <code>anthropic</code> <code>model</code></p>
 <p class="meta">Anthropic’s new model, Fable, has restrictions many users find unacceptable. Also: a new trend of smart model routing, Coinbase’s core service has no automatic cross-zone failover, and more.</p>
+<p class="item"><a href="https://blog.bytebytego.com/p/ep218-the-typical-ai-agent-stack" target="_blank" rel="noreferrer">EP218: The Typical AI Agent Stack, Explained</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：4 | <code>ai agent</code> <code>product</code></p>
+<p class="meta">Over to you: Which layer of the stack do you think is the hardest to get right in production?</p>
 <p class="item"><a href="https://blog.bytebytego.com/p/must-know-deployment-strategies-from" target="_blank" rel="noreferrer">Must- Know Deployment Strategies: From Big-Bang to Progressive Delivery</a></p>
 <p class="meta">来源：ByteByteGo (系统设计) | 分数：2 | <code>product</code></p>
 <p class="meta">In this article, we’ll go through the main deployment strategies used in production today, looking at how each one works, what it costs, and when it makes sense to use.</p>
@@ -277,9 +279,15 @@
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.lemonde.fr/pixels/article/2026/06/13/la-guerre-de-l-ia-a-commence-le-blocage-du-dernier-modele-d-anthropic-par-les-etats-unis-inquiete-en-france-et-en-europe_6702060_4408996.html" target="_blank" rel="noreferrer">« La guerre de l’IA a commencé » : le blocage du dernier modèle d’Anthropic par les Etats-Unis inquiète en France et en Europe</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：8.99 | <code>anthropic</code> <code>modèle</code> <code>france</code> <code>europe</code></p>
-<p class="meta">La start-up américaine a désactivé son dernier modèle d’IA, Mythos 5, à la demande de Washington. Une décision vue d’Europe comme l’illustration de la puissance américaine sur le secteur et de la volonté de contrôle de l...</p>
+<p class="item"><a href="https://www.lemonde.fr/argent/article/2026/06/14/marche-du-timbre-une-lettre-adressee-en-1849-au-depute-victor-hugo-a-150-000-euros-et-l-ile-maurice-pour-300-000-euros_6702677_1657007.html" target="_blank" rel="noreferrer">Marché du timbre : une lettre adressée en 1849 au député Victor Hugo, à 150 000 euros, et l’île Maurice pour 300 000 euros</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：4.71 | <code>marché</code> <code>france</code></p>
+<p class="meta">Les mises à prix de plusieurs lots de France et du reste du monde de la vente sur offres de la maison parisienne Behr, qui sera clôturée jeudi 18 juin, dépassent les 150 000 euros.</p>
+<p class="item"><a href="https://www.lemonde.fr/sante/article/2026/06/14/les-medicaments-antiobesite-wegovy-et-mounjaro-seront-rembourses-en-france-a-partir-de-lundi_6702600_1651302.html" target="_blank" rel="noreferrer">Les médicaments antiobésité Wegovy et Mounjaro seront remboursés en France à partir de lundi</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.61 | <code>france</code></p>
+<p class="meta">Ils seront pris en charge à 65 % par l’Assurance-maladie pour les patients atteints d’obésité massive sans comorbidité ou d’obésité sévère avec comorbidité. Seuls les médecins spécialisés peuvent établir la première pres...</p>
+<p class="item"><a href="https://www.lemonde.fr/idees/article/2026/06/14/dans-la-nouvelle-2-cv-e-car-la-dimension-de-lutte-contre-le-rechauffement-climatique-est-integree-a-un-projet-d-ingenierie-frugale_6702599_3232.html" target="_blank" rel="noreferrer">« Dans la nouvelle 2 CV E-Car, la dimension de lutte contre le réchauffement climatique est intégrée à un projet d’ingénierie frugale »</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.6 | <code>économiste</code></p>
+<p class="meta">L’économiste Christian Le Bas estime, dans une tribune au « Monde », que le projet annoncé par le groupe Stellantis d’une renaissance de l’ancienne et emblématique 2 CV sous la forme d’une « e-car » électrique au prix de...</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
