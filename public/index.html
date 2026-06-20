@@ -173,103 +173,110 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年6月18日星期四 06:29</p>
-<p>采集命中：28 条</p>
+<p>生成时间：2026年6月21日星期日 05:59</p>
+<p>采集命中：31 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>Karpathy发布microgpt，200行呈现GPT全链路。</li>
-<li>OpenAI用部署模拟提前预测模型风险。</li>
-<li>AI编程加速商业化，也放大工程债。</li>
+<li><code>codebase-memory-mcp</code> 用图谱加速代码理解。</li>
+<li><code>microgpt</code> 以 200 行纯 Python 还原 GPT。</li>
+<li><code>Datasette Apps</code> 把受限网页应用嵌进数据查询。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>它把LLM还原为数据、分词、反传、注意力、优化与采样，降低理解门槛。</li>
-<li>用真实对话前缀重放候选模型，较传统评测更接近部署行为。</li>
-<li>代码生成成本下降，但审查、可观测性和系统理解变得更关键。</li>
+<li>代码索引从“逐文件搜索”变成“结构查询”，可显著降 token 和调用次数。</li>
+<li>极简 GPT 说明 Transformer 核心链路可被拆到最小，利于教学和调试。</li>
+<li>iframe 沙箱 + CSP + MessageChannel，给可控 AI 应用提供安全边界。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>Claude/Codex企业提价与续费率。</li>
-<li>部署模拟发现的尾部风险频率。</li>
+<li>MCP 工具化代码检索能否成默认工作流。</li>
+<li>数据沙箱与权限隔离是否继续收紧。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Autograd</strong> (自动微分) — 沿计算图自动求梯度；训练神经网络</li>
-<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态；长文本推理</li>
-<li><strong>Event-driven Loop</strong> (事件驱动循环) — 由外部事件触发执行；Webhook自动化</li>
+<li><strong>知识图谱</strong> (Knowledge Graph) — 用节点/边表达结构；适合代码依赖分析。</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态；适合长上下文推理。</li>
+<li><strong>沙箱隔离</strong> (Sandbox Isolation) — 限制脚本能力；适合不可信插件运行。</li>
 </ul>
 <h2>今日最重要</h2>
+<p class="item"><a href="https://github.com/DeusData/codebase-memory-mcp" target="_blank" rel="noreferrer">DeusData/codebase-memory-mcp</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：45 | <code>claude</code> <code>gemini</code> <code>llama</code> <code>mcp</code> <code>llm</code></p>
+<p class="meta">High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies....</p>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：33 | <code>gemini</code> <code>karpathy</code> <code>llm</code> <code>github</code> <code>model</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } This is a brief guide to my new art project microgpt, a single file of 2...</p>
 <p class="item"><a href="http://karpathy.github.io/2022/03/14/lecun1989/" target="_blank" rel="noreferrer">Deep Neural Nets: 33 years ago and 33 years from now</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：32 | <code>openai</code> <code>karpathy</code> <code>github</code> <code>model</code> <code>paper</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritte...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything" target="_blank" rel="noreferrer">Datasette Apps: Host custom HTML applications inside Datasette</a></p>
+<p class="meta">来源：Simon Willison | 分数：26 | <code>claude</code> <code>gemini</code> <code>llm</code> <code>github</code> <code>model</code></p>
+<p class="meta">&lt;p&gt;Today we launched a new plugin for Datasette, &lt;a href=&quot;https://github.com/datasette/datasette-apps&quot;&gt;datasette-apps&lt;/a&gt;, with &lt;a href=&quot;https://datasette.io/blog/2026/datasette-apps/&quot;&gt;this launch announcement post&lt;/a&gt; o...</p>
 <p class="item"><a href="https://martinfowler.com/fragments/2026-06-16.html" target="_blank" rel="noreferrer">Fragments: June 16</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：20 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>llm</code> <code>model</code></p>
 <p class="meta">“Prag Dave” Thomas (co-author of the outstanding “Pragmatic Programmer”) has loved programming since he was young. Programming was how I could express myself. I wasn’t an artist. When I sing, dogs howl. When I draw, frie...</p>
-<p class="item"><a href="https://jack-clark.net/2026/06/15/import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-interns/" target="_blank" rel="noreferrer">Import AI 461: “Alignment is not on track”; FrontierCode; and synthetic research interns</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：10 | <code>arxiv</code> <code>startup</code> <code>launch</code> <code>research</code></p>
-<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI researchers launch new safety start...</p>
-<p class="item"><a href="https://www.alternatives-economiques.fr/avec-le-soutien-de-la-france-l-europe-ouvre-le-champ-aux-nouveaux-ogm" target="_blank" rel="noreferrer">Avec le soutien de la France, l’Europe ouvre le champ aux nouveaux OGM</a></p>
-<p class="meta">来源：Alternatives Économiques | 分数：8.67 | <code>france</code> <code>français</code> <code>européen</code> <code>europe</code></p>
-<p class="meta">L’Union européenne a autorisé ce 17 juin la culture des variétés créées par les nouvelles techniques génomiques (NGT). Le soutien du gouvernement et des parlementaires français aura été décisif.</p>
 <h2>AI 前沿与思维</h2>
+<p class="item"><a href="https://www.bestblogs.dev/en/article/b5f80528?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">测试神话与寓言，超越 SWE-bench，Nvidia 的开放竞争者</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：12 | <code>anthropic</code> <code>claude</code> <code>deepseek</code> <code>llm</code> <code>transformer</code></p>
+<p class="meta">📌 One-Sentence Summary 本期《The Batch》分析了 AI 控制权的权力动态、新的智能体编程基准测试，以及 Nvidia 的开放权重 Nemotron 3 Ultra 模型。 📝 Summary 本期通讯涵盖了三大主题。首先，它审视了 Anthropic 和美国政府近期为控制前沿 AI 模型访问权所采取的行动，认为这些举动展现了赤裸裸的权力，并将加速全球范围内对 AI 主权和开源替代方案的追求。其次，它回顾...</p>
+<p class="item"><a href="https://huggingface.co/blog/is-it-agentic-enough" target="_blank" rel="noreferrer">Is it agentic enough? Benchmarking open models on your own tooling</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：7 | <code>model</code> <code>agentic</code> <code>benchmark</code></p>
 <p class="item"><a href="https://jack-clark.net/2026/06/08/import-ai-460-reward-hacking-society-rsi-data-from-anthropic-and-rl-based-quadcopter-racing/" target="_blank" rel="noreferrer">Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：7 | <code>anthropic</code> <code>arxiv</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Society can be reward-hacked, just lik...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1" target="_blank" rel="noreferrer">LLM Research Papers: The 2026 List (January to May)</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：7 | <code>llm</code> <code>paper</code> <code>research</code></p>
 <p class="meta">A curated roundup of notable LLM research papers that came out this year</p>
-<p class="item"><a href="https://openai.com/index/introducing-life-sci-bench" target="_blank" rel="noreferrer">Introducing LifeSciBench</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：6.06 | <code>benchmark</code> <code>research</code></p>
-<p class="meta">Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions.</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/adc8d33b?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Claude Design 日常工作中更稳定地保持品牌一致性 | Claude</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：6 | <code>anthropic</code> <code>claude</code> <code>github</code></p>
-<p class="meta">📌 One-Sentence Summary Claude Design 现已集成你的设计系统、与 Claude Code 同步、支持直接画布编辑，并连接更多外部工具，使其在日常专业使用中更加稳定。 📝 Summary 本文宣布了 Anthropic 旗下 AI 设计工具 Claude Design 的重大更新。主要改进包括：重建的设计系统导入功能，允许团队从 GitHub、设计文件或上传中获取已批准的组件，并设有管理员控制以确保一...</p>
-<p class="item"><a href="https://openai.com/index/ai-chemist-improves-reaction" target="_blank" rel="noreferrer">A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：5.48 | <code>openai</code> <code>research</code></p>
-<p class="meta">OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.</p>
-<p class="item"><a href="https://tldr.tech/ai/2026-06-17" target="_blank" rel="noreferrer">GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱</a></p>
-<p class="meta">来源：TLDR AI | 分数：4.06 | <code>deepseek</code> <code>mcp</code></p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/44451f2c?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">通过模拟部署在发布前预测模型行为</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>openai</code> <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary OpenAI 推出部署模拟方法，通过用新模型重放真实用户对话，在发布前预测不良行为，在准确性和降低评估意识方面优于传统评估方法。 📝 Summary 这篇来自 OpenAI 的研究文章介绍了部署模拟，一种针对前沿 AI 模型的新型部署前风险评估技术。核心方法很简单：从先前模型的部署中获取经过隐私保护、去标识化的对话前缀，移除原始助手的回复，然后用候选模型重新生成回复。随后评估新生成的回复...</p>
-<p class="item"><a href="https://tldr.tech/ai/2026-06-16" target="_blank" rel="noreferrer">Meta AI mode 📱, Factory 2.0 👨‍💻, Sakana’s autonomous researcher 🐟</a></p>
-<p class="meta">来源：TLDR AI | 分数：3 | <code>research</code></p>
-<p class="item"><a href="https://www.latent.space/p/radical-ai" target="_blank" rel="noreferrer">🔬 The Self-Driving Lab — Joseph Krause, Radical AI</a></p>
-<p class="meta">来源：Latent Space | 分数：2.81 | <code>model</code></p>
-<p class="meta">Radical AI's Joseph Krause on why the moat in materials is the lab, not the model</p>
-<p class="item"><a href="https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything" target="_blank" rel="noreferrer">Quoting Charity Majors</a></p>
-<p class="meta">来源：Simon Willison | 分数：2.78 | <code>product</code></p>
-<p class="meta">&lt;blockquote cite=&quot;https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline#footnote-2&quot;&gt;&lt;p&gt;What happened in 2025 was this: &lt;strong&gt;the economics of code production were turned upside down&lt;/strong&gt;. Inst...</p>
-<p class="item">[[AINews] GLM-5.2: the top Frontend Coding model in the world, IndexShare for Speculative Decoding](https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding)</p>
-<p class="meta">来源：Latent Space | 分数：2.3 | <code>model</code></p>
-<p class="meta">We have a new top open model in the world!</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/95fa81b5?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">循环工程的艺术</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary 本文提出了一种构建可靠 AI 智能体的结构化框架，通过堆叠四个不同的循环来实现：智能体循环、验证循环、事件驱动循环和爬山循环。 📝 Summary 文章认为，有效的 AI 智能体需要的不仅仅是好的模型，还需要一个围绕堆叠循环精心设计的“缰绳”。文章介绍了四个层次的循环：核心智能体循环（模型调用工具）、验证循环（评估器根据标准检查输出）、事件驱动循环（将智能体连接到 webhook 或计划...</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/status/2068039709126017356?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Andrew Ng 论 AI 控制：Anthropic 与美国政府行动标志着转折点</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：6 | <code>anthropic</code> <code>claude</code> <code>llm</code></p>
+<p class="meta">📌 One-Sentence Summary Andrew Ng 分析了 Anthropic 与美国政府近期限制前沿 AI 模型访问的行动，认为这些举措正加速全球对 AI 主权和开源替代方案的投资。 📝 Summary Andrew Ng 深入分析了过去两周发生的两件大事：Anthropic 发布带有严格防护栏的 Claude Fable 5（包括限制竞争性 LLM 研究），以及美国政府随后对该模型实施出口管制。他认为，这些行动赤裸...</p>
+<p class="item"><a href="https://openai.com/index/improving-health-intelligence-in-chatgpt" target="_blank" rel="noreferrer">Improving health intelligence in ChatGPT</a></p>
+<p class="meta">来源：OpenAI Blog | 分数：5 | <code>reasoning</code> <code>evaluation</code></p>
+<p class="meta">Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.</p>
+<p class="item"><a href="https://huggingface.co/blog/ServiceNow/mosaicleaks" target="_blank" rel="noreferrer">MosaicLeaks: Can your research agent keep a secret?</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：3 | <code>research</code></p>
+<p class="item"><a href="https://www.bestblogs.dev/en/video/cb0632f?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">OpenAI Codex Record &amp; Replay：演示一次，即可复用浏览器工作流</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>openai</code></p>
+<p class="meta">📌 One-Sentence Summary OpenAI 展示了 Codex 如何通过一次操作录制学习人工浏览器工作流，并将其转化为可复用的自动化技能，无需用户逐步编写提示词。 📝 Summary 这段简洁的产品演示以 YouTube 视频发布为实际场景，介绍 OpenAI Codex 的 Record &amp; Replay 功能。Codex 会观察用户从电子表格读取元数据、查找匹配素材、在 YouTube Studio 中填写标题和...</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-06-19" target="_blank" rel="noreferrer">GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠</a></p>
+<p class="meta">来源：TLDR AI | 分数：2 | <code>claude</code></p>
+<p class="item"><a href="https://tldr.tech/ai/2026-06-18" target="_blank" rel="noreferrer">ChatGPT marketshare drops 📉, Vercel eve 🤖, Replit links Claude 🔌</a></p>
+<p class="meta">来源：TLDR AI | 分数：2 | <code>claude</code></p>
+<p class="item">[[AINews] GLM &gt; GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December](https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe)</p>
+<p class="meta">来源：Latent Space | 分数：2 | <code>model</code></p>
+<p class="meta">With GLM-5.2 passing everyone's vibe check, the open models story finally becomes a real frontier story.</p>
+<p class="item"><a href="https://openai.com/index/chatgpt-enterprise-spend-controls" target="_blank" rel="noreferrer">New usage analytics and updated spend controls for enterprises</a></p>
+<p class="meta">来源：OpenAI Blog | 分数：2 | <code>openai</code></p>
+<p class="meta">OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.</p>
 <h2>工程与思维武器</h2>
-<p class="item"><a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noreferrer">freeCodeCamp/freeCodeCamp</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：8 | <code>github</code> <code>technologie</code> <code>open-source</code></p>
-<p class="meta">freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. freeCodeCamp.org's open-source codebase and curriculum freeCodeCamp.org is a friendly community where you ca...</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/last-call-for-enrollment-build-with" target="_blank" rel="noreferrer">LAST CALL FOR ENROLLMENT: Build with Claude Code - Cohort 2</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：7.71 | <code>claude</code> <code>product</code> <code>launch</code></p>
-<p class="meta">We’re launching Cohort 2 of our 2-day intensive, cohort-based course, Build with Claude Code, taught by John Kim, who has trained hundreds of engineers at Meta to use Claude Code in real production workflows.</p>
+<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-big-implications-of-us" target="_blank" rel="noreferrer">The Pulse: Big implications of US banning Anthropic’s new model, Fable</a></p>
+<p class="meta">来源：The Pragmatic Engineer | 分数：8 | <code>anthropic</code> <code>cursor</code> <code>github</code> <code>model</code></p>
+<p class="meta">Also: a follow-up on Meta destroying its own engineering culture, the SpaceX IPO, SpaceX buys Cursor, Cursor’s GitHub competitor, and more.</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything" target="_blank" rel="noreferrer">Quoting Sean Lynch</a></p>
+<p class="meta">来源：Simon Willison | 分数：6.03 | <code>mcp</code> <code>model</code> <code>protocol</code></p>
+<p class="meta">&lt;blockquote cite=&quot;https://news.ycombinator.com/item?id=48592163#48593190&quot;&gt;&lt;p&gt;The real valuable capability MCP offers over skills/CLI is isolating the auth flow outside of the agent’s context window, and potentially out o...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures" target="_blank" rel="noreferrer">Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：6 | <code>deepseek</code> <code>llm</code> <code>architecture</code></p>
 <p class="meta">From Gemma 4 to DeepSeek V4, How New Open-Weight LLMs Are Reducing Long-Context Costs</p>
+<p class="item"><a href="https://blog.bytebytego.com/p/ep219-12-open-source-llms" target="_blank" rel="noreferrer">EP219: 12 Open-source LLMs</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：5.73 | <code>model</code> <code>open-source</code></p>
+<p class="meta">Twelve models worth knowing in 2026, each with one standout strength.</p>
 <p class="item"><a href="https://martinfowler.com/articles/reliable-llm-bayer.html" target="_blank" rel="noreferrer">Building Reliable Agentic AI Systems</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：5 | <code>agentic</code> <code>research</code></p>
 <p class="meta">One of the most interesting projects my colleagues have done with LLMs has been building a system with Bayer to allow pharmaceutical researchers to query decades of information about studies buried in PDF reports. Sarang...</p>
 <p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>refactor</code> <code>product</code></p>
 <p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/how-open-weight-models-changed-the" target="_blank" rel="noreferrer">How Open-Weight Models Changed the AI Landscape</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：2 | <code>model</code></p>
-<p class="meta">In this article, we will look at how open-weight models have transformed the AI landscape.</p>
+<p class="item"><a href="https://blog.bytebytego.com/p/observability-for-beginners-logs" target="_blank" rel="noreferrer">Observability for Beginners: Logs, Metrics, Traces, and Everything Around Them</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：2 | <code>observability</code></p>
+<p class="meta">In this article, we will look at the basics of observability in detail with concepts like logs, metrics, and traces explained in detail.</p>
 <h2>商业与产品</h2>
+<p class="item"><a href="https://jack-clark.net/2026/06/15/import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-interns/" target="_blank" rel="noreferrer">Import AI 461: “Alignment is not on track”; FrontierCode; and synthetic research interns</a></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：10 | <code>arxiv</code> <code>startup</code> <code>launch</code> <code>research</code></p>
+<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI researchers launch new safety start...</p>
+<p class="item"><a href="https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/" target="_blank" rel="noreferrer">A startup claims it broke through a bottleneck that’s holding back LLMs</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：4 | <code>model</code> <code>startup</code></p>
+<p class="meta">Miami-based AI startup Subquadratic came out of stealth mode last month with a huge claim. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade. T...</p>
 <p class="item"><a href="https://lexfridman.com/don-lincoln/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=don-lincoln" target="_blank" rel="noreferrer">#497 – Biggest Mysteries in Physics: Antimatter, Dark Energy &amp; ToE – Don Lincoln</a></p>
 <p class="meta">来源：Lex Fridman Podcast | 分数：4 | <code>ai agent</code> <code>business</code></p>
 <p class="meta">Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics. https://lexfridman.com/sponsors/ep497-sc CONTACT LEX: Feedback – give feedback to Lex: https://lexfri...</p>
@@ -277,15 +284,15 @@
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.alternatives-economiques.fr/quand-la-commission-europeenne-dresse-le-constat-d-echec-du-macronisme" target="_blank" rel="noreferrer">Quand la Commission européenne dresse le constat d’échec du macronisme</a></p>
-<p class="meta">来源：Alternatives Économiques | 分数：6.64 | <code>économique</code> <code>france</code> <code>européen</code></p>
-<p class="meta">Chaque printemps et chaque automne, la Commission européenne donne son avis sur les politiques économiques des pays membres. L’essentiel des commentaires se concentre alors sur la trajectoire budgétaire. Début juin n’a p...</p>
-<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/06/18/nomme-par-donald-trump-a-la-tete-de-la-fed-kevin-warsh-promet-de-remodeler-l-institution_6704305_3234.html" target="_blank" rel="noreferrer">Nommé par Donald Trump à la tête de la Fed, Kevin Warsh promet de remodeler l’institution</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：4.98 | <code>model</code> <code>banque</code></p>
-<p class="meta">Mercredi 17 juin, la banque centrale américaine a laissé ses taux directeurs inchangés et évoqué une possible hausse d’ici la fin de l’année, en raison de l’inflation engendrée par le conflit au Moyen-Orient. Critiquant ...</p>
-<p class="item"><a href="https://www.lemonde.fr/politique/article/2026/06/17/unedic-syndicats-et-patronat-exhortent-le-gouvernement-a-cesser-de-ponctionner-les-caisses-de-l-assurance-chomage_6704294_823448.html" target="_blank" rel="noreferrer">Unédic : syndicats et patronat exhortent le gouvernement à cesser de ponctionner les caisses de l’assurance-chômage</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：4.83 | <code>entreprise</code> <code>modèle</code></p>
-<p class="meta">Face à un déficit du régime gérant le système d’indemnisation des demandeurs d’emploi qui pourrait atteindre 2,3 milliards d’euros en 2026, les représentants des travailleurs et des chefs d’entreprise ont réclamé un « ab...</p>
+<p class="item"><a href="https://www.lemonde.fr/disparitions/article/2026/06/20/la-mort-de-claude-guillemot-le-discret-et-diplomate-cofondateur-d-ubisoft_6705325_3382.html" target="_blank" rel="noreferrer">La mort de Claude Guillemot, le discret et diplomate cofondateur d’Ubisoft</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：4.77 | <code>claude</code> <code>français</code></p>
+<p class="meta">L’aîné de la fratrie Guillemot, qui avait cofondé le géant français du jeu vidéo avec ses quatre frères en 1986, a péri, vendredi 19 juin, dans un accident d’avion. Il avait 69 ans.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/06/20/le-platine-n-est-pas-a-la-fete-sur-les-marches-financiers_6705308_3234.html" target="_blank" rel="noreferrer">« Le platine n’est pas à la fête sur les marchés financiers »</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.63 | <code>marché</code></p>
+<p class="meta">Le cours de ce métal précieux, très prisé dans la joaillerie et l’industrie automobile, affiche un repli de plus de 16 % depuis le début de l’année, en raison de la guerre en Iran, observe Laurence Girard, journaliste au...</p>
+<p class="item"><a href="https://www.alternatives-economiques.fr/olivier-faure-proteger-les-francais-c-est-assurer-a-la-fois-la-securite-exterieure-et-la-cohesion" target="_blank" rel="noreferrer">Olivier Faure : « Protéger les Français, c’est assurer à la fois la sécurité extérieure et la cohésion sociale »</a></p>
+<p class="meta">来源：Alternatives Économiques | 分数：2.25 | <code>français</code></p>
+<p class="meta">Alors que le Parti socialiste se réunira le 30 juin afin de décider sa stratégie pour la présidentielle, son premier secrétaire expose les principes et les orientations du programme qu’il défendrait en cas d’alternance.</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
