@@ -173,31 +173,31 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年7月7日星期二 06:05</p>
-<p>采集命中：27 条</p>
+<p>生成时间：2026年7月8日星期三 06:04</p>
+<p>采集命中：29 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>microgpt用200行Python还原GPT核心。</li>
-<li>AI编码代理进入生产，成本与审查成焦点。</li>
-<li>MCP apps把AI客户端推向软件入口。</li>
+<li>Karpathy 发布 microgpt，200 行 Python 展示 GPT 本质。</li>
+<li>sqlite-utils 4.0 引入迁移，AI 参与提升发布质量。</li>
+<li>Anthropic J-space 研究揭示 Claude 内部推理表征。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>它降低了理解LLM的门槛：数据、分词、反传、注意力、训练和推理都可见。</li>
-<li>sqlite-utils案例显示，代理能发现深层事务缺陷，但仍需人类复核与跨模型审查。</li>
-<li>工具不再只返回JSON，而是嵌入交互式UI，可能改变软件分发与使用路径。</li>
+<li>它把 LLM 拆到最小可运行形态，降低理解门槛。也提醒：规模之外，核心仍是下一词预测。</li>
+<li>迁移、嵌套事务、复合外键提升 SQLite 工程化能力。AI 代码审查已能发现发布阻塞问题。</li>
+<li>J-space 提供观察隐藏推理的新工具。它不证明意识，但对安全监测和可解释性有现实价值。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>token成本治理、模型分层使用。</li>
-<li>MCP商店审核、动态发现效果。</li>
+<li>Fable/Codex 在真实工程审查中的缺陷发现率。</li>
+<li>J-space 是否能稳定检测欺骗、伪造等安全信号。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度。场景：训练神经网络。</li>
-<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态。场景：加速LLM推理。</li>
-<li><strong>Atomic Transaction</strong> (原子事务) — 多步写入同成同败。场景：数据库更新。</li>
+<li><strong>Autograd</strong> (自动微分) — 自动计算参数梯度；训练神经网络。</li>
+<li><strong>Schema Migration</strong> (模式迁移) — 有序演进数据库结构；产品版本升级。</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态；加速模型推理。</li>
 </ul>
 <h2>今日最重要</h2>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
@@ -206,80 +206,83 @@
 <p class="item"><a href="http://karpathy.github.io/2022/03/14/lecun1989/" target="_blank" rel="noreferrer">Deep Neural Nets: 33 years ago and 33 years from now</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：32 | <code>openai</code> <code>karpathy</code> <code>github</code> <code>model</code> <code>paper</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritte...</p>
-<p class="item"><a href="https://github.com/Zackriya-Solutions/meetily" target="_blank" rel="noreferrer">Zackriya-Solutions/meetily</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：31 | <code>openai</code> <code>claude</code> <code>llama</code> <code>github</code> <code>model</code></p>
-<p class="meta">Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://...</p>
-<p class="item"><a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything" target="_blank" rel="noreferrer">sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)</a></p>
-<p class="meta">来源：Simon Willison | 分数：19 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>llm</code> <code>cursor</code></p>
-<p class="meta">&lt;p&gt;I wrote about the &lt;a href=&quot;https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/&quot;&gt;sqlite-utils 4.0rc1&lt;/a&gt; release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days...</p>
+<p class="item"><a href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank" rel="noreferrer">asgeirtj/system_prompts_leaks</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：31 | <code>openai</code> <code>anthropic</code> <code>claude</code> <code>gemini</code> <code>qwen</code></p>
+<p class="meta">Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, ...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything" target="_blank" rel="noreferrer">sqlite-utils 4.0, now with database schema migrations</a></p>
+<p class="meta">来源：Simon Willison | 分数：17.89 | <code>anthropic</code> <code>claude</code> <code>llm</code> <code>github</code> <code>model</code></p>
+<p class="meta">&lt;p&gt;This morning I released &lt;a href=&quot;https://sqlite-utils.datasette.io/en/stable/changelog.html#v4-0&quot;&gt;sqlite-utils 4.0&lt;/a&gt;, the 124th release of that project and the first major version bump since &lt;a href=&quot;https://sqlite-...</p>
 <p class="item"><a href="https://jack-clark.net/2026/06/29/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/" target="_blank" rel="noreferrer">Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：15 | <code>ai agent</code> <code>arxiv</code> <code>robotics</code> <code>nvidia</code> <code>gpu</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now NVIDIA sets up a crude self-improvemen...</p>
 <h2>AI 前沿与思维</h2>
-<p class="item"><a href="https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything" target="_blank" rel="noreferrer">sqlite-utils 4.0rc3</a></p>
-<p class="meta">来源：Simon Willison | 分数：7.32 | <code>claude</code> <code>github</code> <code>release</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/simonw/sqlite-utils/releases/tag/4.0rc3&quot;&gt;sqlite-utils 4.0rc3&lt;/a&gt;&lt;/p&gt; &lt;p&gt;I hoped to release &lt;code&gt;sqlite-utils 4.0&lt;/code&gt; stable this weekend, but as I worked throu...</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/article/1ba9dc94?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">语言模型中的全局工作空间</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：9 | <code>anthropic</code> <code>claude</code> <code>llm</code> <code>research</code></p>
+<p class="meta">📌 One-Sentence Summary Anthropic 研究人员提出证据表明，Claude 已经发展出一小套内部神经模式（&quot;J 空间&quot;），其功能类似于全局工作空间，能够实现可报告、可控且灵活的内部推理，这与自动处理截然不同。 📝 Summary 本文总结了 Anthropic 发表的一篇新研究论文，探讨了在 Claude 中发现&quot;J 空间&quot;的问题——一组内部神经表征，其特性类似于人类认知中的全局工作空间理论。受神经科学启发...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1" target="_blank" rel="noreferrer">LLM Research Papers: The 2026 List (January to May)</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：7 | <code>llm</code> <code>paper</code> <code>research</code></p>
 <p class="meta">A curated roundup of notable LLM research papers that came out this year</p>
-<p class="item"><a href="https://tldr.tech/ai/2026-07-03" target="_blank" rel="noreferrer">Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈</a></p>
-<p class="meta">来源：TLDR AI | 分数：5 | <code>anthropic</code> <code>research</code></p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/0ba407e1?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">停止从 RAG 返回文本：防止幻觉的类型化答案合约</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>llm</code> <code>rag</code></p>
-<p class="meta">📌 One-Sentence Summary 本文提出了一种用于 RAG 生成的类型化答案合约，用结构化模式（类型化值、多跨度引用、自我评估标志）替代自由文本输出，以减少幻觉并使输出可编程操作。 📝 Summary 本文是一个系列文章的一部分，该系列逐块构建企业级 RAG 系统，本文聚焦于生成模块。它认为减少幻觉的关键不是更聪明的提示词，而是一种类型化答案合约（模式），迫使模型从提供的段落中提取信息，而不是依赖记忆。该模式分层构建：...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything" target="_blank" rel="noreferrer">sqlite-migrate 0.2</a></p>
+<p class="meta">来源：Simon Willison | 分数：5.77 | <code>github</code> <code>release</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/simonw/sqlite-migrate/releases/tag/0.2&quot;&gt;sqlite-migrate 0.2&lt;/a&gt;&lt;/p&gt; &lt;p&gt;The version that retires the library, instead implementing a compatibility shim against the n...</p>
+<p class="item">[[AINews] The Field Guide to Fable](https://www.latent.space/p/ainews-the-field-guide-to-fable)</p>
+<p class="meta">来源：Latent Space | 分数：5.28 | <code>model</code> <code>launch</code></p>
+<p class="meta">a quiet day lets us digest the world's most significant model launch... to date.</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-07-07" target="_blank" rel="noreferrer">Anthropic J-space research 🧠, Apple + Broadcom ⚡, continual agent learning 🤖</a></p>
+<p class="meta">来源：TLDR AI | 分数：5.08 | <code>anthropic</code> <code>research</code></p>
+<p class="item"><a href="https://huggingface.co/blog/microsoft/foundry-managed-compute" target="_blank" rel="noreferrer">Hugging Face Models on Foundry Managed Compute</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：4.72 | <code>model</code> <code>hugging face</code></p>
+<p class="item"><a href="https://www.bestblogs.dev/en/video/b5b7cd2?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Claude 心智中心的 J-space：Anthropic 如何观察隐藏推理与安全信号</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>anthropic</code> <code>claude</code></p>
+<p class="meta">📌 One-Sentence Summary Anthropic 将 Claude 的 J-space 解释为一种与词语相关的内部工作空间，它似乎支持隐藏推理、部分思想控制和安全监测，但不能证明意识存在。 📝 Summary 这段 Anthropic 短视频介绍了 J-space：Claude 内部一组神经活动模式，研究者可以把它们与模型可能在内部使用、但并未说出口的词语关联起来。视频将这一概念连接到人类的意识访问和 global ...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noreferrer">Using Local Coding Agents</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：4 | <code>claude</code> <code>model</code></p>
 <p class="meta">Using Open-Weight Models in Local Coding Harnesses as an Alternative to Claude Code and Codex Subscriptions</p>
-<p class="item"><a href="https://huggingface.co/blog/Photoroom/prx-part4-data" target="_blank" rel="noreferrer">PRX Part 4: Our Data Strategy</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：2.73 | <code>strategy</code></p>
+<p class="item"><a href="https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio" target="_blank" rel="noreferrer">From Hugging Face to Amazon SageMaker Studio in one click</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：2.97 | <code>hugging face</code></p>
+<p class="item"><a href="https://huggingface.co/blog/skypilot-hf-storage" target="_blank" rel="noreferrer">Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot</a></p>
+<p class="meta">来源：Hugging Face Blog | 分数：2.08 | <code>hugging face</code></p>
 <p class="item"><a href="https://tldr.tech/ai/2026-07-06" target="_blank" rel="noreferrer">Seedance 2.5 🎥, guide to Fable ✨, OpenAI preps GPT-5.6 🚀</a></p>
-<p class="meta">来源：TLDR AI | 分数：2.08 | <code>openai</code></p>
-<p class="item"><a href="https://huggingface.co/blog/cerebras-gemma4-voice-ai" target="_blank" rel="noreferrer">Hugging Face and Cerebras bring Gemma 4 to real-time voice AI</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：2 | <code>hugging face</code></p>
+<p class="meta">来源：TLDR AI | 分数：2 | <code>openai</code></p>
 <p class="item"><a href="https://lexfridman.com/anthony-kaldellis/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=anthony-kaldellis" target="_blank" rel="noreferrer">#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &amp; Fall of Empires</a></p>
 <p class="meta">来源：Lex Fridman Podcast | 分数：2 | <code>ai agent</code></p>
 <p class="meta">Anthony Kaldellis is a historian of the Roman Empire and author of “The New Roman Empire”, a comprehensive history of the Byzantine Empire (Eastern Roman Empire). https://lexfridman.com/sponsors/ep498-sc Transcript: http...</p>
-<p class="item"><a href="https://openai.com/index/how-chatgpt-adoption-has-expanded" target="_blank" rel="noreferrer">How ChatGPT adoption has expanded</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：2 | <code>openai</code></p>
-<p class="meta">New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.</p>
 <h2>工程与思维武器</h2>
 <p class="item"><a href="https://martinfowler.com/fragments/2026-07-06.html" target="_blank" rel="noreferrer">Fragments: July  6</a></p>
-<p class="meta">来源：Martin Fowler (架构思维) | 分数：14.62 | <code>llm</code> <code>model</code> <code>inference</code> <code>agentic</code> <code>architecture</code></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：14 | <code>llm</code> <code>model</code> <code>inference</code> <code>agentic</code> <code>architecture</code></p>
 <p class="meta">Last week, Thoughtworks ran a second Future of Software Development Retreat, this time in Europe. As with the previous event, I’ll be sharing some fragmentary thoughts on this. There were five parallel streams, so I coul...</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/video/7036255?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">MCP apps、应用商店与下一代软件入口：AI 客户端如何承载交互式产品</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：10 | <code>claude</code> <code>mcp</code> <code>cursor</code> <code>model</code> <code>protocol</code></p>
-<p class="meta">📌 One-Sentence Summary Pietro Zullo 将 MCP apps 解释为下一代软件界面：AI 客户端可以渲染交互式组件，通过商店发现连接器，并把用户意图直接路由进产品。 📝 Summary 这场演讲及时而务实地描绘了 MCP apps 超越普通 MCP servers 之后的形态。Pietro Zullo 说明，工具不仅可以返回 JSON，还能返回沙箱化 iframe 组件，让这些组件与宿主应用和模型通信...</p>
 <p class="item"><a href="https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/" target="_blank" rel="noreferrer">Import AI 464: Fables writes GPU kernels; AI automation; and analog computation</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：9.6 | <code>arxiv</code> <code>gpu</code> <code>kernel</code> <code>research</code></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：9 | <code>arxiv</code> <code>gpu</code> <code>kernel</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Fable writes a decent GPU kernel, hint...</p>
-<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/impressions-from-visiting-openai" target="_blank" rel="noreferrer">Impressions from visiting OpenAI, Anthropic, &amp; Cursor</a></p>
-<p class="meta">来源：The Pragmatic Engineer | 分数：6 | <code>openai</code> <code>anthropic</code> <code>cursor</code></p>
-<p class="meta">A peek into where software engineering is headed from inside the sector’s leading AI labs. Agents running in the cloud are a major trend, while coding harnesses are spreading beyond the craft</p>
-<p class="item"><a href="https://martinfowler.com/articles/reliable-llm-bayer.html" target="_blank" rel="noreferrer">Building Reliable Agentic AI Systems</a></p>
-<p class="meta">来源：Martin Fowler (架构思维) | 分数：5 | <code>agentic</code> <code>research</code></p>
-<p class="meta">One of the most interesting projects my colleagues have done with LLMs has been building a system with Bayer to allow pharmaceutical researchers to query decades of information about studies buried in PDF reports. Sarang...</p>
+<p class="item"><a href="https://blog.bytebytego.com/p/chatgpt-vs-gemini-vs-claude-how-they" target="_blank" rel="noreferrer">ChatGPT vs Gemini vs Claude: How They Differ</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：6.73 | <code>claude</code> <code>gemini</code> <code>model</code></p>
+<p class="meta">In this article, we will look at the various architectural forks the teams building these models encountered and the decisions they took.</p>
+<p class="item"><a href="https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/" target="_blank" rel="noreferrer">The foundational elements of AI architecture that IT leaders need to scale</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：4.55 | <code>agentic</code> <code>architecture</code></p>
+<p class="meta">With the rapid progress of AI capabilities and the move to agentic systems, organizations are expanding their use cases as the technology continues to grow. That constant evolution also introduces risk, leaving IT leader...</p>
 <p class="item"><a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/" target="_blank" rel="noreferrer">Moving away from Tailwind, and learning to structure my CSS</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>refactor</code> <code>product</code></p>
 <p class="meta">Hello! 8 years ago, I wrote excitedly about discovering Tailwind. At that time I really had no idea how to structure my CSS code and given the choice between a pile of complete chaos and Tailwind, I was really happy to c...</p>
+<p class="item"><a href="https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html" target="_blank" rel="noreferrer">Viability of local models for coding</a></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：2.6 | <code>model</code></p>
+<p class="meta">Birgitta Böckeler recently spent some time trying out running local LLMs for some programming tasks. In this memo she outlines the factors that influence how viable they are for the job. more…</p>
 <p class="item"><a href="https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/" target="_blank" rel="noreferrer">Your family’s $300 stake in OpenAI</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：2.83 | <code>openai</code></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：2 | <code>openai</code></p>
 <p class="meta">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. OpenAI CEO Sam Altman’s oft-discussed promise that Americans will share in the wea...</p>
-<p class="item"><a href="https://huggingface.co/blog/revamped-kernels" target="_blank" rel="noreferrer">🤗 Kernels: Major Updates</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：2.08 | <code>kernel</code></p>
 <h2>商业与产品</h2>
-<p class="item"><a href="https://www.technologyreview.com/2026/07/02/1140045/achieving-operational-excellence-with-ai/" target="_blank" rel="noreferrer">Achieving operational excellence with AI</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：2 | <code>business</code></p>
-<p class="meta">Frameworks like Lean Six Sigma and business process management (BPM) first gained traction because they promised clarity in the chaos—a structured way to bring order to messy, sprawling operations. Lean Six Sigma emphasi...</p>
 <p class="item"><a href="https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud/" target="_blank" rel="noreferrer">Notes on a non-profit indicted for bank fraud</a></p>
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/06/thales-trouve-un-accord-avec-exail-technologies-l-expert-francais-en-drones-chasseurs-de-mines-et-en-systemes-de-navigation_6721253_3234.html" target="_blank" rel="noreferrer">Thales trouve un accord avec Exail Technologies, l’expert français en drones chasseurs de mines et en systèmes de navigation</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：6.9 | <code>entreprise</code> <code>technologie</code> <code>français</code></p>
-<p class="meta">Après l’échec des négociations, vendredi, entre Safran et Exail Technologies, l’entreprise a été courtisée par Thales qui a bouclé les conditions d’un rachat d’une valeur de 3,9 milliards d’euros pendant le week-end.</p>
-<p class="item"><a href="https://www.alternatives-economiques.fr/clementine-autain-nous-devons-valoriser-un-nouvel-imaginaire-de-societe-loin-du-productivisme-et-du" target="_blank" rel="noreferrer">Clémentine Autain : « Nous devons valoriser un nouvel imaginaire de société, loin du productivisme et du consumérisme »</a></p>
-<p class="meta">来源：Alternatives Économiques | 分数：2.29 | <code>product</code></p>
-<p class="meta">Que ferez-vous si vous êtes élue présidente de la République ? Alternatives Economiques a posé la question à la députée de Seine-Saint-Denis, candidate du mouvement L'Après à la primaire de la gauche hors-LFI.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/07/television-le-syndicat-des-regies-publicitaires-francaises-saisit-la-commission-europeenne-pour-demander-un-assouplissement-des-regles_6721538_3234.html" target="_blank" rel="noreferrer">Télévision : le syndicat des régies publicitaires françaises saisit la Commission européenne pour demander un assouplissement des règles</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：4.81 | <code>français</code> <code>européen</code></p>
+<p class="meta">L’Alliance des Médias TV &amp; Vidéo (ADMTV) conteste un décret de 1992 qui interdit aux enseignes de la grande distribution de faire de la publicité à la télévision française pour leurs « opérations commerciales de promotio...</p>
+<p class="item"><a href="https://www.lemonde.fr/politique/article/2026/07/07/finances-publiques-la-perspective-d-une-baisse-du-deficit-s-eloigne-de-nouvelles-economies-decidees_6721523_823448.html" target="_blank" rel="noreferrer">Finances publiques : la perspective d’une baisse du déficit s’éloigne, de nouvelles économies décidées</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.75 | <code>économie</code></p>
+<p class="meta">Mardi 7 juillet, lors d’un comité d’alerte des finances publiques, le gouvernement a annoncé que l’objectif de ramener le déficit à 5 % en 2026 sera « difficile à atteindre ». Un effort de 3 milliards d’euros d’économies...</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/07/la-publicite-pour-les-energies-fossiles-sera-bientot-interdite-en-france-cinq-ans-apres-la-loi-climat-et-resilience_6721520_3234.html" target="_blank" rel="noreferrer">La publicité pour les énergies fossiles sera bientôt interdite en France, cinq ans après la loi Climat et résilience</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.75 | <code>france</code></p>
+<p class="meta">La promotion des produits pétroliers et du gaz naturel a déjà quasi disparu, mais les actions de communication autour du biométhane semblent aussi visées.</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
