@@ -173,87 +173,83 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年7月20日星期一 05:41</p>
-<p>采集命中：33 条</p>
+<p>生成时间：2026年7月21日星期二 05:54</p>
+<p>采集命中：29 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>RoboTTT 将机器人上下文扩至 8K 步，长任务能力显著提升。</li>
-<li>LingBot-Map 实现流式 3D 重建，长视频约 20FPS 推理。</li>
-<li>AI 系统进入治理期：GPT-Red、AI Overviews 判责并行出现。</li>
+<li>中国开放模型加速，冲击美国闭源商业模式。</li>
+<li>code-review-graph 用代码图降低 AI 审查上下文。</li>
+<li>microgpt 用 200 行 Python 展示 GPT 核心机制。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>长上下文成为机器人基础模型新缩放轴。测试时训练把历史压缩进快速权重。</li>
-<li>3D 重建从离线优化转向前馈流式推理。利好机器人、AR、空间智能管线。</li>
-<li>安全红队自动化与平台责任判例同步推进。AI 输出不再只是“中介内容”。</li>
+<li>Qwen、Kimi、DeepSeek 等开放权重缩小能力差距，蒸馏与版权政策争议升温。</li>
+<li>本地 AST 图和增量更新可减少无效 token，适合大仓库 PR 审查和 CI 风险门禁。</li>
+<li>它把 tokenizer、autograd、attention、训练与推理压缩到最小形态，降低理解 LLM 的门槛。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>机器人长上下文是否带来稳定泛化。</li>
-<li>AI 生成内容责任边界如何扩展。</li>
+<li>Qwen/Kimi 开放权重与真实评测。</li>
+<li>AI 生成内容责任与蒸馏监管。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>KV Cache</strong> (键值缓存) — 缓存注意力历史以降推理成本。长上下文生成。</li>
-<li><strong>Test-Time Training</strong> (测试时训练) — 推理时更新部分参数适应环境。机器人在线改进。</li>
-<li><strong>Domain-Specific Language</strong> (领域专用语言) — 用受限抽象约束系统行为。LLM 生成可靠代码。</li>
+<li><strong>Incremental Update</strong> (增量更新) — 只处理变化部分，降低成本。应用：代码索引刷新</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态，加速生成。应用：LLM 推理服务</li>
+<li><strong>Domain-Specific Language</strong> (领域专用语言) — 用受限表达约束系统行为。应用：LLM 生成可靠配置</li>
 </ul>
 <h2>今日最重要</h2>
-<p class="item"><a href="https://github.com/Robbyant/lingbot-map" target="_blank" rel="noreferrer">Robbyant/lingbot-map</a></p>
-<p class="meta">来源：GitHub Trending Daily | 分数：49 | <code>github</code> <code>model</code> <code>paper</code> <code>huggingface</code> <code>hugging face</code></p>
-<p class="meta">A feed-forward 3D foundation model for reconstructing scenes from streaming data LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction Robbyant Team https://github.com/user-attachments/assets/fe39e09...</p>
+<p class="item"><a href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noreferrer">tirth8205/code-review-graph</a></p>
+<p class="meta">来源：GitHub Trending Daily | 分数：54 | <code>openai</code> <code>claude</code> <code>gemini</code> <code>qwen</code> <code>llama</code></p>
+<p class="meta">Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows. code-revie...</p>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：33 | <code>gemini</code> <code>karpathy</code> <code>llm</code> <code>github</code> <code>model</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } This is a brief guide to my new art project microgpt, a single file of 2...</p>
 <p class="item"><a href="http://karpathy.github.io/2022/03/14/lecun1989/" target="_blank" rel="noreferrer">Deep Neural Nets: 33 years ago and 33 years from now</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：32 | <code>openai</code> <code>karpathy</code> <code>github</code> <code>model</code> <code>paper</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritte...</p>
-<p class="item"><a href="https://huggingface.co/papers/2607.15275" target="_blank" rel="noreferrer">RoboTTT: Context Scaling for Robot Policies</a></p>
-<p class="meta">来源：Hugging Face Daily Papers | 分数：16 | <code>model</code> <code>pretrain</code> <code>inference</code> <code>foundation model</code> <code>nvidia</code></p>
-<p class="meta">Abstract Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor cont...</p>
-<p class="item"><a href="https://jack-clark.net/2026/06/29/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/" target="_blank" rel="noreferrer">Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：15 | <code>ai agent</code> <code>arxiv</code> <code>robotics</code> <code>nvidia</code> <code>gpu</code></p>
-<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now NVIDIA sets up a crude self-improvemen...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything" target="_blank" rel="noreferrer">Who’s Afraid of Chinese Models?</a></p>
+<p class="meta">来源：Simon Willison | 分数：14.8 | <code>qwen</code> <code>model</code> <code>open weight</code> <code>innovation</code> <code>release</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://stratechery.com/2026/whos-afraid-of-chinese-models/&quot;&gt;Who’s Afraid of Chinese Models?&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing...</p>
+<p class="item"><a href="https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/" target="_blank" rel="noreferrer">Import AI 464: Fables writes GPU kernels; AI automation; and analog computation</a></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：9 | <code>arxiv</code> <code>gpu</code> <code>kernel</code> <code>research</code></p>
+<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Fable writes a decent GPU kernel, hint...</p>
 <h2>AI 前沿与思维</h2>
-<p class="item"><a href="https://huggingface.co/papers/2607.15273" target="_blank" rel="noreferrer">MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators</a></p>
-<p class="meta">来源：Hugging Face Daily Papers | 分数：9 | <code>model</code> <code>diffusion</code> <code>reinforcement learning</code> <code>state-of-the-art</code></p>
-<p class="meta">Abstract MeanFlow generators achieve fast few-step sampling by predicting average velocities over time intervals, making them attractive for efficient generation. Reinforcement learning (RL) has become a powerful way to ...</p>
-<p class="item"><a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/" target="_blank" rel="noreferrer">Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：9 | <code>openai</code> <code>llm</code> <code>model</code> <code>release</code></p>
-<p class="meta">OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship...</p>
-<p class="item"><a href="https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel" target="_blank" rel="noreferrer">Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：6 | <code>model</code> <code>fine-tune</code> <code>nvidia</code></p>
+<p class="item"><a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan/" target="_blank" rel="noreferrer">Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan</a></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：7.61 | <code>model</code> <code>arxiv</code> <code>research</code></p>
+<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now UK government: Gap between open and cl...</p>
 <p class="item">[[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing](https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest)</p>
 <p class="meta">来源：Latent Space | 分数：5 | <code>model</code> <code>release</code></p>
 <p class="meta">a great week for open models continues.</p>
-<p class="item"><a href="https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything" target="_blank" rel="noreferrer">AI Mania Is Eviscerating Global Decision-Making</a></p>
-<p class="meta">来源：Simon Willison | 分数：4.31 | <code>product</code> <code>strategy</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/&quot;&gt;AI Mania Is Eviscerating Global Decision-Making&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Here's an entertaining perspective from Nik Suresh on...</p>
+<p class="item"><a href="https://openai.com/index/safety-alignment-long-horizon-models" target="_blank" rel="noreferrer">Safety and alignment in an era of long-horizon models</a></p>
+<p class="meta">来源：OpenAI Blog | 分数：4.5 | <code>openai</code> <code>model</code></p>
+<p class="meta">OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-07-20" target="_blank" rel="noreferrer">Qwen 3.8 ✨, Kimi Code CLI 👨‍💻, Netflix’s LLM stack 🤖</a></p>
+<p class="meta">来源：TLDR AI | 分数：4.09 | <code>qwen</code> <code>llm</code></p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/6073d22b27?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">AI Overviews 让谷歌陷入麻烦，GPT-Live 将推理置于后台，如何判断你的模型是否具有操控性</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>openai</code> <code>llm</code></p>
 <p class="meta">📌 One-Sentence Summary Andrew Ng 认为，AI 自动化正在工程、营销和招聘等领域催生对更广泛“全栈”角色的需求，同时本期通讯还涵盖了 OpenAI 新的全双工语音模型，以及德国法院裁定谷歌需为其 AI Overviews 生成的诽谤性内容承担责任。 📝 Summary 本期 The Batch 以 Andrew Ng 关于 AI 如何重塑工作角色的社论开篇。他认为，随着 AI 自动化处理狭义、可验证的任...</p>
-<p class="item"><a href="https://huggingface.co/papers/2607.15257" target="_blank" rel="noreferrer">SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration</a></p>
-<p class="meta">来源：Hugging Face Daily Papers | 分数：4 | <code>model</code> <code>strategy</code></p>
-<p class="meta">Abstract Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task p...</p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noreferrer">Using Local Coding Agents</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：4 | <code>claude</code> <code>model</code></p>
 <p class="meta">Using Open-Weight Models in Local Coding Harnesses as an Alternative to Claude Code and Codex Subscriptions</p>
+<p class="item"><a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/" target="_blank" rel="noreferrer">AI is more likely than humans to form biases when hiring</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：3.45 | <code>research</code></p>
+<p class="meta">The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from th...</p>
 <p class="item"><a href="https://www.bestblogs.dev/en/status/2078759124914098291?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Qwen3.8 发布：拥有 2.4T 参数（官方）</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：2.45 | <code>qwen</code></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>qwen</code></p>
 <p class="meta">📌 One-Sentence Summary Qwen 宣布推出 Qwen3.8，这是一款拥有 2.4T 参数的模型，性能媲美前沿模型，目前预览版已开放。 📝 Summary Qwen 宣布推出 Qwen3.8，这是一款拥有 2.4T 巨量参数的模型，即将开放权重。其声称性能可媲美领先的前沿模型，仅次于 Fable 5。Max-Preview 版本现已在阿里巴巴的 Token Plan、Qoder 和 QoderWork 上开放使用...</p>
-<p class="item"><a href="https://www.bestblogs.dev/en/video/35332f062?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">Garry Tan：如何打造 AI 原生公司</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：2 | <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary Garry Tan 将 AI 原生公司定义为：把可重复的智能体工作沉淀为持续维护的技能，并以经过治理的公司记忆不断累积竞争优势的组织。 📝 Summary 在这场闭幕主题演讲中，Garry Tan 认为，真正重要的 AI 优势并非人人都能获得的模型权重，而是公司如何围绕智能体重组工作。他把技能文件、任务路由、归档规则和评估机制视为员工、管理、流程与绩效考核在智能体时代的对应物。演讲提出了...</p>
 <p class="item"><a href="https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages" target="_blank" rel="noreferrer">Newer Models, Same Advantage</a></p>
 <p class="meta">来源：Hugging Face Blog | 分数：2 | <code>model</code></p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms" target="_blank" rel="noreferrer">Controlling Reasoning Effort in LLMs</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：2 | <code>reasoning</code></p>
 <p class="meta">How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-07-17" target="_blank" rel="noreferrer">Kimi K3 🌕, Gemini 3.5 delayed ⏳, crushing ARC-AGI 3 🤖</a></p>
+<p class="meta">来源：TLDR AI | 分数：2 | <code>gemini</code></p>
+<p class="item"><a href="https://lexfridman.com/anthony-kaldellis/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=anthony-kaldellis" target="_blank" rel="noreferrer">#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &amp; Fall of Empires</a></p>
+<p class="meta">来源：Lex Fridman Podcast | 分数：2 | <code>ai agent</code></p>
+<p class="meta">Anthony Kaldellis is a historian of the Roman Empire and author of “The New Roman Empire”, a comprehensive history of the Byzantine Empire (Eastern Roman Empire). https://lexfridman.com/sponsors/ep498-sc Transcript: http...</p>
 <h2>工程与思维武器</h2>
-<p class="item"><a href="https://jack-clark.net/2026/07/06/import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation/" target="_blank" rel="noreferrer">Import AI 464: Fables writes GPU kernels; AI automation; and analog computation</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：9 | <code>arxiv</code> <code>gpu</code> <code>kernel</code> <code>research</code></p>
-<p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Fable writes a decent GPU kernel, hint...</p>
 <p class="item"><a href="https://martinfowler.com/articles/llm-and-dsls.html" target="_blank" rel="noreferrer">DSLs Enable Reliable Use of LLMs</a></p>
 <p class="meta">来源：Martin Fowler (架构思维) | 分数：6 | <code>llm</code> <code>model</code> <code>distributed</code></p>
 <p class="meta">LLMs generate code incredibly fast, but to ensure they generate exactly what is intended, they need clear boundaries. Abstractions and Domain-Specific Languages (DSLs) provide a strong harness that guides LLMs right from...</p>
@@ -269,26 +265,26 @@
 <p class="item"><a href="https://blog.bytebytego.com/p/mcp-vs-a2a-vs-acp-how-ai-agents-actually" target="_blank" rel="noreferrer">MCP vs A2A vs ACP: How AI Agents Actually Talk to Each Other</a></p>
 <p class="meta">来源：ByteByteGo (系统设计) | 分数：4 | <code>ai agent</code> <code>mcp</code></p>
 <p class="meta">Agents are capable on their own. Combined with tools and other agents, their capabilities compound.</p>
+<p class="item"><a href="https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/" target="_blank" rel="noreferrer">China’s AI models have Trump’s AI world at war with itself</a></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：2.84 | <code>model</code></p>
+<p class="meta">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on...</p>
 <p class="item"><a href="https://blog.bytebytego.com/p/a-guide-to-multi-tenancy-benefits" target="_blank" rel="noreferrer">A Guide to Multi-Tenancy: Benefits and Challenges</a></p>
 <p class="meta">来源：ByteByteGo (系统设计) | 分数：2 | <code>architecture</code></p>
 <p class="meta">In this article, we will understand multi-tenant architecture from the basics, along with its various benefits and challenges.</p>
 <h2>商业与产品</h2>
-<p class="item"><a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything" target="_blank" rel="noreferrer">Claude Code uses Bun written in Rust now</a></p>
-<p class="meta">来源：Simon Willison | 分数：13.26 | <code>anthropic</code> <code>claude</code> <code>github</code> <code>startup</code> <code>product</code></p>
-<p class="meta">&lt;p&gt;In &lt;a href=&quot;https://bun.com/blog/bun-in-rust&quot;&gt;Rewriting Bun in Rust&lt;/a&gt; Jarred Sumner made the following claim:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Claude Code v2.1.181 (released June 17th) and later use the Rust port of Bun. Startup...</p>
 <p class="item"><a href="https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud/" target="_blank" rel="noreferrer">Notes on a non-profit indicted for bank fraud</a></p>
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.lemonde.fr/idees/article/2026/07/19/la-dependance-de-l-irlande-a-l-egard-de-grandes-entreprises-non-europeennes-cree-des-conflits-d-interets-insurmontables_6726231_3232.html" target="_blank" rel="noreferrer">« La dépendance de l’Irlande à l’égard de grandes entreprises non européennes crée des conflits d’intérêts insurmontables »</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：6.8 | <code>économiste</code> <code>entreprise</code> <code>européen</code></p>
-<p class="meta">Le pays, qui a pris la présidence tournante du Conseil de l’UE au 1ᵉʳ juillet, doit se retirer des négociations sur la régulation numérique et les règles de fiscalité des entreprises, estime dans une tribune au « Monde »...</p>
-<p class="item"><a href="https://www.lemonde.fr/series-d-ete/article/2026/07/19/bernard-arnault-a-la-cour-de-l-homme-le-plus-riche-de-france_6725963_3451060.html" target="_blank" rel="noreferrer">Bernard Arnault, à la cour de l’homme le plus riche de France</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：2.68 | <code>france</code></p>
-<p class="meta">« L’empire Bernard Arnault » (1/6). Le milliardaire à la tête de LVMH, aussi secret que puissant, s’appuie sur un entourage dévoué où règne un mélange de terreur et d’admiration.</p>
-<p class="item"><a href="https://www.alternatives-economiques.fr/plateformisation-et-precarisation-du-travail-perte-de-sens-dialogue-entre-l-ecrivain-franck-courtes" target="_blank" rel="noreferrer">Plateformisation et précarisation du travail, perte de sens : dialogue entre l’écrivain Franck Courtès et l’économiste Coralie Perez</a></p>
-<p class="meta">来源：Alternatives Économiques | 分数：2 | <code>économiste</code></p>
-<p class="meta">Dans son livre A pied d’œuvre, Franck Courtès raconte son quotidien de travailleur de plateforme. L’économiste Coralie Perez reconnaît dans ce récit tout un pan du monde du travail actuel. Ils en discutent ensemble.</p>
+<p class="item"><a href="https://www.lemonde.fr/pixels/article/2026/07/20/ces-ia-chinoises-qui-font-trembler-la-silicon-valley_6727374_4408996.html" target="_blank" rel="noreferrer">Ces IA chinoises qui font trembler la Silicon Valley</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：8.73 | <code>deepseek</code> <code>économique</code> <code>intelligence artificielle</code> <code>modèle</code></p>
+<p class="meta">La sortie, en Chine, de nouveaux systèmes d’intelligence artificielle très performants et ouverts, par Moonshot, Zhipu ou Deepseek, peut remettre en cause le modèle économique des géants américains, fondé sur un accès pa...</p>
+<p class="item"><a href="https://www.alternatives-economiques.fr/john-maynard-keynes-un-economiste-mondain-et-iconoclaste" target="_blank" rel="noreferrer">John Maynard Keynes, un économiste mondain et iconoclaste</a></p>
+<p class="meta">来源：Alternatives Économiques | 分数：4.34 | <code>économie</code> <code>économiste</code></p>
+<p class="meta">Issu d’un milieu privilégié et membre de la haute société britannique, Keynes n'a pour autant pas hésité à s'écarter des sentiers battus en économie. Deuxième épisode de notre série d'été.</p>
+<p class="item"><a href="https://www.lemonde.fr/planete/article/2026/07/20/eolien-solaire-biomethane-vers-une-hausse-de-11-du-cout-du-soutien-public-aux-energies-renouvelables-en-2027_6727650_3244.html" target="_blank" rel="noreferrer">Eolien, solaire, biométhane… vers une hausse de 11 % du coût du soutien public aux énergies renouvelables en 2027</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.84 | <code>product</code></p>
+<p class="meta">La hausse des charges prévisionnelles entre 2026 et 2027 s’explique principalement par une hausse des volumes de production d’énergie renouvelable soutenus.</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
