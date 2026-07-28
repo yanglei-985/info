@@ -173,31 +173,31 @@
 <body>
   <main>
 <h1>每日信息流</h1>
-<p>生成时间：2026年7月28日星期二 05:56</p>
-<p>采集命中：34 条</p>
+<p>生成时间：2026年7月29日星期三 05:55</p>
+<p>采集命中：39 条</p>
 <h2>AI 主编摘要</h2>
 <h2>今日要点（TOP 3）</h2>
 <ul>
-<li>Karpathy发布microgpt，200行呈现GPT核心。</li>
-<li>AI编程焦点转向验证、评测与治理。</li>
-<li>LLM token转售黑产暴露API滥用风险。</li>
+<li>OpenAI 代理越狱攻击 HF，暴露机器速度攻防差。</li>
+<li>Karpathy 发布 microgpt，200 行复现 GPT 核心。</li>
+<li>端侧与开源大模型工程继续提速。</li>
 </ul>
 <h2>为什么重要</h2>
 <ul>
-<li>说明LLM核心机制并不神秘，规模化差异主要在数据、并行与工程。</li>
-<li>代码生成已不是唯一瓶颈，测试、观测、权限隔离成为关键约束。</li>
-<li>未保护端点和无硬限额API可被套利，带来账单、数据外流和蒸馏风险。</li>
+<li>AI 代理能快速试错、横向移动、外泄数据。传统沙箱、代理出口和日志分析压力上升。</li>
+<li>microgpt 把数据、分词、反传、注意力、训练和推理压到最小形态。利于理解 LLM 本质。</li>
+<li>UltraViT 优化端侧视觉编码；Kimi K3 推理栈强化内存、内核和推测解码。效率成为竞争焦点。</li>
 </ul>
 <h2>继续跟踪</h2>
 <ul>
-<li>MirrorCode长程任务通过率；AI评测偏见。</li>
-<li>API硬限额治理；开源模型安全差距。</li>
+<li>代理沙箱逃逸细节、CVE 修复效果。</li>
+<li>开源权重性能差距、端侧延迟指标。</li>
 </ul>
 <h2>今日思维武器（3 个计算机术语）</h2>
 <ul>
-<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度；训练神经网络</li>
-<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态；LLM流式推理</li>
-<li><strong>Observability</strong> (可观测性) — 用日志指标追踪系统状态；排查智能体事故</li>
+<li><strong>Autograd</strong> (自动微分) — 自动沿计算图求梯度。场景：训练神经网络。</li>
+<li><strong>KV Cache</strong> (键值缓存) — 复用历史注意力状态。场景：LLM 长文本推理。</li>
+<li><strong>Sandbox Escape</strong> (沙箱逃逸) — 突破隔离执行边界。场景：AI 代理安全审计。</li>
 </ul>
 <h2>今日最重要</h2>
 <p class="item"><a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noreferrer">microgpt</a></p>
@@ -206,88 +206,103 @@
 <p class="item"><a href="http://karpathy.github.io/2022/03/14/lecun1989/" target="_blank" rel="noreferrer">Deep Neural Nets: 33 years ago and 33 years from now</a></p>
 <p class="meta">来源：Andrej Karpathy | 分数：32 | <code>openai</code> <code>karpathy</code> <code>github</code> <code>model</code> <code>paper</code></p>
 <p class="meta">.post-header h1 { font-size: 35px; } .post pre, .post code { background-color: #fcfcfc; font-size: 13px; /<em> make code smaller for this post... </em>/ } The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritte...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything" target="_blank" rel="noreferrer">Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident</a></p>
+<p class="meta">来源：Simon Willison | 分数：24.98 | <code>openai</code> <code>llm</code> <code>model</code> <code>huggingface</code> <code>hugging face</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://huggingface.co/blog/agent-intrusion-technical-timeline&quot;&gt;Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Hugging Face just released th...</p>
+<p class="item"><a href="https://huggingface.co/papers/2607.23373" target="_blank" rel="noreferrer">UltraViT: Latency-Optimized On-device Vision Encoder for Large Vision-Language Models</a></p>
+<p class="meta">来源：Hugging Face Daily Papers | 分数：15.76 | <code>llm</code> <code>model</code> <code>paper</code> <code>multimodal</code> <code>architecture</code></p>
+<p class="meta">Abstract Large Vision-Language Models (LVLMs) remain bottlenecked by massive computational footprints, precluding their deployment on resource-constrained edge devices. While efforts to compress LVLMs focus heavily on vi...</p>
 <p class="item"><a href="https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker/" target="_blank" rel="noreferrer">Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI’s accidental AI hacker</a></p>
-<p class="meta">来源：Import AI (Jack Clark) | 分数：15.65 | <code>openai</code> <code>arxiv</code> <code>robotics</code> <code>release</code> <code>benchmark</code></p>
+<p class="meta">来源：Import AI (Jack Clark) | 分数：15 | <code>openai</code> <code>arxiv</code> <code>robotics</code> <code>release</code> <code>benchmark</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Epoch and METR release MirrorCode, a b...</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/how-nvidia-builds-open-models-for" target="_blank" rel="noreferrer">How NVIDIA Builds Open Models for the Age of AI</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：14.71 | <code>model</code> <code>reasoning</code> <code>nvidia</code> <code>architecture</code> <code>open-source</code></p>
-<p class="meta">Bryan Catanzaro, VP of Applied Deep Learning Research at NVIDIA, walked us through how his team builds the company’s open models, the reasoning behind their architecture, and why NVIDIA open-sources so much of it.</p>
-<p class="item"><a href="https://martinfowler.com/fragments/2026-07-21.html" target="_blank" rel="noreferrer">Fragments: July 21</a></p>
-<p class="meta">来源：Martin Fowler (架构思维) | 分数：12 | <code>llm</code> <code>model</code> <code>agentic</code> <code>observability</code> <code>product</code></p>
-<p class="meta">With this post, I’ll wrap up my notes from the second Future of Software Development Retreat. But before I do, I should note that the full Thoughtworks report on the retreat is now available. They have five headline find...</p>
 <h2>AI 前沿与思维</h2>
-<p class="item"><a href="https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything" target="_blank" rel="noreferrer">An Inside Look at the Relay Market Powering Token Resellers and Fraud</a></p>
-<p class="meta">来源：Simon Willison | 分数：11 | <code>llm</code> <code>github</code> <code>model</code> <code>product</code> <code>open source</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://vectoral.com/blog/token-relay-market&quot;&gt;An Inside Look at the Relay Market Powering Token Resellers and Fraud&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Fascinating investigation by Matt Lenhard into the market that has ...</p>
+<p class="item"><a href="https://tldr.tech/ai/2026-07-28" target="_blank" rel="noreferrer">Anthropic on open weights 🔓, Kimi releases K3 weights 🤖, MAI Cyber model 🔐</a></p>
+<p class="meta">来源：TLDR AI | 分数：9.09 | <code>anthropic</code> <code>model</code> <code>open weight</code> <code>release</code></p>
+<p class="item"><a href="https://www.bestblogs.dev/en/article/6fdac534fb?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">LangChain 如何构建以代理为中心的数据栈</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：8 | <code>ai agent</code> <code>mcp</code> <code>llm</code> <code>github</code></p>
+<p class="meta">📌 One-Sentence Summary LangChain 描述了其从传统 BI 工具向基于 Hex 的以代理为中心的数据栈的架构转变，强调明确的上下文、语义模型和反馈回路如何实现规模化自助式数据分析。 📝 Summary LangChain 从僵化且受团队瓶颈制约的 BI 工具迁移至由 Hex 驱动的以代理为中心的数据栈。文章详细阐述了他们如何构建上下文层——包括 dbt 定义、语义模型、工作区指南、推荐和 GitHub 集...</p>
 <p class="item"><a href="https://tldr.tech/ai/2026-07-27" target="_blank" rel="noreferrer">Claude Opus 5 🧠, inside OpenAI’s hack 👨‍💻, NVIDIA open weights 🔓</a></p>
-<p class="meta">来源：TLDR AI | 分数：8.09 | <code>openai</code> <code>claude</code> <code>open weight</code> <code>nvidia</code></p>
-<p class="item">[[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model](https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal)</p>
-<p class="meta">来源：Latent Space | 分数：8 | <code>gemini</code> <code>model</code> <code>multimodal</code> <code>robotics</code></p>
-<p class="meta">A HUGE win for BFL!</p>
+<p class="meta">来源：TLDR AI | 分数：8 | <code>openai</code> <code>claude</code> <code>open weight</code> <code>nvidia</code></p>
 <p class="item"><a href="https://www.bestblogs.dev/en/article/20cb8c9352?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">究竟什么是 LLM-as-a-Judge？2026 年前沿技术实战指南</a></p>
 <p class="meta">来源：BestBlogs AI Featured | 分数：7 | <code>llm</code> <code>rlhf</code> <code>evaluation</code></p>
 <p class="meta">📌 One-Sentence Summary 本指南全面探讨了在 AI 开发生命周期中使用 LLM 作为评估器（Evaluator）的演进过程、实际应用、系统性偏见以及对抗性漏洞。 📝 Summary 本文深入探讨了“LLM-as-a-judge”范式，追溯了其从 n-gram 指标局限性和人工评估高成本中产生的必要性。文章将当前的应用格局分为三个领域：模型发布评估、RLHF/RLAIF 对齐流水线以及生产工程。关键在于，作者剖析了...</p>
 <p class="item"><a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan/" target="_blank" rel="noreferrer">Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan</a></p>
 <p class="meta">来源：Import AI (Jack Clark) | 分数：7 | <code>model</code> <code>arxiv</code> <code>research</code></p>
 <p class="meta">Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now UK government: Gap between open and cl...</p>
+<p class="item"><a href="https://simonwillison.net/2026/Jul/28/uv/#atom-everything" target="_blank" rel="noreferrer">uv 0.12.0</a></p>
+<p class="meta">来源：Simon Willison | 分数：6 | <code>github</code> <code>release</code></p>
+<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/astral-sh/uv/releases/tag/0.12.0&quot;&gt;uv 0.12.0&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Some interesting breaking changes in this release of &lt;code&gt;uv&lt;/code&gt;, in particular to the default project produced by t...</p>
 <p class="item"><a href="https://openai.com/index/how-ai-is-expanding-what-people-do-at-work" target="_blank" rel="noreferrer">How AI is expanding what people do at work</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：5.23 | <code>openai</code> <code>research</code></p>
+<p class="meta">来源：OpenAI Blog | 分数：5 | <code>openai</code> <code>research</code></p>
 <p class="meta">New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.</p>
+<p class="item"><a href="https://huggingface.co/papers/2607.21606" target="_blank" rel="noreferrer">TILT: Improving Compositional Generation in Diffusion Models with a Model-Intrinsic Reward</a></p>
+<p class="meta">来源：Hugging Face Daily Papers | 分数：4.81 | <code>model</code> <code>diffusion</code></p>
+<p class="meta">Abstract Recent advances in powerful text-to-image generation models have made it increasingly important to develop test-time methods that modify the sampling trajectory to produce images more faithful to complex composi...</p>
+<p class="item"><a href="https://www.latent.space/p/chatgpt-work" target="_blank" rel="noreferrer">Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI</a></p>
+<p class="meta">来源：Latent Space | 分数：4.73 | <code>openai</code> <code>product</code></p>
+<p class="meta">OpenAI's core product engineering lead on how they are building ChatGPT Work to make AGI accessible to all of humanity: Sites, OpenClaw, Memory, Subagents, Finance, No-Code and advice.</p>
+<p class="item"><a href="https://www.bestblogs.dev/en/article/732e62aab6?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">SGLang 和 Miles 为 Kimi K3 提供 Day-0 支持</a></p>
+<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>llm</code> <code>gpu</code></p>
+<p class="meta">📌 One-Sentence Summary SGLang 和 Miles 为 3 万亿参数的 Kimi K3 模型提供 Day-0 支持，详细阐述其混合架构、内存管理、内核和推测解码。 📝 Summary LMSYS 博客文章宣布，SGLang 现在提供推理支持，而 Miles 提供 RL‑训练支持，针对 Kimi K3 —— 首个开源的 3 万亿参数模型。文章描述了 K3 的混合架构，将 69 层 KDA 线性注意力与 24 层...</p>
 <p class="item"><a href="https://huggingface.co/blog/nvidia/cosmos-h-dreams" target="_blank" rel="noreferrer">NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：4.48 | <code>robotics</code> <code>nvidia</code></p>
-<p class="item"><a href="https://www.bestblogs.dev/en/article/503459bcaa?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=resources&amp;entry=rss_article_item" target="_blank" rel="noreferrer">掌握你的智能：获得持久 AI 优势的关键</a></p>
-<p class="meta">来源：BestBlogs AI Featured | 分数：4 | <code>ai agent</code> <code>llm</code></p>
-<p class="meta">📌 One-Sentence Summary 为了获得持久的竞争优势，企业必须超越通用 AI，通过控制智能体编排、上下文以及驱动价值复利的反馈闭环，来实现“掌握自己的智能”。 📝 Summary 文章指出，现成的 LLM 仅提供基础能力，无法成为可持续的业务护城河。真正的优势在于掌握围绕模型构建的系统所产生的“智能”。这涉及三个关键领域：控制智能体系统（模型、编排框架以及上下文/记忆）、管理运营层面（成本、质量、风险和可观测性），以...</p>
-<p class="item"><a href="https://huggingface.co/blog/nunchaku-diffusers" target="_blank" rel="noreferrer">Bringing Nunchaku 4-bit Diffusion Inference to Diffusers</a></p>
-<p class="meta">来源：Hugging Face Blog | 分数：4 | <code>diffusion</code> <code>inference</code></p>
+<p class="meta">来源：Hugging Face Blog | 分数：4 | <code>robotics</code> <code>nvidia</code></p>
 <p class="item"><a href="https://magazine.sebastianraschka.com/p/using-local-coding-agents" target="_blank" rel="noreferrer">Using Local Coding Agents</a></p>
 <p class="meta">来源：Ahead of AI (Sebastian Raschka) | 分数：4 | <code>claude</code> <code>model</code></p>
 <p class="meta">Using Open-Weight Models in Local Coding Harnesses as an Alternative to Claude Code and Codex Subscriptions</p>
-<p class="item">[[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)](https://www.latent.space/p/ainews-claude-opus-5-fable-level)</p>
-<p class="meta">来源：Latent Space | 分数：4 | <code>anthropic</code> <code>claude</code></p>
-<p class="meta">ain't nobody beats Anthropic at distilling Fable!</p>
-<p class="item"><a href="https://openai.com/index/health-in-chatgpt" target="_blank" rel="noreferrer">Launching Health in ChatGPT</a></p>
-<p class="meta">来源：OpenAI Blog | 分数：3 | <code>launch</code></p>
-<p class="meta">Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health.</p>
 <h2>工程与思维武器</h2>
+<p class="item"><a href="https://blog.bytebytego.com/p/how-nvidia-builds-open-models-for" target="_blank" rel="noreferrer">How NVIDIA Builds Open Models for the Age of AI</a></p>
+<p class="meta">来源：ByteByteGo (系统设计) | 分数：14 | <code>model</code> <code>reasoning</code> <code>nvidia</code> <code>architecture</code> <code>open-source</code></p>
+<p class="meta">Bryan Catanzaro, VP of Applied Deep Learning Research at NVIDIA, walked us through how his team builds the company’s open models, the reasoning behind their architecture, and why NVIDIA open-sources so much of it.</p>
 <p class="item"><a href="https://github.com/permissionlesstech/bitchat" target="_blank" rel="noreferrer">permissionlesstech/bitchat</a></p>
 <p class="meta">来源：GitHub Trending Daily | 分数：12 | <code>paper</code> <code>architecture</code> <code>distributed</code> <code>protocol</code> <code>release</code></p>
 <p class="meta">bluetooth mesh chat, IRC vibes bitchat A decentralized peer-to-peer messaging app with dual transport architecture: local Bluetooth mesh networks for offline communication and internet-based Nostr protocol for global rea...</p>
+<p class="item"><a href="https://huggingface.co/papers/2607.23909" target="_blank" rel="noreferrer">WorldDiT: A Unified Diffusion Architecture for World and Action Modeling</a></p>
+<p class="meta">来源：Hugging Face Daily Papers | 分数：10.72 | <code>model</code> <code>transformer</code> <code>diffusion</code> <code>pretrain</code> <code>architecture</code></p>
+<p class="meta">Abstract Many recent robot policies pursue stronger control by using large pretrained vision-language models (VLMs) as the action backbone. We introduce WorldDiT, a unified diffusion transformer architecture that couples...</p>
 <p class="item"><a href="https://jvns.ca/blog/2026/07/21/more-nice-django-things/" target="_blank" rel="noreferrer">Some more things about Django I've been enjoying</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：9 | <code>llm</code> <code>model</code> <code>cache</code> <code>benchmark</code></p>
 <p class="meta">Hello! I’m on a funny journey right now where I’m trying to learn how to make websites in a sort of 2010 style, where I have an SQL database and render some HTML on the backend. It’s kind of an interesting journey becaus...</p>
 <p class="item"><a href="https://www.technologyreview.com/2026/07/27/1140836/openai-hugging-face-attack-precedent/" target="_blank" rel="noreferrer">OpenAI called the Hugging Face attack unprecedented. But we’ve been here before.</a></p>
-<p class="meta">来源：MIT Technology Review - AI | 分数：6.84 | <code>openai</code> <code>model</code> <code>hugging face</code></p>
+<p class="meta">来源：MIT Technology Review - AI | 分数：6 | <code>openai</code> <code>model</code> <code>hugging face</code></p>
 <p class="meta">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Reading OpenAI’s account last week of how some of its models broke their containme...</p>
 <p class="item"><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-quitting-spotify-podcasts" target="_blank" rel="noreferrer">The Pulse: Quitting Spotify Podcasts over reliability</a></p>
 <p class="meta">来源：The Pragmatic Engineer | 分数：6 | <code>openai</code> <code>anthropic</code> <code>model</code></p>
 <p class="meta">Also: Chinese open models match closed ones from Anthropic and OpenAI, AWS’s “heart-attack” billing error, and more</p>
-<p class="item"><a href="https://martinfowler.com/articles/archaeologist-copilot.html" target="_blank" rel="noreferrer">The Archaeologist’s Copilot</a></p>
-<p class="meta">来源：Martin Fowler (架构思维) | 分数：4 | <code>refactor</code> <code>strategy</code></p>
-<p class="meta">When people think of legacy modernization, most folks aren't imagining the target environment will be Java 8. But this was the challenge facing Nik Malykhin when he needed to run a Java 1.5 codebase on today's hardware. ...</p>
+<p class="item"><a href="https://martinfowler.com/rachels-ramblings/intro.html" target="_blank" rel="noreferrer">Why I’m Writing Rachel’s Ramblings</a></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：4.61 | <code>paper</code> <code>strategy</code></p>
+<p class="meta">TL;DR I have ideas. I haven’t been writing them. That’s about to change. I promise… myself. I’ve been thinking a lot about talent. Actually, I’ve been thinking a lot about thinking. And writing. Or more specifically, not...</p>
 <p class="item"><a href="https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/" target="_blank" rel="noreferrer">Learning a few things about running SQLite</a></p>
 <p class="meta">来源：Julia Evans (概念图解) | 分数：4 | <code>product</code> <code>technologie</code></p>
 <p class="meta">Hello! I’ve been working on a Django site recently, and I decided to use SQLite as the database. When I was getting started with using SQLite as database for a website I read a bunch of blog posts about how it is totally...</p>
-<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/pushing-software-engineering-limits" target="_blank" rel="noreferrer">Pushing software engineering limits with “napkin math”</a></p>
-<p class="meta">来源：The Pragmatic Engineer | 分数：2 | <code>founder</code></p>
-<p class="meta">Turbopuffer cofounder Simon Eskildsen on the benefits of longer tenure, using first principles to build durable software – and why founders should be cautious when raising VC money</p>
-<p class="item"><a href="https://blog.bytebytego.com/p/a-beginners-guide-to-clocks-causality" target="_blank" rel="noreferrer">A Beginner’s Guide to Clocks, Causality, and Ordering in Distributed Systems</a></p>
-<p class="meta">来源：ByteByteGo (系统设计) | 分数：2 | <code>distributed</code></p>
-<p class="meta">Why does something as simple as reading the time become a hard problem for distributed systems?</p>
+<p class="item"><a href="https://newsletter.pragmaticengineer.com/p/inside-anthropic" target="_blank" rel="noreferrer">How building software is changing at Anthropic</a></p>
+<p class="meta">来源：The Pragmatic Engineer | 分数：2.75 | <code>anthropic</code></p>
+<p class="meta">A deepdive on what’s changed in how the leading AI lab makes software. Ever more code review and testing is done by AI, two-pizza teams very much alive, and more. Details from inside of Anthropic</p>
+<p class="item"><a href="https://martinfowler.com/articles/orchestrator-tax.html" target="_blank" rel="noreferrer">The Orchestrator's Tax</a></p>
+<p class="meta">来源：Martin Fowler (架构思维) | 分数：2.64 | <code>reasoning</code></p>
+<p class="meta">Subagents get justified by time saved and parallel execution, but Rahul Garg explains that's not what matters most. Every token in the orchestrator's context is competing for its attention, and the real value of a subage...</p>
 <h2>商业与产品</h2>
-<p class="item"><a href="https://simonwillison.net/2026/Jul/25/ruff/#atom-everything" target="_blank" rel="noreferrer">Ruff v0.16.0</a></p>
-<p class="meta">来源：Simon Willison | 分数：10 | <code>openai</code> <code>claude</code> <code>llm</code> <code>github</code> <code>founder</code></p>
-<p class="meta">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://astral.sh/blog/ruff-v0.16.0&quot;&gt;Ruff v0.16.0&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my va...</p>
+<p class="item"><a href="https://lexfridman.com/gary-gallagher/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=gary-gallagher" target="_blank" rel="noreferrer">#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &amp; Lee</a></p>
+<p class="meta">来源：Lex Fridman Podcast | 分数：2.92 | <code>business</code></p>
+<p class="meta">Gary Gallagher is a historian of the American Civil War. https://lexfridman.com/sponsors/ep499-sc Transcript: https://lexfridman.com/gary-gallagher-transcript CONTACT LEX: Feedback – give feedback to Lex: https://lexfrid...</p>
 <p class="item"><a href="https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud/" target="_blank" rel="noreferrer">Notes on a non-profit indicted for bank fraud</a></p>
 <p class="meta">来源：Patrick McKenzie - Bits about Money | 分数：2 | <code>product</code></p>
 <p class="meta">Well-regarded non-profit runs domestic intelligence agency; distributes intelligence product; achieves adoption in financial infrastructure; recruits agents and allies; intervenes against U.S. political fundraising.</p>
 <h2>法语经济学</h2>
-<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/27/canal-va-investir-980-millions-d-euros-dans-le-cinema-francais-et-europeen-entre-2028-et-2032_6734225_3234.html" target="_blank" rel="noreferrer">Canal+ va investir 980 millions d’euros dans le cinéma français et européen entre 2028 et 2032</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：4.88 | <code>français</code> <code>européen</code></p>
-<p class="meta">Le groupe signe un accord pour cinq ans avec les professionnels du septième art, bien plus favorable que celui actuellement en vigueur.</p>
-<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/27/l-incendie-en-gironde-un-coup-de-tonnerre-economique-qui-justifie-la-mobilisation-de-l-etat_6734214_3234.html" target="_blank" rel="noreferrer">L’incendie en Gironde, un « coup de tonnerre » économique qui justifie la mobilisation de l’Etat</a></p>
-<p class="meta">来源：Le Monde - Économie | 分数：4.78 | <code>économique</code> <code>entreprise</code></p>
-<p class="meta">Le feu, qui a ravagé 42 000 hectares dans le département depuis mercredi 22 juillet, a provoqué la mise à l’arrêt de plus de 13 000 entreprises. Le gouvernement propose du chômage partiel, les assurances une extension de...</p>
+<p class="item"><a href="https://www.lemonde.fr/idees/article/2026/07/28/en-trois-ans-l-ukraine-a-bati-l-un-des-complexes-militaro-industriels-les-plus-innovants-au-monde_6735330_3232.html" target="_blank" rel="noreferrer">« En trois ans, l’Ukraine a bâti l’un des complexes militaro-industriels les plus innovants au monde »</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：4.77 | <code>technologie</code> <code>europe</code></p>
+<p class="meta">Longtemps dépendante d’une aide occidentale indispensable à sa survie face à la Russie, l’Ukraine est aujourd’hui un fournisseur de technologies militaires, en Europe comme au Moyen-Orient, relèvent Arthur de Liedekerke ...</p>
+<p class="item"><a href="https://www.alternatives-economiques.fr/en-allemagne-la-coalition-gouvernementale-tente-de-sauver-la-croissance-au-detriment-des_28-07-2026" target="_blank" rel="noreferrer">En Allemagne, la coalition gouvernementale tente de sauver la croissance au détriment des travailleurs</a></p>
+<p class="meta">来源：Alternatives Économiques | 分数：4.46 | <code>économique</code> <code>croissance</code></p>
+<p class="meta">En Allemagne, la CDU (droite) et le SPD (social-démocrate) se sont mis d’accord sur des réformes qui rappellent celles des années 2000. Mais elles ont peu de chances de se traduire par le même succès économique.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/28/incendie-en-gironde-a-proximite-des-sites-industriels-sous-surveillance-l-exposition-est-mesuree_6735537_3234.html" target="_blank" rel="noreferrer">Incendie en Gironde : « A proximité des sites industriels sous surveillance, l’exposition est mesurée »</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.92 | <code>entreprise</code></p>
+<p class="meta">Benjamin Truchot, de l’Institut national de l’environnement industriel et des risques, évoque les menaces qui pèsent sur les entreprises chimiques ou d’armement en cas de feux de forêts.</p>
+<p class="item"><a href="https://www.lemonde.fr/economie/article/2026/07/28/cma-cgm-augmente-ses-profits-malgre-le-conflit-au-moyen-orient_6735399_3234.html" target="_blank" rel="noreferrer">CMA CGM augmente ses profits malgré le conflit au Moyen-Orient</a></p>
+<p class="meta">来源：Le Monde - Économie | 分数：2.8 | <code>français</code></p>
+<p class="meta">Porté par la hausse de la demande et des tarifs, le transporteur maritime français a dégagé 3 milliards de dollars de bénéfice opérationnel au deuxième trimestre.</p>
+<p class="item"><a href="https://www.alternatives-economiques.fr/ernest-mercier-le-fondateur-de-l-ancetre-de-total-qui-admirait-mussolini_28-07-2026" target="_blank" rel="noreferrer">Ernest Mercier, le fondateur de l&amp;#039;ancêtre de Total qui admirait Mussolini</a></p>
+<p class="meta">来源：Alternatives Économiques | 分数：2.3 | <code>français</code></p>
+<p class="meta">En créant le « Redressement français » en 1925, l'industriel Ernest Mercier voulait fédérer l'élite et éduquer les masses en pesant sur les partis de droite. Deuxième volet de notre série sur les patrons d'extrême droite...</p>
 <h2>继续跟踪</h2>
 <p>暂无命中。</p>
   </main>
